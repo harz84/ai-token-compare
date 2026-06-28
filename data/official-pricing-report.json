@@ -1,0 +1,525 @@
+{
+  "providers": {
+    "openai": "https://platform.openai.com/docs/models",
+    "anthropic": "https://docs.anthropic.com/en/docs/about-claude/models",
+    "google": "https://ai.google.dev/gemini-api/docs/models",
+    "deepseek": "https://platform.deepseek.com/api-docs",
+    "xai": "https://docs.x.ai/docs/models",
+    "moonshot": "https://platform.moonshot.ai/docs",
+    "zhipu": "https://docs.z.ai",
+    "alibaba": "https://www.alibabacloud.com/help/en/model-studio/models",
+    "mistral": "https://docs.mistral.ai/getting-started/models/",
+    "meta": "https://llama.meta.com",
+    "cohere": "https://docs.cohere.com/docs/models",
+    "minimax": "https://www.minimax.io/platform",
+    "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
+  },
+  "fetchedAt": "2026-06-28T09:16:43.972Z",
+  "generatedAt": "2026-06-28T09:16:50.494Z",
+  "mappedCount": 64,
+  "matchedCount": 43,
+  "missingCount": 21,
+  "fetchErrors": [
+    {
+      "provider": "deepseek",
+      "url": "https://platform.deepseek.com/api-docs",
+      "message": "Request failed for https://platform.deepseek.com/api-docs: 403 Forbidden"
+    }
+  ],
+  "matched": [
+    {
+      "internalId": "gpt-5-5-official",
+      "provider": "openai",
+      "inputPrice": 5,
+      "cachePrice": 0.5,
+      "outputPrice": 30,
+      "contextWindow": 1000000,
+      "maxOutput": 128000
+    },
+    {
+      "internalId": "gpt-5-4-official",
+      "provider": "openai",
+      "inputPrice": 2.5,
+      "cachePrice": 0.25,
+      "outputPrice": 15,
+      "contextWindow": 1000000,
+      "maxOutput": 128000
+    },
+    {
+      "internalId": "gpt-5-4-mini",
+      "provider": "openai",
+      "inputPrice": 0.75,
+      "cachePrice": 0.075,
+      "outputPrice": 4.5,
+      "contextWindow": 400000,
+      "maxOutput": 128000
+    },
+    {
+      "internalId": "gpt-5-4-nano",
+      "provider": "openai",
+      "inputPrice": 0.15,
+      "cachePrice": 0.015,
+      "outputPrice": 0.6,
+      "contextWindow": 128000,
+      "maxOutput": 32768
+    },
+    {
+      "internalId": "claude-fable-5",
+      "provider": "anthropic",
+      "inputPrice": 10,
+      "cachePrice": 1,
+      "outputPrice": 50,
+      "contextWindow": 1000000,
+      "maxOutput": 128000
+    },
+    {
+      "internalId": "claude-mythos-5",
+      "provider": "anthropic",
+      "inputPrice": 10,
+      "cachePrice": 1,
+      "outputPrice": 50,
+      "contextWindow": 1000000,
+      "maxOutput": 128000
+    },
+    {
+      "internalId": "claude-opus-4-8",
+      "provider": "anthropic",
+      "inputPrice": 5,
+      "cachePrice": 0.5,
+      "outputPrice": 25,
+      "contextWindow": 1000000,
+      "maxOutput": 128000
+    },
+    {
+      "internalId": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "inputPrice": 3,
+      "cachePrice": 0.3,
+      "outputPrice": 15,
+      "contextWindow": 1000000,
+      "maxOutput": 128000
+    },
+    {
+      "internalId": "claude-sonnet-4-5",
+      "provider": "anthropic",
+      "inputPrice": 3,
+      "cachePrice": 0.3,
+      "outputPrice": 15,
+      "contextWindow": 200000,
+      "maxOutput": 64000
+    },
+    {
+      "internalId": "claude-haiku-4-5",
+      "provider": "anthropic",
+      "inputPrice": 1,
+      "cachePrice": 0.1,
+      "outputPrice": 5,
+      "contextWindow": 200000,
+      "maxOutput": 64000
+    },
+    {
+      "internalId": "gemini-2-5-pro",
+      "provider": "google",
+      "inputPrice": 1.25,
+      "cachePrice": 0.125,
+      "outputPrice": 10,
+      "contextWindow": 2000000,
+      "maxOutput": 65536
+    },
+    {
+      "internalId": "gemini-2-5-flash",
+      "provider": "google",
+      "inputPrice": 0.3,
+      "cachePrice": 0.03,
+      "outputPrice": 2.5,
+      "contextWindow": 1000000,
+      "maxOutput": 65536
+    },
+    {
+      "internalId": "gemini-2-0-flash",
+      "provider": "google",
+      "inputPrice": 0.1,
+      "cachePrice": 0.01,
+      "outputPrice": 0.4,
+      "contextWindow": 1000000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "deepseek-v3-1",
+      "provider": "deepseek",
+      "inputPrice": 0.27,
+      "cachePrice": 0.07,
+      "outputPrice": 1.1,
+      "contextWindow": 128000,
+      "maxOutput": 16384
+    },
+    {
+      "internalId": "deepseek-r1",
+      "provider": "deepseek",
+      "inputPrice": 0.55,
+      "cachePrice": 0.14,
+      "outputPrice": 2.19,
+      "contextWindow": 128000,
+      "maxOutput": 32768
+    },
+    {
+      "internalId": "deepseek-v3",
+      "provider": "deepseek",
+      "inputPrice": 0.27,
+      "cachePrice": 0.07,
+      "outputPrice": 1.1,
+      "contextWindow": 64000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "deepseek-chat",
+      "provider": "deepseek",
+      "inputPrice": 0.14,
+      "cachePrice": 0.014,
+      "outputPrice": 0.28,
+      "contextWindow": 64000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "grok-4",
+      "provider": "xai",
+      "inputPrice": 3,
+      "cachePrice": 0.75,
+      "outputPrice": 15,
+      "contextWindow": 256000,
+      "maxOutput": 16384
+    },
+    {
+      "internalId": "grok-3",
+      "provider": "xai",
+      "inputPrice": 3,
+      "cachePrice": 0.75,
+      "outputPrice": 15,
+      "contextWindow": 131000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "kimi-k2-7",
+      "provider": "moonshot",
+      "inputPrice": 0.74,
+      "cachePrice": 0.15,
+      "outputPrice": 3.5,
+      "contextWindow": 262144,
+      "maxOutput": 16384
+    },
+    {
+      "internalId": "kimi-k2-6",
+      "provider": "moonshot",
+      "inputPrice": 0.66,
+      "cachePrice": 0.144,
+      "outputPrice": 3.41,
+      "contextWindow": 262144,
+      "maxOutput": 262144
+    },
+    {
+      "internalId": "kimi-k2",
+      "provider": "moonshot",
+      "inputPrice": 0.57,
+      "cachePrice": 0,
+      "outputPrice": 2.3,
+      "contextWindow": 131072,
+      "maxOutput": 16384
+    },
+    {
+      "internalId": "kimi-k2-thinking",
+      "provider": "moonshot",
+      "inputPrice": 0.8,
+      "cachePrice": 0.2,
+      "outputPrice": 3,
+      "contextWindow": 131000,
+      "maxOutput": 32768
+    },
+    {
+      "internalId": "glm-5-2",
+      "provider": "zhipu",
+      "inputPrice": 0.95,
+      "cachePrice": 0.18,
+      "outputPrice": 3,
+      "contextWindow": 1048576,
+      "maxOutput": 32768
+    },
+    {
+      "internalId": "glm-4-5",
+      "provider": "zhipu",
+      "inputPrice": 0.6,
+      "cachePrice": 0.12,
+      "outputPrice": 2.2,
+      "contextWindow": 128000,
+      "maxOutput": 16384
+    },
+    {
+      "internalId": "mistral-large-latest",
+      "provider": "mistral",
+      "inputPrice": 2,
+      "cachePrice": 0.2,
+      "outputPrice": 6,
+      "contextWindow": 128000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "magistral-medium-latest",
+      "provider": "mistral",
+      "inputPrice": 2,
+      "cachePrice": 0.2,
+      "outputPrice": 5,
+      "contextWindow": 40000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "codestral-latest",
+      "provider": "mistral",
+      "inputPrice": 0.2,
+      "cachePrice": 0.02,
+      "outputPrice": 0.6,
+      "contextWindow": 256000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "mistral-small-latest",
+      "provider": "mistral",
+      "inputPrice": 0.1,
+      "cachePrice": 0.01,
+      "outputPrice": 0.3,
+      "contextWindow": 128000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "ministral-8b-latest",
+      "provider": "mistral",
+      "inputPrice": 0.1,
+      "cachePrice": 0.01,
+      "outputPrice": 0.1,
+      "contextWindow": 128000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "llama-4-maverick",
+      "provider": "meta",
+      "inputPrice": 0.2,
+      "cachePrice": 0.02,
+      "outputPrice": 0.6,
+      "contextWindow": 1000000,
+      "maxOutput": 16384
+    },
+    {
+      "internalId": "llama-4-scout",
+      "provider": "meta",
+      "inputPrice": 0.1,
+      "cachePrice": 0.01,
+      "outputPrice": 0.3,
+      "contextWindow": 10000000,
+      "maxOutput": 16384
+    },
+    {
+      "internalId": "llama-guard-4",
+      "provider": "meta",
+      "inputPrice": 0.05,
+      "cachePrice": 0.005,
+      "outputPrice": 0.05,
+      "contextWindow": 128000,
+      "maxOutput": 4096
+    },
+    {
+      "internalId": "command-a-03-2025",
+      "provider": "cohere",
+      "inputPrice": 2.5,
+      "cachePrice": 0.25,
+      "outputPrice": 10,
+      "contextWindow": 256000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "command-r-plus",
+      "provider": "cohere",
+      "inputPrice": 2.5,
+      "cachePrice": 0.25,
+      "outputPrice": 10,
+      "contextWindow": 128000,
+      "maxOutput": 4096
+    },
+    {
+      "internalId": "command-r",
+      "provider": "cohere",
+      "inputPrice": 0.15,
+      "cachePrice": 0.015,
+      "outputPrice": 0.6,
+      "contextWindow": 128000,
+      "maxOutput": 4096
+    },
+    {
+      "internalId": "command-r7b",
+      "provider": "cohere",
+      "inputPrice": 0.0375,
+      "cachePrice": 0.004,
+      "outputPrice": 0.15,
+      "contextWindow": 128000,
+      "maxOutput": 4096
+    },
+    {
+      "internalId": "minimax-m2-7-highspeed",
+      "provider": "minimax",
+      "inputPrice": 0.6,
+      "cachePrice": 0.12,
+      "outputPrice": 2.4,
+      "contextWindow": 1000000,
+      "maxOutput": 80000
+    },
+    {
+      "internalId": "minimax-m2-7",
+      "provider": "minimax",
+      "inputPrice": 0.5,
+      "cachePrice": 0.1,
+      "outputPrice": 2,
+      "contextWindow": 1000000,
+      "maxOutput": 80000
+    },
+    {
+      "internalId": "minimax-m3",
+      "provider": "minimax",
+      "inputPrice": 1,
+      "cachePrice": 0.1,
+      "outputPrice": 3,
+      "contextWindow": 128000,
+      "maxOutput": 16384
+    },
+    {
+      "internalId": "mimo-7b-rl",
+      "provider": "xiaomi",
+      "inputPrice": 0.06,
+      "cachePrice": 0.015,
+      "outputPrice": 0.18,
+      "contextWindow": 128000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "mimo-7b-base",
+      "provider": "xiaomi",
+      "inputPrice": 0.04,
+      "cachePrice": 0.01,
+      "outputPrice": 0.12,
+      "contextWindow": 128000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "mimo-7b-sft",
+      "provider": "xiaomi",
+      "inputPrice": 0.05,
+      "cachePrice": 0.01,
+      "outputPrice": 0.15,
+      "contextWindow": 128000,
+      "maxOutput": 8192
+    }
+  ],
+  "missing": [
+    {
+      "internalId": "claude-opus-4-8-fast",
+      "provider": "anthropic",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "gemini-2-5-flash-lite",
+      "provider": "google",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "gemini-1-5-pro",
+      "provider": "google",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "grok-3-mini",
+      "provider": "xai",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "grok-code-fast-1",
+      "provider": "xai",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "glm-5-2-air",
+      "provider": "zhipu",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "glm-4-air",
+      "provider": "zhipu",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "glm-4-flash",
+      "provider": "zhipu",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "qwen3-max",
+      "provider": "alibaba",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "qwen3-plus",
+      "provider": "alibaba",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "qwen3-235b-a22b",
+      "provider": "alibaba",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "qwen3-coder-plus",
+      "provider": "alibaba",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "qwen3-turbo",
+      "provider": "alibaba",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "llama-3-3-70b-instruct",
+      "provider": "meta",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "llama-3-1-405b-instruct",
+      "provider": "meta",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "minimax-m1",
+      "provider": "minimax",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "minimax-vl-01",
+      "provider": "minimax",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "minimax-text-01",
+      "provider": "minimax",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "mimo-v2-5-pro",
+      "provider": "xiaomi",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "mimo-vl-7b",
+      "provider": "xiaomi",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "mimo-lite",
+      "provider": "xiaomi",
+      "reason": "alias-not-found"
+    }
+  ]
+}

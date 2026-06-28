@@ -1,0 +1,92 @@
+# ============================================================
+# Automated Daily Pricing Update
+# Runs every day at 00:00 WIB (17:00 UTC) to fetch latest
+# pricing data from OpenRouter, DeepInfra, Sumopod, and
+# official provider APIs.
+# ============================================================
+
+name: 🔄 Update AI Model Pricing
+
+on:
+  schedule:
+    # 00:00 WIB = 17:00 UTC (previous day)
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+    # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  update-pricing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🔄 Fetch & merge latest pricing
+        run: npm run update:all-pricing
+        env:
+          NODE_ENV: production
+
+      - name: 📊 Show update summary
+        run: |
+          echo "=== Pricing Update Report ==="
+          if [ -f data/pricing-update-report.json ]; then
+            cat data/pricing-update-report.json | node -e "
+              const data = JSON.parse(require('fs').readFileSync('/dev/stdin','utf8'));
+              console.log('');
+              if (data.openrouter) console.log('OpenRouter: ' + data.openrouter.matched + ' matched, ' + data.openrouter.missing + ' missing');
+              if (data.official) console.log('Official:   ' + data.official.matched + ' matched, ' + data.official.missing + ' missing');
+              if (data.sumopod) console.log('Sumopod:    ' + data.sumopod.matched + ' matched, ' + data.sumopod.missing + ' missing');
+              if (data.deepinfra) console.log('DeepInfra:  ' + data.deepinfra.matched + ' matched, ' + data.deepinfra.missing + ' missing');
+              console.log('');
+            "
+          else
+            echo "No report file generated"
+          fi
+
+      - name: 📝 Check for changes
+        id: changes
+        run: |
+          git diff --quiet || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+      - name: 💾 Commit & push updated pricing
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage only the generated/data files
+          git add \
+            js/openrouter-merge.generated.js \
+            js/official-pricing.generated.js \
+            js/sumopod-merge.generated.js \
+            js/deepinfra-merge.generated.js \
+            data/*.json \
+            data/*.generated.json
+
+          TIMESTAMP=$(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M WIB')
+          git commit -m "🔄 Auto-update pricing data — ${TIMESTAMP}"
+          git push
+
+      - name: ✅ Done
+        run: |
+          if [ "${{ steps.changes.outputs.has_changes }}" == "true" ]; then
+            echo "✅ Pricing data updated and committed successfully!"
+          else
+            echo "ℹ️ No pricing changes detected. Skipping commit."
+          fi

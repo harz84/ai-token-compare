@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Token Price Compare | Bandingkan Harga Token AI</title>
+  <meta name="description" content="Compare AI token prices across 20+ providers. Find the cheapest AI API for GPT-4, Claude, Gemini, DeepSeek, Qwen, and more.">
+  <meta name="keywords" content="AI token price, API pricing, GPT-4 price, Claude price, Gemini price, AI comparison, DeepSeek, Qwen, Llama, Mistral, harga token AI">
+  <meta name="author" content="AI Token Price Compare">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Token Price Compare — Find the Cheapest AI API">
+  <meta property="og:description" content="Compare AI token prices across 20+ providers. GPT-4, Claude, Gemini, DeepSeek, Qwen and more.">
+  <meta property="og:url" content="https://ai-token-compare.example.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Token Price Compare">
+  <meta name="twitter:description" content="Compare AI token prices across 20+ providers.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon" aria-hidden="true">⚡</span>
+        <span class="logo-text" data-i18n="site.title">AI Token Price Compare</span>
+      </div>
+
+      <nav class="nav-links" id="main-nav" aria-label="Main navigation">
+        <div class="nav-dropdown-container">
+          <a href="#compare" class="nav-link active" data-tab="compare" data-i18n="nav.compare">Compare <span style="font-size:0.8em;opacity:0.7;">▾</span></a>
+          <ul class="nav-dropdown-menu" id="compare-nav-menu">
+            <!-- Dynamically populated by app.js -->
+          </ul>
+        </div>
+        <a href="#promos" class="nav-link" data-tab="promos" data-i18n="nav.promos">Free & Starter Options</a>
+        <a href="#models" class="nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
+        <a href="#best-picks" class="nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Language toggle -->
+        <div class="toggle-container" role="group" aria-label="Language selection">
+          <span class="toggle-label" id="label-en">EN</span>
+          <label class="toggle-switch" id="lang-toggle">
+            <input type="checkbox" id="lang-checkbox" aria-labelledby="label-en label-id">
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label" id="label-id">ID</span>
+        </div>
+
+        <!-- Currency toggle -->
+        <div class="toggle-container" role="group" aria-label="Currency selection">
+          <span class="toggle-label" id="label-usd">USD</span>
+          <label class="toggle-switch" id="currency-toggle">
+            <input type="checkbox" id="currency-checkbox" aria-labelledby="label-usd label-idr">
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label" id="label-idr">IDR</span>
+        </div>
+
+        <!-- Theme toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <span class="theme-icon-dark">🌙</span>
+          <span class="theme-icon-light" style="display:none;">☀️</span>
+        </button>
+
+        <!-- Mobile hamburger -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="hero" aria-label="Hero banner">
+    <div class="hero-bg-animation" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title gradient-text" data-i18n="site.tagline">Compare AI Token Prices Across All Platforms</h1>
+      <p class="hero-subtitle" data-i18n="site.subtitle">Find the best deals on AI API tokens from 20+ providers worldwide</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main class="main container" id="main-content">
+
+    <!-- ── ALL MODELS ─────────────────────────────────────── -->
+    <section class="section hidden" id="section-models" aria-label="All models pricing table">
+
+      <!-- Search and Stats Row -->
+      <div class="action-bar-row">
+        <div class="search-container" style="display:flex; gap: 8px;">
+          <div style="position:relative; flex: 1;">
+            <span class="search-icon" aria-hidden="true" style="position:absolute; left:12px; top:50%; transform:translateY(-50%);">🔍</span>
+            <input
+              type="text"
+              class="search-input"
+              id="search-input"
+              data-i18n-placeholder="filter.search_placeholder"
+              placeholder="Search models, providers..."
+              autocomplete="off"
+              aria-label="Search models and providers"
+              style="width:100%;"
+            >
+          </div>
+          <select id="provider-select" class="sort-select" aria-label="Filter by provider" style="padding:var(--space-sm) var(--space-md); font-size:1rem; border-radius:var(--radius-full); background:var(--bg-card-alt); border:2px solid var(--border); color:var(--text-primary); cursor:pointer;">
+            <option value="all">All Providers</option>
+          </select>
+        </div>
+
+        <div class="hero-stats action-bar-stats" aria-label="Site statistics">
+          <div class="stat-item">
+            <span class="stat-number" id="stat-providers">20+</span>
+            <span class="stat-label" data-i18n="table.provider">Providers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="stat-models">40+</span>
+            <span class="stat-label" data-i18n="table.model">Models</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="stat-promos">12+</span>
+             <span class="stat-label" data-i18n="nav.promos">Free & Starter Options</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-bar" id="filter-bar">
+        <!-- Category filter -->
+        <div class="filter-group" role="group" aria-label="Filter by category">
+          <span class="filter-label" data-i18n="table.category">Category:</span>
+          <button class="filter-chip active" data-filter-category="all" data-i18n="filter.all">All</button>
+          <button class="filter-chip" data-filter-category="flagship" data-i18n="filter.flagship">Flagship</button>
+          <button class="filter-chip" data-filter-category="mid" data-i18n="filter.mid">Mid-tier</button>
+          <button class="filter-chip" data-filter-category="budget" data-i18n="filter.budget">Budget</button>
+          <button class="filter-chip" data-filter-category="reasoning" data-i18n="filter.reasoning">Reasoning</button>
+        </div>
+
+        <!-- Sort -->
+        <div class="filter-group" role="group" aria-label="Sort options">
+          <span class="filter-label" data-i18n="filter.sort_by">Sort by:</span>
+          <select class="sort-select" id="sort-select" aria-label="Sort models by">
+            <option value="inputPrice" data-i18n="filter.sort_cheapest_input">Cheapest Input</option>
+            <option value="outputPrice" data-i18n="filter.sort_cheapest_output">Cheapest Output</option>
+            <option value="name" data-i18n="filter.sort_name">Name (A-Z)</option>
+            <option value="contextWindow" data-i18n="filter.sort_context">Context Window</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="price-table-container">
+        <div class="table-wrapper">
+          <table class="price-table" id="price-table">
+            <thead>
+              <tr>
+                <th class="sortable" data-sort="provider" data-i18n="table.provider">Provider <span class="sort-icon">↕</span></th>
+                <th class="sortable" data-sort="name" data-i18n="table.model">Model <span class="sort-icon">↕</span></th>
+                <th class="sortable" data-sort="inputPrice" data-i18n="table.input_price">Input (per 1M) <span class="sort-icon">↕</span></th>
+                <th class="sortable" data-sort="cachePrice" data-i18n="table.cache_price">Cache (per 1M) <span class="sort-icon">↕</span></th>
+                <th class="sortable" data-sort="outputPrice" data-i18n="table.output_price">Output (per 1M) <span class="sort-icon">↕</span></th>
+                <th class="sortable" data-sort="contextWindow" data-i18n="table.context">Context <span class="sort-icon">↕</span></th>
+                <th class="sortable" data-sort="category" data-i18n="table.category">Category <span class="sort-icon">↕</span></th>
+                <th class="sortable" data-sort="updatedAt" data-i18n="table.updated">Updated <span class="sort-icon">↕</span></th>
+              </tr>
+            </thead>
+            <tbody id="price-table-body">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+        <p class="no-results hidden" id="no-results" data-i18n="general.no_results">No models found</p>
+      </div>
+    </section>
+
+    <!-- ── COMPARE ────────────────────────────────────────── -->
+    <section class="section" id="section-compare" aria-label="Multi-provider price comparison">
+      <div style="display:flex; align-items:center; justify-content:flex-start; gap:var(--space-xl); flex-wrap:wrap; margin-bottom:var(--space-2xl);">
+        <div>
+          <h2 class="section-title" style="margin-bottom:var(--space-xs);" data-i18n="compare.title">Multi-Provider Price Comparison</h2>
+          <p class="section-subtitle" style="margin:0;" data-i18n="compare.subtitle">See how much the same model costs across different providers</p>
+        </div>
+        <div style="flex:0 0 auto; min-width:280px;">
+          <select class="sort-select compare-select" id="compare-model-select" aria-label="Select a model to compare" style="width:100%; padding:var(--space-sm) var(--space-md); font-size:1rem; border-radius:var(--radius-lg); background:var(--bg-card-alt); border:2px solid var(--primary); box-shadow:0 0 20px var(--primary-glow); outline:none; cursor:pointer; color:var(--text-primary);">
+            <option value="" data-i18n="compare.select_model">-- Select a model --</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="compare-grid" id="compare-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- ── BEST PICKS ─────────────────────────────────────── -->
+    <section class="section hidden" id="section-best-picks" aria-label="Best model recommendations">
+      <h2 class="section-title" data-i18n="best_picks.title">Best Picks</h2>
+      <p class="section-subtitle" data-i18n="best_picks.subtitle">Fast recommendations for the most useful model categories</p>
+
+      <div class="best-picks-grid" id="best-picks-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- ── PROMOS ─────────────────────────────────────────── -->
+    <section class="section hidden" id="section-promos" aria-label="Promos and free tiers">
+      <h2 class="section-title" data-i18n="promo.title">Free &amp; Starter Options</h2>
+      <p class="section-subtitle" data-i18n="promo.subtitle">Free tiers, starter credits, and low-risk ways to try AI APIs</p>
+
+      <div class="promo-grid" id="promo-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-love" data-i18n="footer.built_with">Built with ❤️ for the AI community</p>
+      <p class="footer-updated">
+        <span data-i18n="general.last_updated">Last updated</span>:
+        <time id="last-updated">24 June 2026</time>
+      </p>
+      <p class="footer-disclaimer" data-i18n="footer.disclaimer">This is an independent comparison tool. Prices shown are approximate and may vary. Always check official pricing pages for the most current rates.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS  (order matters: data → pricing patches → i18n → currency → app)
+       ============================================================ -->
+  <script src="js/data.js?v=4"></script>
+  <script src="js/official-pricing.generated.js?v=3"></script>
+  <script src="js/openrouter-merge.generated.js?v=3"></script>
+  <script src="js/sumopod-merge.generated.js?v=3"></script>
+  <script src="js/deepinfra-merge.generated.js?v=3"></script>
+  <script src="js/i18n.js?v=3"></script>
+  <script src="js/currency.js?v=3"></script>
+  <script src="js/app.js?v=3"></script>
+</body>
+</html>

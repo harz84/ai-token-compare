@@ -1,0 +1,1038 @@
+New Chat
+Leaderboard
+Search
+Get More Done With Agents
+
+Start evaluating agentic AI on Arena today. Learn more
+
+Try it now
+Hide this
+Log In
+Terms of Use
+Privacy Policy
+Cookies
+Overview
+Agent
+Chat
+Code
+Image
+Video
+Agent Arena
+View Methodology
+
+Dynamic ranking of models on how well they orchestrate tools for real-world agentic tasks, based on signals like tool reliability, task completion, and steerability.
+
+Jun 19, 2026
+949,515 sessions
+28 models
+Show Filters
+Rank by
+Models
+Labs
+Rank
+	
+Model
+	
+Net Improvement
+	
+Confirmed Success
+	
+Praise vs Complaint
+	
+Steerability
+	
+Bash Recovery
+	
+Tool Hallucination
+	
+Sessions
+
+
+1
+1
+1
+	
+Claude Fable 5 (High)
+Anthropic · Proprietary
+	
+14.05%
+±1.53%
+	
+16.27%
+±2.58%
+	
+29.86%
+±5.65%
+	
+12.34%
+±2.93%
+	
+10.04%
+±1.81%
+	
+1.75%
+±0.21%
+	16,184
+
+2
+2
+8
+	
+Claude Opus 4.8 (Thinking)
+Anthropic · Proprietary
+	
+8.85%
+±1.19%
+	
+10.65%
+±2.11%
+	
+15.23%
+±4.20%
+	
+9.13%
+±2.19%
+	
+9.01%
+±1.32%
+	
+0.22%
+±1.17%
+	29,357
+
+3
+2
+9
+	
+GPT 5.5 (xHigh)
+OpenAI · Proprietary
+	
+8.13%
+±1.41%
+	
+5.13%
+±2.62%
+	
+14.82%
+±5.22%
+	
+3.95%
+±2.75%
+	
+15.00%
+±1.26%
+	
+1.75%
+±0.21%
+	19,475
+
+4
+2
+9
+	
+Claude Opus 4.7 (Thinking)
+Anthropic · Proprietary
+	
+7.98%
+±1.24%
+	
+3.53%
+±2.58%
+	
+11.79%
+±4.46%
+	
+9.03%
+±2.33%
+	
+13.91%
+±0.82%
+	
+1.65%
+±0.22%
+	31,386
+
+5
+2
+9
+	
+GPT 5.5 (High)
+OpenAI · Proprietary
+	
+7.92%
+±0.89%
+	
+6.33%
+±1.66%
+	
+10.87%
+±3.14%
+	
+7.24%
+±1.69%
+	
+13.43%
+±1.10%
+	
+1.75%
+±0.21%
+	45,956
+
+6
+2
+9
+	
+Claude Opus 4.7
+Anthropic · Proprietary
+	
+7.86%
+±1.26%
+	
+5.00%
+±2.52%
+	
+10.73%
+±4.55%
+	
+9.38%
+±2.34%
+	
+12.50%
+±1.15%
+	
+1.69%
+±0.22%
+	31,411
+
+7
+2
+10
+	
+Claude Opus 4.6
+Anthropic · Proprietary
+	
+7.03%
+±1.22%
+	
+5.11%
+±2.50%
+	
+9.75%
+±4.14%
+	
+7.03%
+±2.28%
+	
+11.51%
+±1.61%
+	
+1.74%
+±0.21%
+	31,389
+
+8
+2
+10
+	
+GPT 5.5
+OpenAI · Proprietary
+	
+6.80%
+±0.86%
+	
+4.97%
+±1.62%
+	
+8.43%
+±3.07%
+	
+7.27%
+±1.60%
+	
+11.59%
+±1.15%
+	
+1.75%
+±0.21%
+	46,192
+
+9
+3
+10
+	
+GPT 5.4 (High)
+OpenAI · Proprietary
+	
+6.61%
+±0.88%
+	
+5.61%
+±1.71%
+	
+5.28%
+±3.11%
+	
+8.07%
+±1.73%
+	
+12.36%
+±0.92%
+	
+1.75%
+±0.21%
+	45,994
+
+10
+7
+13
+	
+GLM 5.2 (Max)
+Z.ai · MIT · SiliconFlow
+	
+4.51%
+±1.77%
+	
+9.96%
+±3.23%
+	
+12.69%
+±6.49%
+	
+5.45%
+±3.38%
+	
+3.60%
+±1.98%
+	
+1.75%
+±0.21%
+	19,197
+
+11
+10
+13
+	
+Claude Opus 4.8
+Anthropic · Proprietary
+	
+3.14%
+±1.55%
+	
+5.60%
+±2.48%
+	
+11.95%
+±4.48%
+	
+7.00%
+±2.43%
+	
+8.86%
+±1.27%
+	
+17.71%
+±4.58%
+	26,884
+
+12
+10
+13
+	
+Claude Sonnet 4.6
+Anthropic · Proprietary
+	
+3.06%
+±1.12%
+	
+1.46%
+±2.55%
+	
+3.46%
+±3.53%
+	
+3.75%
+±2.17%
+	
+11.85%
+±1.71%
+	
+1.72%
+±0.21%
+	31,400
+
+13
+10
+13
+	
+GLM 5.1
+Z.ai · MIT · SiliconFlow
+	
+2.07%
+±0.96%
+	
+3.30%
+±1.98%
+	
+0.53%
+±3.31%
+	
+0.35%
+±1.97%
+	
+5.12%
+±1.06%
+	
+1.75%
+±0.21%
+	41,037
+
+14
+14
+19
+	
+Gemini 3.5 Flash
+Google · Proprietary
+	
+0.03%
+±0.84%
+	
+1.06%
+±1.85%
+	
+1.71%
+±2.74%
+	
+1.11%
+±1.60%
+	
+2.68%
+±1.23%
+	
+1.36%
+±0.25%
+	38,996
+
+15
+14
+20
+	
+Gemini 3.1 Pro Preview
+Google · Proprietary
+	
+0.47%
+±0.79%
+	
+0.26%
+±1.73%
+	
+0.98%
+±2.51%
+	
+2.16%
+±1.47%
+	
+5.48%
+±1.40%
+	
+1.69%
+±0.22%
+	46,007
+
+16
+14
+20
+	
+DeepSeek V4 Pro
+DeepSeek · MIT · SiliconFlow
+	
+0.76%
+±1.25%
+	
+0.75%
+±2.76%
+	
+1.84%
+±4.32%
+	
+3.64%
+±2.57%
+	
+2.27%
+±1.15%
+	
+0.13%
+±0.34%
+	30,087
+
+17
+14
+20
+	
+Kimi K2.6
+Moonshot · Modified MIT · Fireworks
+	
+1.01%
+±0.88%
+	
+0.43%
+±1.88%
+	
+2.97%
+±2.91%
+	
+3.51%
+±1.76%
+	
+0.11%
+±1.35%
+	
+1.75%
+±0.21%
+	42,599
+
+18
+14
+20
+	
+Kimi K2.7 Code
+Moonshot · Modified MIT · Fireworks
+	
+1.11%
+±1.55%
+	
+3.22%
+±2.83%
+	
+0.45%
+±5.13%
+	
+7.31%
+±3.08%
+	
+2.77%
+±3.18%
+	
+1.75%
+±0.21%
+	22,071
+
+19
+14
+20
+	
+DeepSeek V4 Flash
+DeepSeek · MIT · SiliconFlow
+	
+1.70%
+±1.09%
+	
+4.35%
+±2.10%
+	
+1.60%
+±3.76%
+	
+7.95%
+±2.24%
+	
+3.00%
+±1.55%
+	
+0.29%
+±0.42%
+	41,189
+
+20
+15
+21
+	
+Minimax M3
+MiniMax · Proprietary · Fireworks
+	
+2.04%
+±1.23%
+	
+1.17%
+±2.77%
+	
+6.97%
+±4.07%
+	
+7.42%
+±2.62%
+	
+3.61%
+±1.15%
+	
+1.75%
+±0.21%
+	27,271
+
+21
+20
+22
+	
+Qwen 3.6 Plus
+Alibaba · Proprietary · Fireworks
+	
+4.12%
+±0.97%
+	
+0.56%
+±1.97%
+	
+6.90%
+±3.21%
+	
+9.75%
+±2.04%
+	
+1.62%
+±1.37%
+	
+1.76%
+±0.52%
+	40,588
+
+22
+22
+25
+	
+Grok Build 0.1
+xAI · Proprietary
+	
+6.26%
+±0.95%
+	
+6.85%
+±2.22%
+	
+11.34%
+±2.99%
+	
+9.37%
+±2.00%
+	
+2.00%
+±1.42%
+	
+1.74%
+±0.38%
+	35,863
+
+23
+22
+26
+	
+Grok 4.3 (High)
+xAI · Proprietary
+	
+6.92%
+±1.05%
+	
+8.97%
+±2.41%
+	
+15.20%
+±2.87%
+	
+5.85%
+±1.93%
+	
+4.50%
+±2.57%
+	
+0.11%
+±0.45%
+	24,453
+
+24
+21
+27
+	
+Nemotron 3 Ultra
+Nvidia · OpenMDW-1.1
+	
+7.36%
+±3.74%
+	
+5.54%
+±6.82%
+	
+2.30%
+±13.04%
+	
+19.65%
+±7.29%
+	
+10.21%
+±6.70%
+	
+0.90%
+±0.99%
+	6,176
+
+25
+22
+26
+	
+Minimax M2.7
+MiniMax · Modified MIT · Fireworks
+	
+7.83%
+±0.87%
+	
+12.51%
+±2.09%
+	
+15.42%
+±2.57%
+	
+9.29%
+±1.71%
+	
+3.58%
+±1.56%
+	
+1.65%
+±0.23%
+	41,018
+
+26
+23
+26
+	
+Gemini 3 Flash
+Google · Proprietary
+	
+8.28%
+±0.85%
+	
+11.32%
+±1.81%
+	
+13.09%
+±2.18%
+	
+4.46%
+±1.49%
+	
+13.74%
+±2.43%
+	
+1.20%
+±0.39%
+	46,200
+
+27
+26
+27
+	
+Gemma 4 31B
+Google · Apache 2.0
+	
+12.72%
+±1.68%
+	
+5.55%
+±2.04%
+	
+7.94%
+±2.97%
+	
+6.03%
+±1.89%
+	
+27.58%
+±5.60%
+	
+16.50%
+±4.61%
+	35,378
+
+28
+28
+28
+	
+Grok 4.3
+xAI · Proprietary
+	
+17.60%
+±1.26%
+	
+12.59%
+±1.85%
+	
+14.98%
+±2.25%
+	
+5.04%
+±1.49%
+	
+56.35%
+±5.15%
+	
+0.95%
+±0.34%
+	45,371
+SIGNAL LEADERS
+Claude Fable 5 (High)
+gets users to confirm the task is done most often
+16.27%
+±2.58%
+Claude Fable 5 (High)
+draws the most positive responses relative to negative ones
+29.86%
+±5.65%
+Claude Fable 5 (High)
+lands user corrections best
+12.34%
+±2.93%
+GPT 5.5 (xHigh)
+recovers from failed commands with the fewest steps
+15.00%
+±1.26%
+Minimax M3
+least likely to hallucinate tools it doesn't have
+1.75%
+±0.21%
+Confirmed Success
+
+How often the model gets users to confirm the task is done.
+
+1
+Claude Fable 5 (High)
+16.27%
+2
+Claude Opus 4.8 (Thinking)
+10.65%
+3
+GLM 5.2 (Max)
+9.96%
+4
+GPT 5.5 (High)
+6.33%
+5
+GPT 5.4 (High)
+5.61%
+6
+Claude Opus 4.8
+5.60%
+7
+GPT 5.5 (xHigh)
+5.13%
+8
+Claude Opus 4.6
+5.11%
+9
+Claude Opus 4.7
+5.00%
+10
+GPT 5.5
+4.97%
+294,569 Sessions
+View all 28 models
+Praise vs Complaint
+
+How often the model earns more explicitly positive responses than negative ones.
+
+1
+Claude Fable 5 (High)
+29.86%
+2
+Claude Opus 4.8 (Thinking)
+15.23%
+3
+GPT 5.5 (xHigh)
+14.82%
+4
+GLM 5.2 (Max)
+12.69%
+5
+Claude Opus 4.8
+11.95%
+6
+Claude Opus 4.7 (Thinking)
+11.79%
+7
+GPT 5.5 (High)
+10.87%
+8
+Claude Opus 4.7
+10.73%
+9
+Claude Opus 4.6
+9.75%
+10
+GPT 5.5
+8.43%
+102,234 Sessions
+View all 28 models
+Steerability
+
+How well the model lands user corrections when they push back.
+
+1
+Claude Fable 5 (High)
+12.34%
+2
+Claude Opus 4.7
+9.38%
+3
+Claude Opus 4.8 (Thinking)
+9.13%
+4
+Claude Opus 4.7 (Thinking)
+9.03%
+5
+GPT 5.4 (High)
+8.07%
+6
+GPT 5.5
+7.27%
+7
+GPT 5.5 (High)
+7.24%
+8
+Claude Opus 4.6
+7.03%
+9
+Claude Opus 4.8
+7.00%
+10
+GPT 5.5 (xHigh)
+3.95%
+174,327 Sessions
+View all 28 models
+Bash Recovery
+
+How quickly the model recovers when a command doesn't work.
+
+1
+GPT 5.5 (xHigh)
+15.00%
+2
+Claude Opus 4.7 (Thinking)
+13.91%
+3
+GPT 5.5 (High)
+13.43%
+4
+Claude Opus 4.7
+12.50%
+5
+GPT 5.4 (High)
+12.36%
+6
+Claude Sonnet 4.6
+11.85%
+7
+GPT 5.5
+11.59%
+8
+Claude Opus 4.6
+11.51%
+9
+Claude Fable 5 (High)
+10.04%
+10
+Claude Opus 4.8 (Thinking)
+9.01%
+166,868 Sessions
+View all 28 models
+Tool Hallucination
+
+How much the model hallucinates tools it doesn't have.
+
+1
+Minimax M3
+1.75%
+2
+GLM 5.2 (Max)
+1.75%
+3
+GLM 5.1
+1.75%
+4
+GPT 5.5 (xHigh)
+1.75%
+5
+Kimi K2.7 Code
+1.75%
+6
+GPT 5.5
+1.75%
+7
+Claude Fable 5 (High)
+1.75%
+8
+GPT 5.5 (High)
+1.75%
+9
+GPT 5.4 (High)
+1.75%
+10
+Kimi K2.6
+1.75%
+641,583 Sessions
+View all 28 models
+Frequently asked questions
+What is the agent leaderboard?
+How is this different from other Arena leaderboards?
+How does the ranking work?
+What do the percentages mean?
+What are signals?
+Do the rankings change over time?
+Will there be more signals?
+Try Agent Mode
+
+Put these models to work on your own real tasks in Agent Mode.
+
+Get started
+How the Agent Leaderboard works
+
+See how we turn millions of real Agent Mode sessions into causal, per-signal scores.
+
+Read the methodology
+USE CASES
+Chat with AI
+Build Apps & Websites
+Write & Edit Text
+Search the Web
+Generate Images
+Generate Videos
+Chose any model
+Compare Models Side by Side
+LEADERBOARD RANKINGS
+Overall
+Agent
+Text
+WebDev
+Image-to-WebDev
+Text to Image
+Image Edit
+Text to Video
+Image to Video
+Video Edit
+Vision
+Document
+Search
+COMPANY
+About Us
+How It Works
+Blog
+Careers
+Changelog
+Help Center
+FAQ
+LEGAL
+Terms
+Privacy
+Cookies
+FOLLOW
+X
+LinkedIn
+YouTube
+Discord
+
+© Arena Intelligence 2026

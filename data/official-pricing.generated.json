@@ -1,0 +1,1182 @@
+{
+  "providers": {
+    "openai": "https://platform.openai.com/docs/models",
+    "anthropic": "https://docs.anthropic.com/en/docs/about-claude/models",
+    "google": "https://ai.google.dev/gemini-api/docs/models",
+    "deepseek": "https://platform.deepseek.com/api-docs",
+    "xai": "https://docs.x.ai/docs/models",
+    "moonshot": "https://platform.moonshot.ai/docs",
+    "zhipu": "https://docs.z.ai",
+    "alibaba": "https://www.alibabacloud.com/help/en/model-studio/models",
+    "mistral": "https://docs.mistral.ai/getting-started/models/",
+    "meta": "https://llama.meta.com",
+    "cohere": "https://docs.cohere.com/docs/models",
+    "minimax": "https://www.minimax.io/platform",
+    "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
+  },
+  "fetchedAt": "2026-06-28T09:16:43.972Z",
+  "count": 43,
+  "patches": [
+    [
+      "gpt-5-5-official",
+      {
+        "officialPricing": {
+          "inputPrice": 5,
+          "cachePrice": 0.5,
+          "outputPrice": 30,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.openai.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 5,
+        "cachePrice": 0.5,
+        "outputPrice": 30,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "openai",
+          "sourceUrl": "https://platform.openai.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 128000
+      }
+    ],
+    [
+      "gpt-5-4-official",
+      {
+        "officialPricing": {
+          "inputPrice": 2.5,
+          "cachePrice": 0.25,
+          "outputPrice": 15,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.openai.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 2.5,
+        "cachePrice": 0.25,
+        "outputPrice": 15,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "openai",
+          "sourceUrl": "https://platform.openai.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 128000
+      }
+    ],
+    [
+      "gpt-5-4-mini",
+      {
+        "officialPricing": {
+          "inputPrice": 0.75,
+          "cachePrice": 0.075,
+          "outputPrice": 4.5,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.openai.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.75,
+        "cachePrice": 0.075,
+        "outputPrice": 4.5,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "openai",
+          "sourceUrl": "https://platform.openai.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 400000,
+        "maxOutput": 128000
+      }
+    ],
+    [
+      "gpt-5-4-nano",
+      {
+        "officialPricing": {
+          "inputPrice": 0.15,
+          "cachePrice": 0.015,
+          "outputPrice": 0.6,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.openai.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.15,
+        "cachePrice": 0.015,
+        "outputPrice": 0.6,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "openai",
+          "sourceUrl": "https://platform.openai.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 32768
+      }
+    ],
+    [
+      "claude-fable-5",
+      {
+        "officialPricing": {
+          "inputPrice": 10,
+          "cachePrice": 1,
+          "outputPrice": 50,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 10,
+        "cachePrice": 1,
+        "outputPrice": 50,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "anthropic",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 128000
+      }
+    ],
+    [
+      "claude-mythos-5",
+      {
+        "officialPricing": {
+          "inputPrice": 10,
+          "cachePrice": 1,
+          "outputPrice": 50,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 10,
+        "cachePrice": 1,
+        "outputPrice": 50,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "anthropic",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 128000
+      }
+    ],
+    [
+      "claude-opus-4-8",
+      {
+        "officialPricing": {
+          "inputPrice": 5,
+          "cachePrice": 0.5,
+          "outputPrice": 25,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 5,
+        "cachePrice": 0.5,
+        "outputPrice": 25,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "anthropic",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 128000
+      }
+    ],
+    [
+      "claude-sonnet-4-6",
+      {
+        "officialPricing": {
+          "inputPrice": 3,
+          "cachePrice": 0.3,
+          "outputPrice": 15,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 3,
+        "cachePrice": 0.3,
+        "outputPrice": 15,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "anthropic",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 128000
+      }
+    ],
+    [
+      "claude-sonnet-4-5",
+      {
+        "officialPricing": {
+          "inputPrice": 3,
+          "cachePrice": 0.3,
+          "outputPrice": 15,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 3,
+        "cachePrice": 0.3,
+        "outputPrice": 15,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "anthropic",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 200000,
+        "maxOutput": 64000
+      }
+    ],
+    [
+      "claude-haiku-4-5",
+      {
+        "officialPricing": {
+          "inputPrice": 1,
+          "cachePrice": 0.1,
+          "outputPrice": 5,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 1,
+        "cachePrice": 0.1,
+        "outputPrice": 5,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "anthropic",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 200000,
+        "maxOutput": 64000
+      }
+    ],
+    [
+      "gemini-2-5-pro",
+      {
+        "officialPricing": {
+          "inputPrice": 1.25,
+          "cachePrice": 0.125,
+          "outputPrice": 10,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 1.25,
+        "cachePrice": 0.125,
+        "outputPrice": 10,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "google",
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 2000000,
+        "maxOutput": 65536
+      }
+    ],
+    [
+      "gemini-2-5-flash",
+      {
+        "officialPricing": {
+          "inputPrice": 0.3,
+          "cachePrice": 0.03,
+          "outputPrice": 2.5,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.3,
+        "cachePrice": 0.03,
+        "outputPrice": 2.5,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "google",
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 65536
+      }
+    ],
+    [
+      "gemini-2-0-flash",
+      {
+        "officialPricing": {
+          "inputPrice": 0.1,
+          "cachePrice": 0.01,
+          "outputPrice": 0.4,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.1,
+        "cachePrice": 0.01,
+        "outputPrice": 0.4,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "google",
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "deepseek-v3-1",
+      {
+        "officialPricing": {
+          "inputPrice": 0.27,
+          "cachePrice": 0.07,
+          "outputPrice": 1.1,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.deepseek.com/api-docs",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.27,
+        "cachePrice": 0.07,
+        "outputPrice": 1.1,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "deepseek",
+          "sourceUrl": "https://platform.deepseek.com/api-docs",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 16384
+      }
+    ],
+    [
+      "deepseek-r1",
+      {
+        "officialPricing": {
+          "inputPrice": 0.55,
+          "cachePrice": 0.14,
+          "outputPrice": 2.19,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.deepseek.com/api-docs",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.55,
+        "cachePrice": 0.14,
+        "outputPrice": 2.19,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "deepseek",
+          "sourceUrl": "https://platform.deepseek.com/api-docs",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 32768
+      }
+    ],
+    [
+      "deepseek-v3",
+      {
+        "officialPricing": {
+          "inputPrice": 0.27,
+          "cachePrice": 0.07,
+          "outputPrice": 1.1,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.deepseek.com/api-docs",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.27,
+        "cachePrice": 0.07,
+        "outputPrice": 1.1,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "deepseek",
+          "sourceUrl": "https://platform.deepseek.com/api-docs",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 64000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "deepseek-chat",
+      {
+        "officialPricing": {
+          "inputPrice": 0.14,
+          "cachePrice": 0.014,
+          "outputPrice": 0.28,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.deepseek.com/api-docs",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.14,
+        "cachePrice": 0.014,
+        "outputPrice": 0.28,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "deepseek",
+          "sourceUrl": "https://platform.deepseek.com/api-docs",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 64000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "grok-4",
+      {
+        "officialPricing": {
+          "inputPrice": 3,
+          "cachePrice": 0.75,
+          "outputPrice": 15,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.x.ai/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 3,
+        "cachePrice": 0.75,
+        "outputPrice": 15,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "xai",
+          "sourceUrl": "https://docs.x.ai/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 256000,
+        "maxOutput": 16384
+      }
+    ],
+    [
+      "grok-3",
+      {
+        "officialPricing": {
+          "inputPrice": 3,
+          "cachePrice": 0.75,
+          "outputPrice": 15,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.x.ai/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 3,
+        "cachePrice": 0.75,
+        "outputPrice": 15,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "xai",
+          "sourceUrl": "https://docs.x.ai/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 131000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "kimi-k2-7",
+      {
+        "officialPricing": {
+          "inputPrice": 0.74,
+          "cachePrice": 0.15,
+          "outputPrice": 3.5,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.moonshot.ai/docs",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.74,
+        "cachePrice": 0.15,
+        "outputPrice": 3.5,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "moonshot",
+          "sourceUrl": "https://platform.moonshot.ai/docs",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 262144,
+        "maxOutput": 16384
+      }
+    ],
+    [
+      "kimi-k2-6",
+      {
+        "officialPricing": {
+          "inputPrice": 0.66,
+          "cachePrice": 0.144,
+          "outputPrice": 3.41,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.moonshot.ai/docs",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.66,
+        "cachePrice": 0.144,
+        "outputPrice": 3.41,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "moonshot",
+          "sourceUrl": "https://platform.moonshot.ai/docs",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 262144,
+        "maxOutput": 262144
+      }
+    ],
+    [
+      "kimi-k2",
+      {
+        "officialPricing": {
+          "inputPrice": 0.57,
+          "cachePrice": 0,
+          "outputPrice": 2.3,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.moonshot.ai/docs",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.57,
+        "cachePrice": 0,
+        "outputPrice": 2.3,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "moonshot",
+          "sourceUrl": "https://platform.moonshot.ai/docs",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 131072,
+        "maxOutput": 16384
+      }
+    ],
+    [
+      "kimi-k2-thinking",
+      {
+        "officialPricing": {
+          "inputPrice": 0.8,
+          "cachePrice": 0.2,
+          "outputPrice": 3,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://platform.moonshot.ai/docs",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.8,
+        "cachePrice": 0.2,
+        "outputPrice": 3,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "moonshot",
+          "sourceUrl": "https://platform.moonshot.ai/docs",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 131000,
+        "maxOutput": 32768
+      }
+    ],
+    [
+      "glm-5-2",
+      {
+        "officialPricing": {
+          "inputPrice": 0.95,
+          "cachePrice": 0.18,
+          "outputPrice": 3,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.z.ai",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.95,
+        "cachePrice": 0.18,
+        "outputPrice": 3,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "zhipu",
+          "sourceUrl": "https://docs.z.ai",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1048576,
+        "maxOutput": 32768
+      }
+    ],
+    [
+      "glm-4-5",
+      {
+        "officialPricing": {
+          "inputPrice": 0.6,
+          "cachePrice": 0.12,
+          "outputPrice": 2.2,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.z.ai",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.6,
+        "cachePrice": 0.12,
+        "outputPrice": 2.2,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "zhipu",
+          "sourceUrl": "https://docs.z.ai",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 16384
+      }
+    ],
+    [
+      "mistral-large-latest",
+      {
+        "officialPricing": {
+          "inputPrice": 2,
+          "cachePrice": 0.2,
+          "outputPrice": 6,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 2,
+        "cachePrice": 0.2,
+        "outputPrice": 6,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "mistral",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "magistral-medium-latest",
+      {
+        "officialPricing": {
+          "inputPrice": 2,
+          "cachePrice": 0.2,
+          "outputPrice": 5,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 2,
+        "cachePrice": 0.2,
+        "outputPrice": 5,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "mistral",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 40000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "codestral-latest",
+      {
+        "officialPricing": {
+          "inputPrice": 0.2,
+          "cachePrice": 0.02,
+          "outputPrice": 0.6,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.2,
+        "cachePrice": 0.02,
+        "outputPrice": 0.6,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "mistral",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 256000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "mistral-small-latest",
+      {
+        "officialPricing": {
+          "inputPrice": 0.1,
+          "cachePrice": 0.01,
+          "outputPrice": 0.3,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.1,
+        "cachePrice": 0.01,
+        "outputPrice": 0.3,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "mistral",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "ministral-8b-latest",
+      {
+        "officialPricing": {
+          "inputPrice": 0.1,
+          "cachePrice": 0.01,
+          "outputPrice": 0.1,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.1,
+        "cachePrice": 0.01,
+        "outputPrice": 0.1,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "mistral",
+          "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "llama-4-maverick",
+      {
+        "officialPricing": {
+          "inputPrice": 0.2,
+          "cachePrice": 0.02,
+          "outputPrice": 0.6,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://llama.meta.com",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.2,
+        "cachePrice": 0.02,
+        "outputPrice": 0.6,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "meta",
+          "sourceUrl": "https://llama.meta.com",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 16384
+      }
+    ],
+    [
+      "llama-4-scout",
+      {
+        "officialPricing": {
+          "inputPrice": 0.1,
+          "cachePrice": 0.01,
+          "outputPrice": 0.3,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://llama.meta.com",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.1,
+        "cachePrice": 0.01,
+        "outputPrice": 0.3,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "meta",
+          "sourceUrl": "https://llama.meta.com",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 10000000,
+        "maxOutput": 16384
+      }
+    ],
+    [
+      "llama-guard-4",
+      {
+        "officialPricing": {
+          "inputPrice": 0.05,
+          "cachePrice": 0.005,
+          "outputPrice": 0.05,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://llama.meta.com",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.05,
+        "cachePrice": 0.005,
+        "outputPrice": 0.05,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "meta",
+          "sourceUrl": "https://llama.meta.com",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 4096
+      }
+    ],
+    [
+      "command-a-03-2025",
+      {
+        "officialPricing": {
+          "inputPrice": 2.5,
+          "cachePrice": 0.25,
+          "outputPrice": 10,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.cohere.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 2.5,
+        "cachePrice": 0.25,
+        "outputPrice": 10,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "cohere",
+          "sourceUrl": "https://docs.cohere.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 256000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "command-r-plus",
+      {
+        "officialPricing": {
+          "inputPrice": 2.5,
+          "cachePrice": 0.25,
+          "outputPrice": 10,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.cohere.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 2.5,
+        "cachePrice": 0.25,
+        "outputPrice": 10,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "cohere",
+          "sourceUrl": "https://docs.cohere.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 4096
+      }
+    ],
+    [
+      "command-r",
+      {
+        "officialPricing": {
+          "inputPrice": 0.15,
+          "cachePrice": 0.015,
+          "outputPrice": 0.6,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.cohere.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.15,
+        "cachePrice": 0.015,
+        "outputPrice": 0.6,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "cohere",
+          "sourceUrl": "https://docs.cohere.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 4096
+      }
+    ],
+    [
+      "command-r7b",
+      {
+        "officialPricing": {
+          "inputPrice": 0.0375,
+          "cachePrice": 0.004,
+          "outputPrice": 0.15,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://docs.cohere.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.0375,
+        "cachePrice": 0.004,
+        "outputPrice": 0.15,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "cohere",
+          "sourceUrl": "https://docs.cohere.com/docs/models",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 4096
+      }
+    ],
+    [
+      "minimax-m2-7-highspeed",
+      {
+        "officialPricing": {
+          "inputPrice": 0.6,
+          "cachePrice": 0.12,
+          "outputPrice": 2.4,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://www.minimax.io/platform",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.6,
+        "cachePrice": 0.12,
+        "outputPrice": 2.4,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "minimax",
+          "sourceUrl": "https://www.minimax.io/platform",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 80000
+      }
+    ],
+    [
+      "minimax-m2-7",
+      {
+        "officialPricing": {
+          "inputPrice": 0.5,
+          "cachePrice": 0.1,
+          "outputPrice": 2,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://www.minimax.io/platform",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.5,
+        "cachePrice": 0.1,
+        "outputPrice": 2,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "minimax",
+          "sourceUrl": "https://www.minimax.io/platform",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 1000000,
+        "maxOutput": 80000
+      }
+    ],
+    [
+      "minimax-m3",
+      {
+        "officialPricing": {
+          "inputPrice": 1,
+          "cachePrice": 0.1,
+          "outputPrice": 3,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://www.minimax.io/platform",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 1,
+        "cachePrice": 0.1,
+        "outputPrice": 3,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "minimax",
+          "sourceUrl": "https://www.minimax.io/platform",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 16384
+      }
+    ],
+    [
+      "mimo-7b-rl",
+      {
+        "officialPricing": {
+          "inputPrice": 0.06,
+          "cachePrice": 0.015,
+          "outputPrice": 0.18,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.06,
+        "cachePrice": 0.015,
+        "outputPrice": 0.18,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "xiaomi",
+          "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "mimo-7b-base",
+      {
+        "officialPricing": {
+          "inputPrice": 0.04,
+          "cachePrice": 0.01,
+          "outputPrice": 0.12,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.04,
+        "cachePrice": 0.01,
+        "outputPrice": 0.12,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "xiaomi",
+          "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 8192
+      }
+    ],
+    [
+      "mimo-7b-sft",
+      {
+        "officialPricing": {
+          "inputPrice": 0.05,
+          "cachePrice": 0.01,
+          "outputPrice": 0.15,
+          "source": "official-docs",
+          "sourceType": "official",
+          "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
+          "updatedAt": "2026-06-28"
+        },
+        "inputPrice": 0.05,
+        "cachePrice": 0.01,
+        "outputPrice": 0.15,
+        "pricingSource": "official-docs",
+        "pricingSourceType": "official",
+        "confidence": "high",
+        "official": {
+          "provider": "xiaomi",
+          "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
+          "updatedAt": "2026-06-28"
+        },
+        "contextWindow": 128000,
+        "maxOutput": 8192
+      }
+    ]
+  ]
+}

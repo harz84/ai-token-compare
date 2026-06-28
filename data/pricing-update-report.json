@@ -1,0 +1,225 @@
+{
+  "generatedAt": "2026-06-28T09:16:43.422Z",
+  "status": "ok",
+  "steps": [
+    {
+      "name": "fetch-openrouter-models",
+      "command": "node scripts/fetch-openrouter-models.js",
+      "startedAt": "2026-06-28T09:16:43.423Z",
+      "finishedAt": "2026-06-28T09:16:43.906Z",
+      "status": "ok",
+      "exitCode": 0,
+      "stdout": "Generated 339 OpenRouter models at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/openrouter-models.generated.json",
+      "stderr": "",
+      "outputs": [
+        {
+          "path": "data/openrouter-models.generated.json",
+          "exists": true,
+          "size": 460684,
+          "updatedAt": "2026-06-28T09:16:43.880Z"
+        }
+      ]
+    },
+    {
+      "name": "merge-openrouter-pricing",
+      "command": "node scripts/merge-openrouter-pricing.js",
+      "startedAt": "2026-06-28T09:16:43.906Z",
+      "finishedAt": "2026-06-28T09:16:43.942Z",
+      "status": "ok",
+      "exitCode": 0,
+      "stdout": "Generated 88 OpenRouter patches at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/js/openrouter-merge.generated.js\nGenerated merge report at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/openrouter-merge-report.json\nMissing mappings: 1",
+      "stderr": "",
+      "outputs": [
+        {
+          "path": "js/openrouter-merge.generated.js",
+          "exists": true,
+          "size": 158760,
+          "updatedAt": "2026-06-28T09:16:43.936Z"
+        },
+        {
+          "path": "data/openrouter-merge-report.json",
+          "exists": true,
+          "size": 18257,
+          "updatedAt": "2026-06-28T09:16:43.937Z"
+        }
+      ]
+    },
+    {
+      "name": "fetch-official-pricing",
+      "command": "node scripts/fetch-official-pricing.js",
+      "startedAt": "2026-06-28T09:16:43.942Z",
+      "finishedAt": "2026-06-28T09:16:50.507Z",
+      "status": "ok",
+      "exitCode": 0,
+      "stdout": "Generated 43 official pricing patches at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/js/official-pricing.generated.js\nGenerated official pricing data at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/official-pricing.generated.json\nGenerated official pricing report at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/official-pricing-report.json\nMissing official pricing entries: 21",
+      "stderr": "",
+      "outputs": [
+        {
+          "path": "js/official-pricing.generated.js",
+          "exists": true,
+          "size": 45005,
+          "updatedAt": "2026-06-28T09:16:50.496Z"
+        },
+        {
+          "path": "data/official-pricing-report.json",
+          "exists": true,
+          "size": 12604,
+          "updatedAt": "2026-06-28T09:16:50.497Z"
+        }
+      ]
+    },
+    {
+      "name": "fetch-sumopod-models",
+      "command": "node scripts/fetch-sumopod-models.js",
+      "startedAt": "2026-06-28T09:16:50.507Z",
+      "finishedAt": "2026-06-28T09:16:50.507Z",
+      "status": "skipped",
+      "exitCode": null,
+      "stdout": "",
+      "stderr": "Skipped: missing SUMOPOD_API_KEY",
+      "outputs": [
+        {
+          "path": "data/sumopod-models.generated.json",
+          "exists": true,
+          "size": 201095,
+          "updatedAt": "2026-06-25T16:56:07.542Z"
+        },
+        {
+          "path": "js/sumopod-merge.generated.js",
+          "exists": true,
+          "size": 17180,
+          "updatedAt": "2026-06-25T16:56:07.543Z"
+        },
+        {
+          "path": "data/sumopod-merge-report.json",
+          "exists": true,
+          "size": 6721,
+          "updatedAt": "2026-06-25T16:56:07.543Z"
+        }
+      ]
+    },
+    {
+      "name": "fetch-deepinfra-models",
+      "command": "node scripts/fetch-deepinfra-models.js",
+      "startedAt": "2026-06-28T09:16:50.507Z",
+      "finishedAt": "2026-06-28T09:16:53.566Z",
+      "status": "ok",
+      "exitCode": 0,
+      "stdout": "Fetched 172 DeepInfra models, kept 117 with token pricing\nMatched 48/48 internal models\nGenerated /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/js/deepinfra-merge.generated.js",
+      "stderr": "",
+      "outputs": [
+        {
+          "path": "data/deepinfra-models.generated.json",
+          "exists": true,
+          "size": 174568,
+          "updatedAt": "2026-06-28T09:16:53.559Z"
+        },
+        {
+          "path": "js/deepinfra-merge.generated.js",
+          "exists": true,
+          "size": 35569,
+          "updatedAt": "2026-06-28T09:16:53.560Z"
+        },
+        {
+          "path": "data/deepinfra-merge-report.json",
+          "exists": true,
+          "size": 10164,
+          "updatedAt": "2026-06-28T09:16:53.560Z"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "files": [
+      {
+        "path": "data/openrouter-models.generated.json",
+        "size": 460684,
+        "updatedAt": "2026-06-28T09:16:43.880Z"
+      },
+      {
+        "path": "data/openrouter-merge-report.json",
+        "size": 18257,
+        "updatedAt": "2026-06-28T09:16:43.937Z"
+      },
+      {
+        "path": "data/official-pricing.generated.json",
+        "size": 34198,
+        "updatedAt": "2026-06-28T09:16:50.496Z"
+      },
+      {
+        "path": "data/official-pricing-report.json",
+        "size": 12604,
+        "updatedAt": "2026-06-28T09:16:50.497Z"
+      },
+      {
+        "path": "js/openrouter-merge.generated.js",
+        "size": 158760,
+        "updatedAt": "2026-06-28T09:16:43.936Z"
+      },
+      {
+        "path": "js/official-pricing.generated.js",
+        "size": 45005,
+        "updatedAt": "2026-06-28T09:16:50.496Z"
+      },
+      {
+        "path": "js/sumopod-merge.generated.js",
+        "size": 17180,
+        "updatedAt": "2026-06-25T16:56:07.543Z"
+      },
+      {
+        "path": "js/deepinfra-merge.generated.js",
+        "size": 35569,
+        "updatedAt": "2026-06-28T09:16:53.560Z"
+      },
+      {
+        "path": "data/deepinfra-models.generated.json",
+        "size": 174568,
+        "updatedAt": "2026-06-28T09:16:53.559Z"
+      },
+      {
+        "path": "data/deepinfra-merge-report.json",
+        "size": 10164,
+        "updatedAt": "2026-06-28T09:16:53.560Z"
+      }
+    ],
+    "runtime": {
+      "modelCount": 141,
+      "openrouterPatched": 88,
+      "officialPatched": 45,
+      "sumopodPatched": 21,
+      "deepinfraPatched": 48
+    }
+  },
+  "validationError": null,
+  "summary": {
+    "openrouter": {
+      "matched": 88,
+      "missing": 1,
+      "fetchedAt": "2026-06-28T09:16:43.865Z"
+    },
+    "official": {
+      "matched": 43,
+      "missing": 21,
+      "fetchErrors": [
+        {
+          "provider": "deepseek",
+          "url": "https://platform.deepseek.com/api-docs",
+          "message": "Request failed for https://platform.deepseek.com/api-docs: 403 Forbidden"
+        }
+      ],
+      "fetchedAt": "2026-06-28T09:16:43.972Z"
+    },
+    "sumopod": {
+      "matched": 21,
+      "missing": 12,
+      "available": 59,
+      "fetchedAt": "2026-06-25T16:56:07.348Z"
+    },
+    "deepinfra": {
+      "matched": 48,
+      "missing": 0,
+      "available": 117,
+      "fetchedAt": "2026-06-28T09:16:50.537Z"
+    }
+  }
+}
