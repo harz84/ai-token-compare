@@ -3032,4 +3032,14 @@ const PROMOS = [
     link: 'https://www.moonshot.cn',
   }
 ];
-// END OF FILE
+
+// ============================================================
+// EXPOSE TO WINDOW (needed by generated pricing patches & app.js)
+// ============================================================
+if (typeof window !== 'undefined') {
+  window.MODELS = MODELS;
+  window.PROVIDERS = PROVIDERS;
+  window.PROMOS = PROMOS;
+  window.getProvider = getProvider;
+  window.DEFAULT_DATA_UPDATED_AT = DEFAULT_DATA_UPDATED_AT;
+}
