@@ -83,9 +83,20 @@
         </button>
 
         <!-- Mobile hamburger -->
-        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <div class="hamburger" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0" role="button">
           <span></span><span></span><span></span>
-        </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#compare" class="mobile-nav-link" data-tab="compare" data-i18n="nav.compare">Compare</a>
+      <a href="#promos" class="mobile-nav-link" data-tab="promos" data-i18n="nav.promos">Free & Starter Options</a>
+      <a href="#models" class="mobile-nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
+      <a href="#best-picks" class="mobile-nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
+      <div style="display:flex; gap:10px; margin-top:20px; flex-wrap:wrap;">
+        <!-- Toggles copy for mobile if needed, or they can just use the ones in header -->
       </div>
     </div>
   </header>

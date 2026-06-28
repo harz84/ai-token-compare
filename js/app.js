@@ -1047,23 +1047,23 @@
      ========================================================== */
   function setupMobileMenu() {
     const btn = document.getElementById('mobile-menu-btn');
-    const nav = document.getElementById('main-nav');
-    if (!btn || !nav) return;
+    const mobileNav = document.getElementById('mobile-nav');
+    if (!btn || !mobileNav) return;
 
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      btn.classList.toggle('open');
-      nav.classList.toggle('open');
+      btn.classList.toggle('active');
+      mobileNav.classList.toggle('active');
     });
 
     // Close on nav link click
-    nav.querySelectorAll('.nav-link').forEach(link => {
+    mobileNav.querySelectorAll('.mobile-nav-link').forEach(link => {
       link.addEventListener('click', () => closeMobileMenu());
     });
 
     // Close on outside click
     document.addEventListener('click', (e) => {
-      if (!nav.contains(e.target) && !btn.contains(e.target)) {
+      if (!mobileNav.contains(e.target) && !btn.contains(e.target)) {
         closeMobileMenu();
       }
     });
@@ -1071,9 +1071,9 @@
 
   function closeMobileMenu() {
     const btn = document.getElementById('mobile-menu-btn');
-    const nav = document.getElementById('main-nav');
-    if (btn) btn.classList.remove('open');
-    if (nav) nav.classList.remove('open');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (btn) btn.classList.remove('active');
+    if (mobileNav) mobileNav.classList.remove('active');
   }
 
   /* ==========================================================

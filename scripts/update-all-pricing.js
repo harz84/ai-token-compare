@@ -277,6 +277,19 @@ function main() {
     console.log(JSON.stringify({ validation }, null, 2));
   }
 
+  // If successful, update the default date in data.js
+  if (!failedStep && !validationError) {
+    try {
+      const today = new Date().toISOString().split('T')[0];
+      let dataJs = fs.readFileSync(DATA_JS_PATH, 'utf8');
+      dataJs = dataJs.replace(/const DEFAULT_DATA_UPDATED_AT = '[^']+';/, `const DEFAULT_DATA_UPDATED_AT = '${today}';`);
+      fs.writeFileSync(DATA_JS_PATH, dataJs, 'utf8');
+      console.log(`Updated DEFAULT_DATA_UPDATED_AT in data.js to ${today}`);
+    } catch (err) {
+      console.warn('Failed to update DEFAULT_DATA_UPDATED_AT in data.js:', err.message);
+    }
+  }
+
   if (failedStep) {
     console.error(`Pipeline failed at step: ${failedStep.name}`);
     process.exit(1);

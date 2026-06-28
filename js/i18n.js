@@ -221,7 +221,7 @@ const TRANSLATIONS = {
 
 // ─── State ──────────────────────────────────────────────────────────────────────
 
-let currentLang = localStorage.getItem('preferred-lang') || 'id';
+let currentLang = localStorage.getItem('preferred-lang') || 'en';
 
 // ─── Core Functions ─────────────────────────────────────────────────────────────
 
