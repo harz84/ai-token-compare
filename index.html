@@ -10,7 +10,7 @@
   <meta name="robots" content="index, follow">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <link rel="icon" type="image/jpeg" href="favicon.jpg?v=2">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body>
 
@@ -39,7 +39,9 @@
   <header class="header" id="header">
     <div class="container header-inner">
       <div class="logo">
-        <span class="logo-icon" aria-hidden="true">⚡</span>
+        <span class="logo-icon" aria-hidden="true">
+          <img src="favicon.jpg" alt="" class="logo-image">
+        </span>
         <span class="logo-text" data-i18n="site.title">AI Token Price Compare</span>
       </div>
 
@@ -50,7 +52,7 @@
             <!-- Dynamically populated by app.js -->
           </ul>
         </div>
-        <a href="#promos" class="nav-link" data-tab="promos" data-i18n="nav.promos">Free & Starter Options</a>
+        <a href="#promos" class="nav-link" data-tab="promos" data-i18n="nav.promos">Promo</a>
         <a href="#models" class="nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
         <a href="#best-picks" class="nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
       </nav>
@@ -83,23 +85,20 @@
         </button>
 
         <!-- Mobile hamburger -->
-        <div class="hamburger" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0" role="button">
+        <button class="hamburger" id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav" onclick="window.toggleMobileNav && window.toggleMobileNav(event)">
           <span></span><span></span><span></span>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Mobile Navigation Menu -->
-    <div class="mobile-nav" id="mobile-nav">
-      <a href="#compare" class="mobile-nav-link" data-tab="compare" data-i18n="nav.compare">Compare</a>
-      <a href="#promos" class="mobile-nav-link" data-tab="promos" data-i18n="nav.promos">Free & Starter Options</a>
-      <a href="#models" class="mobile-nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
-      <a href="#best-picks" class="mobile-nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
-      <div style="display:flex; gap:10px; margin-top:20px; flex-wrap:wrap;">
-        <!-- Toggles copy for mobile if needed, or they can just use the ones in header -->
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Navigation Menu — outside header to escape stacking context -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#compare" class="mobile-nav-link" data-tab="compare" data-i18n="nav.compare">Compare</a>
+    <a href="#promos" class="mobile-nav-link" data-tab="promos" data-i18n="nav.promos">Promo</a>
+    <a href="#models" class="mobile-nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
+    <a href="#best-picks" class="mobile-nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
+  </nav>
 
   <!-- ============================================================
        HERO
@@ -152,7 +151,7 @@
           </div>
           <div class="stat-item">
             <span class="stat-number" id="stat-promos">12+</span>
-             <span class="stat-label" data-i18n="nav.promos">Free & Starter Options</span>
+             <span class="stat-label" data-i18n="nav.promos">Promo</span>
           </div>
         </div>
       </div>
@@ -234,9 +233,9 @@
     </section>
 
     <!-- ── PROMOS ─────────────────────────────────────────── -->
-    <section class="section hidden" id="section-promos" aria-label="Promos and free tiers">
-      <h2 class="section-title" data-i18n="promo.title">Free &amp; Starter Options</h2>
-      <p class="section-subtitle" data-i18n="promo.subtitle">Free tiers, starter credits, and low-risk ways to try AI APIs</p>
+    <section class="section hidden" id="section-promos" aria-label="Major AI model promos">
+      <h2 class="section-title" data-i18n="promo.title">Promo</h2>
+      <p class="section-subtitle" data-i18n="promo.subtitle">AI models currently at least 50% cheaper than their official price, detected from connected API pricing sources</p>
 
       <div class="promo-grid" id="promo-grid">
         <!-- Rendered by JS -->
@@ -269,6 +268,6 @@
   <script src="js/deepinfra-merge.generated.js?v=3"></script>
   <script src="js/i18n.js?v=3"></script>
   <script src="js/currency.js?v=3"></script>
-  <script src="js/app.js?v=3"></script>
+  <script src="js/app.js?v=5"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@ const TRANSLATIONS = {
     'nav.all_models': 'All Models',
     'nav.compare': 'Compare',
     'nav.best_picks': 'Best Picks',
-    'nav.promos': 'Free & Starter Options',
+    'nav.promos': 'Promo',
 
     // ─── Table Headers ────────────────────────────────────────────────────────
     'table.provider': 'Provider',
@@ -77,8 +77,8 @@ const TRANSLATIONS = {
     'best_picks.free_tier_note': 'Free tier available',
 
     // ─── Promos ───────────────────────────────────────────────────────────────
-    'promo.title': 'Free & Starter Options',
-    'promo.subtitle': 'Free tiers, starter credits, and low-risk ways to try AI APIs',
+    'promo.title': 'Promo',
+    'promo.subtitle': 'AI models currently at least 50% cheaper than their official price, detected from connected API pricing sources',
     'promo.active': 'Active',
     'promo.expired': 'Expired',
     'promo.ongoing': 'Ongoing',
@@ -88,6 +88,13 @@ const TRANSLATIONS = {
     'promo.discount': 'Discount',
     'promo.free_tier': 'Free Tier',
     'promo.trial': 'Trial',
+    'promo.empty': 'No major API promos detected right now.',
+    'promo.view_compare': 'View in Compare',
+    'promo.official_total': 'Official total',
+    'promo.promo_total': 'Promo total',
+    'promo.you_save': 'You save',
+    'promo.source': 'Source',
+    'promo.discount_suffix': 'cheaper vs official',
 
     // ─── General ──────────────────────────────────────────────────────────────
     'general.per_1m': 'per 1M tokens',
@@ -121,7 +128,7 @@ const TRANSLATIONS = {
     'nav.all_models': 'Semua Model',
     'nav.compare': 'Bandingkan',
     'nav.best_picks': 'Best Picks',
-    'nav.promos': 'Free & Starter Options',
+    'nav.promos': 'Promo',
 
     // ─── Table Headers ────────────────────────────────────────────────────────
     'table.provider': 'Penyedia',
@@ -184,8 +191,8 @@ const TRANSLATIONS = {
     'best_picks.free_tier_note': 'Free tier tersedia',
 
     // ─── Promos ───────────────────────────────────────────────────────────────
-    'promo.title': 'Free & Starter Options',
-    'promo.subtitle': 'Free tier, kredit awal, dan cara low-risk untuk mencoba AI API',
+    'promo.title': 'Promo',
+    'promo.subtitle': 'Model AI yang saat ini minimal 50% lebih murah dari harga resmi, dideteksi dari source harga API yang terhubung',
     'promo.active': 'Aktif',
     'promo.expired': 'Berakhir',
     'promo.ongoing': 'Berlangsung',
@@ -195,6 +202,13 @@ const TRANSLATIONS = {
     'promo.discount': 'Diskon',
     'promo.free_tier': 'Gratis',
     'promo.trial': 'Uji Coba',
+    'promo.empty': 'Tidak ada promo API besar yang terdeteksi saat ini.',
+    'promo.view_compare': 'Lihat di Compare',
+    'promo.official_total': 'Total resmi',
+    'promo.promo_total': 'Total promo',
+    'promo.you_save': 'Hemat',
+    'promo.source': 'Sumber',
+    'promo.discount_suffix': 'lebih murah vs harga resmi',
 
     // ─── General ──────────────────────────────────────────────────────────────
     'general.per_1m': 'per 1M token',

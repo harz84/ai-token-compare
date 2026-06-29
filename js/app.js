@@ -164,7 +164,7 @@
      NAVIGATION (tabs)
      ========================================================== */
   function setupNavigation() {
-    document.querySelectorAll('.nav-link[data-tab]').forEach(link => {
+    document.querySelectorAll('.nav-link[data-tab], .mobile-nav-link[data-tab]').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
         const tab = link.dataset.tab;
@@ -181,8 +181,8 @@
     const menu = document.getElementById('compare-nav-menu');
     if (!menu) return;
 
-    let models = typeof MODELS !== 'undefined' ? [...MODELS].filter(m => m.status !== 'deprecated') : [];
-    
+    let models = getPricedModels();
+
     // Group models by provider
     const groups = {};
     models.forEach(m => {
@@ -328,7 +328,7 @@
     const noResults = document.getElementById('no-results');
     if (!tbody) return;
 
-    let models = typeof MODELS !== 'undefined' ? [...MODELS].filter(m => m.status !== 'deprecated') : [];
+    let models = getPricedModels();
 
     /* ── Filter: provider ─────────────────────────────────── */
     if (currentProvider !== 'all') {
@@ -566,9 +566,7 @@
     }
 
     // Build list of models that are active (so users can select any model they see in the main table)
-    const modelsWithTP = (typeof MODELS !== 'undefined' ? MODELS : []).filter(m =>
-      m.status !== 'deprecated'
-    );
+    const modelsWithTP = getPricedModels();
 
     // Group by base model name to avoid duplicates in dropdown
     const seenNames = new Set();
@@ -608,7 +606,7 @@
       return;
     }
 
-    const model = (typeof MODELS !== 'undefined' ? MODELS : []).find(m => m.id === modelId);
+    const model = getPricedModels().find(m => m.id === modelId);
     if (!model || !model.thirdPartyPricing) {
       const message = typeof t === 'function'
         ? t('compare.no_alternatives') || 'No third-party alternatives available for this model'
@@ -674,18 +672,19 @@
     const releaseStr = formatDate(model.updatedAt || model.releaseDate);
     
     let html = `
-      <div class="table-wrapper">
-        <table class="price-table">
+      <div class="compare-results-panel">
+        <div class="compare-table-note">Sorted by total estimated cost. Swipe sideways on mobile to compare providers.</div>
+        <div class="table-wrapper compare-table-wrapper">
+          <table class="price-table compare-price-table">
           <thead>
             <tr>
               <th class="sortable" data-sort="providerName" data-table="compare" data-i18n="table.provider">Provider <span class="sort-icon">↕</span></th>
               <th>Type</th>
-              <th class="sortable" data-sort="inputPrice" data-table="compare" data-i18n="table.input_price">Input (per 1M) <span class="sort-icon">↕</span></th>
-              <th class="sortable" data-sort="cachePrice" data-table="compare" data-i18n="table.cache_price">Cache (per 1M) <span class="sort-icon">↕</span></th>
-              <th class="sortable" data-sort="outputPrice" data-table="compare" data-i18n="table.output_price">Output (per 1M) <span class="sort-icon">↕</span></th>
-              <th class="sortable" data-sort="total" data-table="compare">Total (In+Out) <span class="sort-icon">↕</span></th>
+              <th class="sortable" data-sort="inputPrice" data-table="compare" data-i18n="table.input_price">Input <span class="sort-icon">↕</span></th>
+              <th class="sortable" data-sort="cachePrice" data-table="compare" data-i18n="table.cache_price">Cache <span class="sort-icon">↕</span></th>
+              <th class="sortable" data-sort="outputPrice" data-table="compare" data-i18n="table.output_price">Output <span class="sort-icon">↕</span></th>
+              <th class="sortable" data-sort="total" data-table="compare">Total <span class="sort-icon">↕</span></th>
               <th>Status</th>
-              <th class="sortable" data-sort="updatedAt" data-table="compare" data-i18n="table.updated">Updated <span class="sort-icon">↕</span></th>
             </tr>
           </thead>
           <tbody>
@@ -704,7 +703,6 @@
       const lblOutput = typeof t === 'function' ? t('table.output_price') || 'Output' : 'Output';
       const lblTotal = 'Total';
       const lblStatus = 'Status';
-      const lblUpdated = typeof t === 'function' ? t('table.updated') || 'Updated' : 'Updated';
       
       const cacheStr = e.cachePrice ? fmtPrice(e.cachePrice) : '-';
       const sourceBadge = pricingSourceBadge(e);
@@ -730,12 +728,11 @@
               ${!isCheapest && savingsVal <= 0 ? `<span style="color:var(--text-muted);font-size:0.85em;">-</span>` : ''}
             </div>
           </td>
-          <td data-label="${lblUpdated}" style="color:var(--text-muted); font-size:0.85em;" title="Pricing source: ${escHtml(e.pricingSource || 'manual-curated')} (${escHtml(e.pricingSourceType || 'curated')})">${releaseStr}</td>
         </tr>
       `;
     });
 
-    html += `</tbody></table></div>`;
+    html += `</tbody></table></div></div>`;
     grid.innerHTML = html;
 
     grid.querySelectorAll('th.sortable[data-table="compare"]').forEach(th => {
@@ -837,7 +834,7 @@
   }
 
   function getBestPicks() {
-    const models = (typeof MODELS !== 'undefined' ? MODELS : []).filter(model => model.status !== 'deprecated');
+    const models = getPricedModels();
     const picks = [];
 
     const cheapestOverall = chooseBestModel(models, model => {
@@ -970,56 +967,134 @@
   }
 
   /* ==========================================================
-     PROMOS
+     PROMO DEALS
      ========================================================== */
+  function getPromoDeals(minDiscountPercent = 50) {
+    const deals = [];
+
+    getPricedModels().forEach(model => {
+      const officialPricing = model.officialPricing;
+      if (!officialPricing) return;
+
+      const officialTotal = getPricingTotal(officialPricing);
+      if (!(officialTotal > 0)) return;
+
+      const thirdPartyPricing = model.thirdPartyPricing || {};
+      Object.keys(thirdPartyPricing).forEach(providerId => {
+        const dealPricing = thirdPartyPricing[providerId];
+        if (!dealPricing) return;
+
+        const dealTotal = getPricingTotal(dealPricing);
+        if (dealTotal < 0) return;
+
+        const discountPercent = Math.round((1 - (dealTotal / officialTotal)) * 1000) / 10;
+        if (discountPercent < minDiscountPercent) return;
+
+        const provider = getProvider(model.provider);
+        const dealProviderName = getDealProviderName(providerId);
+        const sourceLabel = getPricingSourceLabel(dealPricing, providerId);
+        deals.push({
+          id: `${model.id}:${providerId}`,
+          model,
+          providerName: provider ? provider.name : model.provider,
+          providerColor: provider ? provider.color : 'var(--primary)',
+          dealProviderId: providerId,
+          dealProviderName,
+          sourceLabel,
+          officialPricing,
+          dealPricing,
+          officialTotal,
+          dealTotal,
+          discountPercent,
+          savingsTotal: officialTotal - dealTotal,
+          updatedAt: dealPricing.updatedAt || officialPricing.updatedAt || model.updatedAt || model.releaseDate || '',
+          sourceUrl: dealPricing.sourceUrl || officialPricing.sourceUrl || model.sourceUrl || '',
+        });
+      });
+    });
+
+    return deals.sort((a, b) => {
+      if (b.discountPercent !== a.discountPercent) return b.discountPercent - a.discountPercent;
+      if (a.dealTotal !== b.dealTotal) return a.dealTotal - b.dealTotal;
+      return Date.parse(b.updatedAt || 0) - Date.parse(a.updatedAt || 0);
+    });
+  }
+
   function renderPromos() {
     const grid = document.getElementById('promo-grid');
     if (!grid) return;
-    const promos = typeof PROMOS !== 'undefined' ? [...PROMOS] : [];
 
-    if (!promos.length) {
-      grid.innerHTML = '<p class="compare-placeholder">' + (typeof t === 'function' ? t('general.no_results') || 'No promos found' : 'No promos found') + '</p>';
+    const deals = getPromoDeals(50);
+    if (!deals.length) {
+      grid.innerHTML = '<p class="compare-placeholder">' +
+        (typeof t === 'function' ? t('promo.empty') || 'No major API promos detected right now.' : 'No major API promos detected right now.') +
+        '</p>';
       return;
     }
 
-    const lang = typeof getLanguage === 'function' ? getLanguage() : 'en';
+    const viewLabel = typeof t === 'function' ? t('promo.view_compare') || 'Compare' : 'Compare';
+    const officialLabel = typeof t === 'function' ? t('promo.official_total') || 'Official' : 'Official';
+    const promoLabel = typeof t === 'function' ? t('promo.promo_total') || 'Promo' : 'Promo';
+    const savingsLabel = typeof t === 'function' ? t('promo.you_save') || 'Save' : 'Save';
+    const sourceLabel = typeof t === 'function' ? t('promo.source') || 'Source' : 'Source';
+    const updatedLabel = typeof t === 'function' ? t('table.updated') || 'Updated' : 'Updated';
+    const modelLabel = typeof t === 'function' ? t('table.model') || 'Model' : 'Model';
+    const discountLabel = typeof t === 'function' ? t('promo.discount') || 'Discount' : 'Discount';
 
-    // Active first, then expired
-    promos.sort((a, b) => {
-      if (a.isActive && !b.isActive) return -1;
-      if (!a.isActive && b.isActive) return 1;
-      return 0;
+    const rows = deals.map(deal => `
+      <tr>
+        <td data-label="${escHtml(modelLabel)}">
+          <div class="promo-table-model">
+            <span class="provider-dot" style="background:${deal.providerColor}"></span>
+            <div>
+              <strong>${escHtml(deal.model.name)}</strong>
+              <span>${escHtml(deal.providerName)}</span>
+            </div>
+          </div>
+        </td>
+        <td data-label="${escHtml(sourceLabel)}">
+          <div class="promo-table-source">
+            <strong>${escHtml(deal.dealProviderName)}</strong>
+            <a href="${escHtml(deal.sourceUrl || '#')}" target="_blank" rel="noopener">${escHtml(deal.sourceLabel)}</a>
+          </div>
+        </td>
+        <td data-label="${escHtml(discountLabel)}"><span class="promo-discount-pill">-${deal.discountPercent}%</span></td>
+        <td data-label="${escHtml(officialLabel)}" class="promo-table-number">${fmtPrice(deal.officialTotal)}</td>
+        <td data-label="${escHtml(promoLabel)}" class="promo-table-number promo-table-deal">${fmtPrice(deal.dealTotal)}</td>
+        <td data-label="${escHtml(savingsLabel)}" class="promo-table-number promo-table-save">${fmtPrice(deal.savingsTotal)}</td>
+        <td data-label="${escHtml(updatedLabel)}" class="promo-table-updated">${escHtml(formatDate(deal.updatedAt))}</td>
+        <td data-label="Action"><button class="promo-table-action" type="button" data-promo-model="${escHtml(deal.model.id)}">${escHtml(viewLabel)}</button></td>
+      </tr>
+    `).join('');
+
+    grid.innerHTML = `
+      <div class="promo-table-wrapper">
+        <table class="promo-table">
+          <thead>
+            <tr>
+              <th>${escHtml(modelLabel)}</th>
+              <th>${escHtml(sourceLabel)}</th>
+              <th>${escHtml(discountLabel)}</th>
+              <th>${escHtml(officialLabel)}</th>
+              <th>${escHtml(promoLabel)}</th>
+              <th>${escHtml(savingsLabel)}</th>
+              <th>${escHtml(updatedLabel)}</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    `;
+    grid.querySelectorAll('[data-promo-model]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modelId = btn.getAttribute('data-promo-model');
+        switchTab('compare');
+        const select = document.getElementById('compare-model-select');
+        if (select) select.value = modelId;
+        renderCompareCards(modelId);
+      });
     });
-
-    let html = '';
-    promos.forEach((p, i) => {
-      const prov = getProvider(p.provider);
-      const color = prov ? prov.color : '#6366f1';
-      const provName = prov ? prov.name : p.provider;
-      const title = lang === 'id' ? (p.title_id || p.title_en) : p.title_en;
-      const desc  = lang === 'id' ? (p.description_id || p.description_en) : p.description_en;
-      const statusBadge = p.isActive
-        ? `<span class="badge badge-active">${typeof t === 'function' ? t('promo.active') || 'Active' : 'Active'}</span>`
-        : `<span class="badge badge-expired">${typeof t === 'function' ? t('promo.expired') || 'Expired' : 'Expired'}</span>`;
-      const validStr = p.validUntil || '';
-      const ctaLabel = typeof t === 'function' ? (t('promo.claim') || 'Claim Offer') : 'Claim Offer';
-
-      html += `
-      <div class="promo-card${p.isActive ? '' : ' promo-expired'}" style="animation-delay:${i * 60}ms;border-top:3px solid ${color}">
-        <div class="promo-card-header">
-          <span class="provider-dot" style="background:${color}"></span>
-          <span class="promo-provider">${escHtml(provName)}</span>
-          ${statusBadge}
-        </div>
-        <h3 class="promo-title">${escHtml(title)}</h3>
-        <p class="promo-desc">${escHtml(desc)}</p>
-        <div class="promo-value">${escHtml(p.value || '')}</div>
-        ${validStr ? `<p class="promo-valid">${typeof t === 'function' ? t('promo.valid_until') || 'Valid until' : 'Valid until'}: ${escHtml(validStr)}</p>` : ''}
-        ${p.link && p.isActive ? `<a href="${escHtml(p.link)}" target="_blank" rel="noopener" class="promo-cta" style="background:${color}">${ctaLabel}</a>` : ''}
-      </div>`;
-    });
-
-    grid.innerHTML = html;
   }
 
   /* ==========================================================
@@ -1037,7 +1112,7 @@
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-    document.querySelectorAll('.section, .promo-card, .compare-card, .best-pick-card, .hero-content').forEach(el => {
+    document.querySelectorAll('.section, .promo-table-wrapper, .compare-card, .best-pick-card, .hero-content').forEach(el => {
       observer.observe(el);
     });
   }
@@ -1050,30 +1125,58 @@
     const mobileNav = document.getElementById('mobile-nav');
     if (!btn || !mobileNav) return;
 
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      btn.classList.toggle('active');
-      mobileNav.classList.toggle('active');
+    mobileNav.setAttribute('aria-hidden', 'true');
+
+    const syncMenuState = (isOpen) => {
+      btn.classList.toggle('active', isOpen);
+      btn.setAttribute('aria-expanded', String(isOpen));
+      mobileNav.classList.toggle('active', isOpen);
+      mobileNav.setAttribute('aria-hidden', String(!isOpen));
+      document.body.classList.toggle('mobile-menu-open', isOpen);
+    };
+
+    window.toggleMobileNav = (event) => {
+      if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      syncMenuState(!isOpen);
+    };
+
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        window.toggleMobileNav(e);
+      }
     });
 
-    // Close on nav link click
     mobileNav.querySelectorAll('.mobile-nav-link').forEach(link => {
-      link.addEventListener('click', () => closeMobileMenu());
+      link.addEventListener('click', () => syncMenuState(false));
     });
 
-    // Close on outside click
     document.addEventListener('click', (e) => {
       if (!mobileNav.contains(e.target) && !btn.contains(e.target)) {
-        closeMobileMenu();
+        syncMenuState(false);
       }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) syncMenuState(false);
     });
   }
 
   function closeMobileMenu() {
     const btn = document.getElementById('mobile-menu-btn');
     const mobileNav = document.getElementById('mobile-nav');
-    if (btn) btn.classList.remove('active');
-    if (mobileNav) mobileNav.classList.remove('active');
+    if (btn) {
+      btn.classList.remove('active');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+    if (mobileNav) {
+      mobileNav.classList.remove('active');
+      mobileNav.setAttribute('aria-hidden', 'true');
+    }
+    document.body.classList.remove('mobile-menu-open');
   }
 
   /* ==========================================================
@@ -1081,7 +1184,7 @@
      ========================================================== */
   function updateHeroStats() {
     const provSet = new Set();
-    const models = typeof MODELS !== 'undefined' ? MODELS : [];
+    const models = getPricedModels();
     models.forEach(m => provSet.add(m.provider));
 
     const provEl   = document.getElementById('stat-providers');
@@ -1090,14 +1193,14 @@
 
     if (provEl)  provEl.textContent = provSet.size + '+';
     if (modelEl) modelEl.textContent = models.length + '+';
-    if (promoEl) promoEl.textContent = (typeof PROMOS !== 'undefined' ? PROMOS.length : 0) + '+';
+    if (promoEl) promoEl.textContent = getPromoDeals(50).length + '+';
   }
 
   function setLastUpdated() {
     const el = document.getElementById('last-updated');
     if (!el) return;
 
-    const models = typeof MODELS !== 'undefined' ? MODELS : [];
+    const models = getPricedModels();
     const timestamps = models
       .map(m => Date.parse(m.updatedAt || m.releaseDate || ''))
       .filter(ts => !Number.isNaN(ts));
@@ -1121,6 +1224,19 @@
     };
   }
 
+  function getPricedModels() {
+    const models = typeof MODELS !== 'undefined' ? MODELS : [];
+    return models.filter(model => model.status !== 'deprecated' && hasValidModelPrice(model));
+  }
+
+  function hasValidModelPrice(model) {
+    return isPositiveNumber(model.inputPrice) || isPositiveNumber(model.outputPrice);
+  }
+
+  function isPositiveNumber(value) {
+    return typeof value === 'number' && Number.isFinite(value) && value > 0;
+  }
+
   function getProvider(id) {
     return (typeof PROVIDERS !== 'undefined' && PROVIDERS[id]) ? PROVIDERS[id] : null;
   }
@@ -1133,6 +1249,35 @@
   function fmtPrice(usdAmount) {
     if (typeof formatPrice === 'function') return formatPrice(usdAmount);
     return '$' + usdAmount.toFixed(2);
+  }
+
+  function getPricingTotal(pricing) {
+    if (!pricing) return -1;
+    const input = isNonNegativeNumber(pricing.inputPrice) ? pricing.inputPrice : 0;
+    const output = isNonNegativeNumber(pricing.outputPrice) ? pricing.outputPrice : 0;
+    return input + output;
+  }
+
+  function isNonNegativeNumber(value) {
+    return typeof value === 'number' && Number.isFinite(value) && value >= 0;
+  }
+
+  function getDealProviderName(providerId) {
+    const map = {
+      openrouter: 'OpenRouter',
+      sumopod: 'Sumopod',
+      deepinfra: 'DeepInfra',
+    };
+    return map[providerId] || getProviderName(providerId);
+  }
+
+  function getPricingSourceLabel(pricing, providerId) {
+    if (!pricing) return getDealProviderName(providerId);
+    if (pricing.source === 'openrouter-api') return 'OpenRouter API';
+    if (pricing.source === 'sumopod-api') return 'Sumopod API';
+    if (pricing.source === 'deepinfra-api') return 'DeepInfra API';
+    if (pricing.source) return pricing.source;
+    return getDealProviderName(providerId);
   }
 
   function formatContext(tokens) {
