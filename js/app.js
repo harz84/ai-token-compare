@@ -367,6 +367,12 @@
       });
     }
 
+    const updateNote = document.getElementById('all-models-updated-note');
+    if (updateNote) {
+      const latestUpdatedAt = getLatestUpdatedAt(models, model => model.updatedAt || model.releaseDate);
+      updateNote.textContent = `Last update: ${formatDate(latestUpdatedAt)}`;
+    }
+
     /* ── Sort ─────────────────────────────────────────────── */
     models = sortModels(models, currentSort, currentSortDir);
 
@@ -476,6 +482,15 @@
       if (typeof valA === 'string' && typeof valB === 'string') return valA.localeCompare(valB) * dir;
       return (valA - valB) * dir;
     });
+  }
+
+  function getLatestUpdatedAt(items, resolver) {
+    const timestamps = items
+      .map(item => Date.parse(resolver(item) || ''))
+      .filter(ts => !Number.isNaN(ts));
+
+    if (!timestamps.length) return '';
+    return new Date(Math.max(...timestamps)).toISOString();
   }
 
   /* ==========================================================
@@ -633,6 +648,7 @@
         inputPrice: model.inputPrice,
         cachePrice: model.cachePrice,
         outputPrice: model.outputPrice,
+        updatedAt: (model.officialPricing && model.officialPricing.updatedAt) || model.updatedAt || model.releaseDate || '',
         pricingSource: model.pricingSource,
         pricingSourceType: model.pricingSourceType,
         isOriginal: true,
@@ -663,6 +679,7 @@
         inputPrice:  inputPrice  ?? 0,
         cachePrice:  cachePrice  ?? 0,
         outputPrice: outputPrice ?? 0,
+        updatedAt: pricing.updatedAt || model.updatedAt || model.releaseDate || '',
         pricingSource: pricing.source,
         pricingSourceType: pricing.sourceType,
         isOriginal: false,
@@ -671,15 +688,14 @@
 
     entries.forEach(e => e.total = e.inputPrice + e.outputPrice);
     const sortedEntries = sortModels(entries, compareSort, compareSortDir);
+    const compareLatestUpdatedAt = getLatestUpdatedAt(sortedEntries, entry => entry.updatedAt);
 
     const cheapest = sortedEntries.length > 0 ? sortedEntries.reduce((p, c) => p.total < c.total ? p : c) : null;
     const expTotal = sortedEntries.length > 0 ? Math.max(...sortedEntries.map(e => e.total)) : 0;
 
-    const releaseStr = formatDate(model.updatedAt || model.releaseDate);
-    
     let html = `
       <div class="compare-results-panel">
-        <div class="compare-table-note">Sorted by total estimated cost. Swipe sideways on mobile to compare providers.</div>
+        <div class="compare-table-note">Sorted by total estimated cost. Last update: ${escHtml(formatDate(compareLatestUpdatedAt))}</div>
         <div class="table-wrapper compare-table-wrapper">
           <table class="price-table compare-price-table">
           <thead>
@@ -690,6 +706,7 @@
               ${sortableHeader(typeof t === 'function' ? t('table.cache_price') || 'Cache' : 'Cache', 'cachePrice', 'compare')}
               ${sortableHeader(typeof t === 'function' ? t('table.output_price') || 'Output' : 'Output', 'outputPrice', 'compare')}
               ${sortableHeader('Total', 'total', 'compare')}
+              ${sortableHeader(typeof t === 'function' ? t('table.updated') || 'Updated' : 'Updated', 'updatedAt', 'compare')}
               <th>Status</th>
             </tr>
           </thead>
@@ -708,9 +725,11 @@
       const lblCache = typeof t === 'function' ? t('table.cache_price') || 'Cache' : 'Cache';
       const lblOutput = typeof t === 'function' ? t('table.output_price') || 'Output' : 'Output';
       const lblTotal = 'Total';
+      const lblUpdated = typeof t === 'function' ? t('table.updated') || 'Updated' : 'Updated';
       const lblStatus = 'Status';
       
       const cacheStr = e.cachePrice ? fmtPrice(e.cachePrice) : '-';
+      const updatedStr = formatDate(e.updatedAt);
       const sourceBadge = pricingSourceBadge(e);
 
       html += `
@@ -727,6 +746,7 @@
           <td data-label="${lblCache}" style="color:var(--text-secondary);">${cacheStr}</td>
           <td data-label="${lblOutput}" style="color:var(--text-secondary);">${fmtPrice(e.outputPrice)}</td>
           <td data-label="${lblTotal}" style="font-weight:700;color:${isCheapest ? 'var(--accent)' : 'inherit'};">${fmtPrice(total)}</td>
+          <td data-label="${lblUpdated}" style="color:var(--text-muted); font-size:0.85em;">${updatedStr}</td>
           <td data-label="${lblStatus}">
             <div style="display:flex;flex-direction:column;align-items:flex-start;gap:4px;">
               ${isCheapest ? `<span class="badge badge-cheapest" style="background:var(--accent-glow);color:var(--accent);border:1px solid var(--accent-glow);">Best Price</span>` : ''}
