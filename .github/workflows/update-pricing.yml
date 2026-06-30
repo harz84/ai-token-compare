@@ -73,6 +73,7 @@ jobs:
 
           # Stage only the generated/data files
           git add \
+            index.html \
             js/openrouter-merge.generated.js \
             js/official-pricing.generated.js \
             js/sumopod-merge.generated.js \

@@ -46,13 +46,13 @@
       </div>
 
       <nav class="nav-links" id="main-nav" aria-label="Main navigation">
+        <a href="#promos" class="nav-link active" data-tab="promos" data-i18n="nav.promos">Promo</a>
         <div class="nav-dropdown-container">
           <a href="#compare" class="nav-link" data-tab="compare" data-i18n="nav.compare">Compare <span style="font-size:0.8em;opacity:0.7;">▾</span></a>
           <ul class="nav-dropdown-menu" id="compare-nav-menu">
             <!-- Dynamically populated by app.js -->
           </ul>
         </div>
-        <a href="#promos" class="nav-link active" data-tab="promos" data-i18n="nav.promos">Promo</a>
         <a href="#models" class="nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
         <a href="#best-picks" class="nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
       </nav>
@@ -94,10 +94,21 @@
 
   <!-- Mobile Navigation Menu — outside header to escape stacking context -->
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
-    <a href="#compare" class="mobile-nav-link" data-tab="compare" data-i18n="nav.compare">Compare</a>
-    <a href="#promos" class="mobile-nav-link active" data-tab="promos" data-i18n="nav.promos">Promo</a>
-    <a href="#models" class="mobile-nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
-    <a href="#best-picks" class="mobile-nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
+    <div class="mobile-nav-header">
+      <div class="mobile-nav-brand">
+        <span class="logo-icon" aria-hidden="true">
+          <img src="favicon.jpg" alt="" class="logo-image">
+        </span>
+        <span class="mobile-nav-title" data-i18n="site.title">AI Token Price Compare</span>
+      </div>
+      <button class="mobile-nav-close" id="mobile-nav-close" type="button" aria-label="Close navigation menu">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#promos" class="mobile-nav-link active" data-tab="promos" data-i18n="nav.promos">Promo</a>
+      <a href="#compare" class="mobile-nav-link" data-tab="compare" data-i18n="nav.compare">Compare</a>
+      <a href="#models" class="mobile-nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
+      <a href="#best-picks" class="mobile-nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
+    </div>
   </nav>
 
   <!-- ============================================================
@@ -261,13 +272,13 @@
   <!-- ============================================================
        SCRIPTS  (order matters: data → pricing patches → i18n → currency → app)
        ============================================================ -->
-  <script src="js/data.js?v=5"></script>
-  <script src="js/official-pricing.generated.js?v=3"></script>
-  <script src="js/openrouter-merge.generated.js?v=3"></script>
-  <script src="js/sumopod-merge.generated.js?v=3"></script>
-  <script src="js/deepinfra-merge.generated.js?v=3"></script>
-  <script src="js/i18n.js?v=3"></script>
-  <script src="js/currency.js?v=3"></script>
-  <script src="js/app.js?v=5"></script>
+  <script src="js/data.js?v=20260630"></script>
+  <script src="js/official-pricing.generated.js?v=20260630"></script>
+  <script src="js/openrouter-merge.generated.js?v=20260630"></script>
+  <script src="js/sumopod-merge.generated.js?v=20260630"></script>
+  <script src="js/deepinfra-merge.generated.js?v=20260630"></script>
+  <script src="js/i18n.js?v=20260630"></script>
+  <script src="js/currency.js?v=20260630"></script>
+  <script src="js/app.js?v=20260630"></script>
 </body>
 </html>

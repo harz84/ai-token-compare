@@ -764,56 +764,34 @@
       const provider = getProvider(pick.model.provider);
       const providerName = provider ? provider.name : pick.model.provider;
       const providerColor = provider ? provider.color : 'var(--primary)';
-      const scoreLabel = typeof t === 'function' ? t('best_picks.why_this_pick') || 'Why this pick' : 'Why this pick';
-      const contextLabel = typeof t === 'function' ? t('table.context') || 'Context Window' : 'Context Window';
-      const categoryLabel = typeof t === 'function' ? t('table.category') || 'Category' : 'Category';
-      const actionLabel = typeof t === 'function' ? t('best_picks.view_in_compare') || 'View in Compare' : 'View in Compare';
+      const contextLabel = typeof t === 'function' ? t('table.context') || 'Context' : 'Context';
+      const actionLabel = typeof t === 'function' ? t('best_picks.view_in_compare') || 'Compare' : 'Compare';
       const noteLabel = typeof t === 'function' ? t('best_picks.free_tier_note') || 'Free tier available' : 'Free tier available';
-      const freeTierBadge = pick.promo ? `<span class="badge badge-cheapest">${noteLabel}</span>` : '';
+      const freeTierBadge = pick.promo ? `<span class="best-pick-chip best-pick-chip-accent">${escHtml(noteLabel)}</span>` : '';
 
       html += `
-        <article class="best-pick-card" style="animation-delay:${index * 50}ms;border-top:3px solid ${providerColor}">
-          <div class="best-pick-header">
-            <div>
-              <p class="best-pick-kicker">${escHtml(pick.title)}</p>
-              <h3 class="best-pick-model">${escHtml(pick.model.name)}</h3>
+        <article class="best-pick-card compact" style="animation-delay:${index * 35}ms;--provider-color:${providerColor}">
+          <div class="best-pick-main">
+            <div class="best-pick-title-row">
+              <span class="best-pick-kicker">${escHtml(pick.title)}</span>
+              <span class="provider-pill compact">
+                <span class="provider-dot" style="background:${providerColor}"></span>
+                ${escHtml(providerName)}
+              </span>
             </div>
-            <span class="provider-pill">
-              <span class="provider-dot" style="background:${providerColor}"></span>
-              ${escHtml(providerName)}
-            </span>
-          </div>
-
-          <p class="best-pick-summary">${escHtml(pick.summary)}</p>
-
-          <div class="best-pick-meta">
-            <div class="best-pick-stat">
-              <span class="best-pick-stat-label">Input</span>
-              <strong>${fmtPrice(pick.model.inputPrice)}</strong>
+            <h3 class="best-pick-model">${escHtml(pick.model.name)}</h3>
+            <p class="best-pick-summary">${escHtml(pick.summary)}</p>
+            <div class="best-pick-inline-meta">
+              <span><b>In</b> ${fmtPrice(pick.model.inputPrice)}</span>
+              <span><b>Out</b> ${fmtPrice(pick.model.outputPrice)}</span>
+              <span><b>${escHtml(contextLabel)}</b> ${formatContext(pick.model.contextWindow)}</span>
             </div>
-            <div class="best-pick-stat">
-              <span class="best-pick-stat-label">Output</span>
-              <strong>${fmtPrice(pick.model.outputPrice)}</strong>
-            </div>
-            <div class="best-pick-stat">
-              <span class="best-pick-stat-label">${escHtml(contextLabel)}</span>
-              <strong>${formatContext(pick.model.contextWindow)}</strong>
-            </div>
-            <div class="best-pick-stat">
-              <span class="best-pick-stat-label">${escHtml(categoryLabel)}</span>
-              <strong>${stripTags(categoryBadge(pick.model.category))}</strong>
+            <div class="best-pick-tags compact">
+              <span class="best-pick-chip">${escHtml(pick.reason)}</span>
+              ${freeTierBadge}
             </div>
           </div>
-
-          <div class="best-pick-tags">
-            <span class="badge badge-original">${escHtml(scoreLabel)}</span>
-            <span class="badge badge-neutral">${escHtml(pick.reason)}</span>
-            ${freeTierBadge}
-          </div>
-
-          <div class="best-pick-footer">
-            <button class="best-pick-action" type="button" data-best-pick-model="${escHtml(pick.model.id)}">${escHtml(actionLabel)}</button>
-          </div>
+          <button class="best-pick-action compact" type="button" data-best-pick-model="${escHtml(pick.model.id)}">${escHtml(actionLabel)}</button>
         </article>
       `;
     });
@@ -1165,6 +1143,7 @@
   function setupMobileMenu() {
     const btn = document.getElementById('mobile-menu-btn');
     const mobileNav = document.getElementById('mobile-nav');
+    const closeBtn = document.getElementById('mobile-nav-close');
     if (!btn || !mobileNav) return;
 
     mobileNav.setAttribute('aria-hidden', 'true');
@@ -1192,14 +1171,24 @@
       }
     });
 
+    if (closeBtn) {
+      closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        syncMenuState(false);
+        btn.focus();
+      });
+    }
+
     mobileNav.querySelectorAll('.mobile-nav-link').forEach(link => {
       link.addEventListener('click', () => syncMenuState(false));
     });
 
-    document.addEventListener('click', (e) => {
-      if (!mobileNav.contains(e.target) && !btn.contains(e.target)) {
-        syncMenuState(false);
-      }
+    mobileNav.addEventListener('click', (e) => {
+      if (e.target === mobileNav) syncMenuState(false);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') syncMenuState(false);
     });
 
     window.addEventListener('resize', () => {

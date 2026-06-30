@@ -6,6 +6,7 @@ const { spawnSync } = require('child_process');
 const PROJECT_ROOT = path.join(__dirname, '..');
 const REPORT_PATH = path.join(PROJECT_ROOT, 'data', 'pricing-update-report.json');
 const DATA_JS_PATH = path.join(PROJECT_ROOT, 'js', 'data.js');
+const INDEX_HTML_PATH = path.join(PROJECT_ROOT, 'index.html');
 const OPENROUTER_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'openrouter-merge.generated.js');
 const OFFICIAL_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'official-pricing.generated.js');
 const SUMOPOD_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'sumopod-merge.generated.js');
@@ -202,6 +203,28 @@ function validateRuntimePatches() {
   };
 }
 
+function updateIndexScriptVersions(version) {
+  let indexHtml = fs.readFileSync(INDEX_HTML_PATH, 'utf8');
+  const scriptFiles = [
+    'js/data.js',
+    'js/official-pricing.generated.js',
+    'js/openrouter-merge.generated.js',
+    'js/sumopod-merge.generated.js',
+    'js/deepinfra-merge.generated.js',
+    'js/i18n.js',
+    'js/currency.js',
+    'js/app.js',
+  ];
+
+  scriptFiles.forEach(file => {
+    const escaped = file.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(<script\\s+src=["']${escaped})\\?v=[^"']+(["'])`, 'g');
+    indexHtml = indexHtml.replace(regex, `$1?v=${version}$2`);
+  });
+
+  fs.writeFileSync(INDEX_HTML_PATH, indexHtml, 'utf8');
+}
+
 function validateOutputs() {
   const files = [
     validateGeneratedFile('data/openrouter-models.generated.json'),
@@ -281,10 +304,13 @@ function main() {
   if (!failedStep && !validationError) {
     try {
       const today = new Date().toISOString().split('T')[0];
+      const cacheVersion = today.replace(/-/g, '');
       let dataJs = fs.readFileSync(DATA_JS_PATH, 'utf8');
       dataJs = dataJs.replace(/const DEFAULT_DATA_UPDATED_AT = '[^']+';/, `const DEFAULT_DATA_UPDATED_AT = '${today}';`);
       fs.writeFileSync(DATA_JS_PATH, dataJs, 'utf8');
+      updateIndexScriptVersions(cacheVersion);
       console.log(`Updated DEFAULT_DATA_UPDATED_AT in data.js to ${today}`);
+      console.log(`Updated script cache version in index.html to ${cacheVersion}`);
     } catch (err) {
       console.warn('Failed to update DEFAULT_DATA_UPDATED_AT in data.js:', err.message);
     }
