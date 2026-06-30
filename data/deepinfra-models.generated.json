@@ -1,6 +1,6 @@
 {
   "source": "https://api.deepinfra.com/v1/openai/models",
-  "fetchedAt": "2026-06-30T07:59:00.811Z",
+  "fetchedAt": "2026-06-30T08:28:19.085Z",
   "count": 115,
   "note": "DeepInfra /v1/openai/models exposes real per-token pricing in metadata.pricing.",
   "models": [
