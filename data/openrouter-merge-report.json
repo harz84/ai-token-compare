@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-06-29T01:46:55.924Z",
-  "generatedAt": "2026-06-29T01:46:55.993Z",
+  "fetchedAt": "2026-06-30T07:58:54.324Z",
+  "generatedAt": "2026-06-30T07:58:54.402Z",
   "mappedCount": 89,
   "matchedCount": 88,
   "missingCount": 1,
@@ -353,9 +353,9 @@
     {
       "internalId": "kimi-k2-6",
       "openrouterId": "moonshotai/kimi-k2.6",
-      "inputPrice": 0.66,
-      "cachePrice": 0.144,
-      "outputPrice": 3.41,
+      "inputPrice": 0.55,
+      "cachePrice": 0.11,
+      "outputPrice": 3.2,
       "contextWindow": 262144
     },
     {
@@ -377,7 +377,7 @@
     {
       "internalId": "glm-5-2",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.95,
+      "inputPrice": 0.94,
       "cachePrice": 0.18,
       "outputPrice": 3,
       "contextWindow": 1048576
@@ -385,7 +385,7 @@
     {
       "internalId": "glm-5-2-air",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.95,
+      "inputPrice": 0.94,
       "cachePrice": 0.18,
       "outputPrice": 3,
       "contextWindow": 1048576
@@ -665,9 +665,9 @@
     {
       "internalId": "glm-5-1",
       "openrouterId": "z-ai/glm-5.1",
-      "inputPrice": 0.98,
-      "cachePrice": 0.182,
-      "outputPrice": 3.08,
+      "inputPrice": 0.975,
+      "cachePrice": 0,
+      "outputPrice": 4.3,
       "contextWindow": 202752
     },
     {
