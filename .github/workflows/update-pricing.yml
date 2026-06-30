@@ -41,6 +41,7 @@ jobs:
         run: npm run update:all-pricing
         env:
           NODE_ENV: production
+          SUMOPOD_API_KEY: ${{ secrets.SUMOPOD_API_KEY }}
 
       - name: 📊 Show update summary
         run: |
