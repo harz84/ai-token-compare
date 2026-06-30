@@ -7,7 +7,7 @@
   'use strict';
 
   /* ── State ──────────────────────────────────────────────── */
-  let currentTab      = 'models';
+  let currentTab      = 'promos';
   let currentRegion   = 'all';
   let currentCategory = 'all';
   let currentProvider = 'all';
@@ -15,6 +15,8 @@
   let currentSortDir  = 1;
   let compareSort     = 'total';
   let compareSortDir  = 1;
+  let promoSort       = 'discountPercent';
+  let promoSortDir    = -1;
   let searchQuery     = '';
 
   /* ==========================================================
@@ -59,6 +61,10 @@
         else { compareSort = key; compareSortDir = 1; }
         const sel = document.getElementById('compare-model-select');
         if (sel) renderCompareCards(sel.value);
+      } else if (th.dataset.table === 'promo') {
+        if (promoSort === key) { promoSortDir *= -1; }
+        else { promoSort = key; promoSortDir = getDefaultSortDir(key); }
+        renderPromos();
       } else {
         if (currentSort === key) { currentSortDir *= -1; }
         else { currentSort = key; currentSortDir = 1; }
@@ -297,7 +303,7 @@
   function switchTab(tab) {
     currentTab = tab;
     // Active link
-    document.querySelectorAll('.nav-link[data-tab]').forEach(l => {
+    document.querySelectorAll('.nav-link[data-tab], .mobile-nav-link[data-tab]').forEach(l => {
       l.classList.toggle('active', l.dataset.tab === tab);
     });
     // Show / hide sections
@@ -678,12 +684,12 @@
           <table class="price-table compare-price-table">
           <thead>
             <tr>
-              <th class="sortable" data-sort="providerName" data-table="compare" data-i18n="table.provider">Provider <span class="sort-icon">↕</span></th>
+              ${sortableHeader(typeof t === 'function' ? t('table.provider') || 'Provider' : 'Provider', 'providerName', 'compare')}
               <th>Type</th>
-              <th class="sortable" data-sort="inputPrice" data-table="compare" data-i18n="table.input_price">Input <span class="sort-icon">↕</span></th>
-              <th class="sortable" data-sort="cachePrice" data-table="compare" data-i18n="table.cache_price">Cache <span class="sort-icon">↕</span></th>
-              <th class="sortable" data-sort="outputPrice" data-table="compare" data-i18n="table.output_price">Output <span class="sort-icon">↕</span></th>
-              <th class="sortable" data-sort="total" data-table="compare">Total <span class="sort-icon">↕</span></th>
+              ${sortableHeader(typeof t === 'function' ? t('table.input_price') || 'Input' : 'Input', 'inputPrice', 'compare')}
+              ${sortableHeader(typeof t === 'function' ? t('table.cache_price') || 'Cache' : 'Cache', 'cachePrice', 'compare')}
+              ${sortableHeader(typeof t === 'function' ? t('table.output_price') || 'Output' : 'Output', 'outputPrice', 'compare')}
+              ${sortableHeader('Total', 'total', 'compare')}
               <th>Status</th>
             </tr>
           </thead>
@@ -735,16 +741,7 @@
     html += `</tbody></table></div></div>`;
     grid.innerHTML = html;
 
-    grid.querySelectorAll('th.sortable[data-table="compare"]').forEach(th => {
-      th.classList.remove('active', 'asc', 'desc');
-      const icon = th.querySelector('.sort-icon');
-      if (th.dataset.sort === compareSort) {
-        th.classList.add('active', compareSortDir === 1 ? 'asc' : 'desc');
-        if (icon) icon.textContent = compareSortDir === 1 ? '↑' : '↓';
-      } else {
-        if (icon) icon.textContent = '↕';
-      }
-    });
+    updateSortHeaders(grid, 'compare', compareSort, compareSortDir);
   }
 
   /* ==========================================================
@@ -1013,10 +1010,54 @@
       });
     });
 
-    return deals.sort((a, b) => {
-      if (b.discountPercent !== a.discountPercent) return b.discountPercent - a.discountPercent;
-      if (a.dealTotal !== b.dealTotal) return a.dealTotal - b.dealTotal;
-      return Date.parse(b.updatedAt || 0) - Date.parse(a.updatedAt || 0);
+    return sortPromoDeals(deals, promoSort, promoSortDir);
+  }
+
+  function sortPromoDeals(deals, key, dir = 1) {
+    return [...deals].sort((a, b) => {
+      let valA = a[key];
+      let valB = b[key];
+
+      if (key === 'modelName') {
+        valA = a.model && a.model.name ? a.model.name : '';
+        valB = b.model && b.model.name ? b.model.name : '';
+      } else if (key === 'providerName' || key === 'dealProviderName' || key === 'sourceLabel') {
+        valA = valA || '';
+        valB = valB || '';
+      } else if (key === 'updatedAt') {
+        valA = Date.parse(a.updatedAt || 0);
+        valB = Date.parse(b.updatedAt || 0);
+      }
+
+      if (valA == null || Number.isNaN(valA)) valA = dir === 1 ? Infinity : -Infinity;
+      if (valB == null || Number.isNaN(valB)) valB = dir === 1 ? Infinity : -Infinity;
+
+      if (typeof valA === 'string' && typeof valB === 'string') return valA.localeCompare(valB) * dir;
+      const diff = (valA - valB) * dir;
+      if (diff !== 0) return diff;
+      return (a.model.name || '').localeCompare(b.model.name || '');
+    });
+  }
+
+  function getDefaultSortDir(key) {
+    return ['discountPercent', 'savingsTotal', 'updatedAt'].includes(key) ? -1 : 1;
+  }
+
+  function sortableHeader(label, key, table = '') {
+    const tableAttr = table ? ` data-table="${table}"` : '';
+    return `<th class="sortable" data-sort="${key}"${tableAttr}><button class="table-sort-button" type="button">${escHtml(label)} <span class="sort-icon">↕</span></button></th>`;
+  }
+
+  function updateSortHeaders(root, table, activeSort, activeDir) {
+    root.querySelectorAll(`th.sortable[data-table="${table}"]`).forEach(th => {
+      th.classList.remove('active', 'asc', 'desc');
+      const icon = th.querySelector('.sort-icon');
+      if (th.dataset.sort === activeSort) {
+        th.classList.add('active', activeDir === 1 ? 'asc' : 'desc');
+        if (icon) icon.textContent = activeDir === 1 ? '↑' : '↓';
+      } else if (icon) {
+        icon.textContent = '↕';
+      }
     });
   }
 
@@ -1072,20 +1113,21 @@
         <table class="promo-table">
           <thead>
             <tr>
-              <th>${escHtml(modelLabel)}</th>
-              <th>${escHtml(sourceLabel)}</th>
-              <th>${escHtml(discountLabel)}</th>
-              <th>${escHtml(officialLabel)}</th>
-              <th>${escHtml(promoLabel)}</th>
-              <th>${escHtml(savingsLabel)}</th>
-              <th>${escHtml(updatedLabel)}</th>
-              <th></th>
+              ${sortableHeader(modelLabel, 'modelName', 'promo')}
+              ${sortableHeader(sourceLabel, 'dealProviderName', 'promo')}
+              ${sortableHeader(discountLabel, 'discountPercent', 'promo')}
+              ${sortableHeader(officialLabel, 'officialTotal', 'promo')}
+              ${sortableHeader(promoLabel, 'dealTotal', 'promo')}
+              ${sortableHeader(savingsLabel, 'savingsTotal', 'promo')}
+              ${sortableHeader(updatedLabel, 'updatedAt', 'promo')}
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>${rows}</tbody>
         </table>
       </div>
     `;
+    updateSortHeaders(grid, 'promo', promoSort, promoSortDir);
     grid.querySelectorAll('[data-promo-model]').forEach(btn => {
       btn.addEventListener('click', () => {
         const modelId = btn.getAttribute('data-promo-model');

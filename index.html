@@ -47,12 +47,12 @@
 
       <nav class="nav-links" id="main-nav" aria-label="Main navigation">
         <div class="nav-dropdown-container">
-          <a href="#compare" class="nav-link active" data-tab="compare" data-i18n="nav.compare">Compare <span style="font-size:0.8em;opacity:0.7;">▾</span></a>
+          <a href="#compare" class="nav-link" data-tab="compare" data-i18n="nav.compare">Compare <span style="font-size:0.8em;opacity:0.7;">▾</span></a>
           <ul class="nav-dropdown-menu" id="compare-nav-menu">
             <!-- Dynamically populated by app.js -->
           </ul>
         </div>
-        <a href="#promos" class="nav-link" data-tab="promos" data-i18n="nav.promos">Promo</a>
+        <a href="#promos" class="nav-link active" data-tab="promos" data-i18n="nav.promos">Promo</a>
         <a href="#models" class="nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
         <a href="#best-picks" class="nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
       </nav>
@@ -95,7 +95,7 @@
   <!-- Mobile Navigation Menu — outside header to escape stacking context -->
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
     <a href="#compare" class="mobile-nav-link" data-tab="compare" data-i18n="nav.compare">Compare</a>
-    <a href="#promos" class="mobile-nav-link" data-tab="promos" data-i18n="nav.promos">Promo</a>
+    <a href="#promos" class="mobile-nav-link active" data-tab="promos" data-i18n="nav.promos">Promo</a>
     <a href="#models" class="mobile-nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
     <a href="#best-picks" class="mobile-nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
   </nav>
@@ -184,14 +184,14 @@
           <table class="price-table" id="price-table">
             <thead>
               <tr>
-                <th class="sortable" data-sort="provider" data-i18n="table.provider">Provider <span class="sort-icon">↕</span></th>
-                <th class="sortable" data-sort="name" data-i18n="table.model">Model <span class="sort-icon">↕</span></th>
-                <th class="sortable" data-sort="inputPrice" data-i18n="table.input_price">Input (per 1M) <span class="sort-icon">↕</span></th>
-                <th class="sortable" data-sort="cachePrice" data-i18n="table.cache_price">Cache (per 1M) <span class="sort-icon">↕</span></th>
-                <th class="sortable" data-sort="outputPrice" data-i18n="table.output_price">Output (per 1M) <span class="sort-icon">↕</span></th>
-                <th class="sortable" data-sort="contextWindow" data-i18n="table.context">Context <span class="sort-icon">↕</span></th>
-                <th class="sortable" data-sort="category" data-i18n="table.category">Category <span class="sort-icon">↕</span></th>
-                <th class="sortable" data-sort="updatedAt" data-i18n="table.updated">Updated <span class="sort-icon">↕</span></th>
+                <th class="sortable" data-sort="provider"><button class="table-sort-button" type="button"><span data-i18n="table.provider">Provider</span> <span class="sort-icon">↕</span></button></th>
+                <th class="sortable" data-sort="name"><button class="table-sort-button" type="button"><span data-i18n="table.model">Model</span> <span class="sort-icon">↕</span></button></th>
+                <th class="sortable" data-sort="inputPrice"><button class="table-sort-button" type="button"><span data-i18n="table.input_price">Input (per 1M)</span> <span class="sort-icon">↕</span></button></th>
+                <th class="sortable" data-sort="cachePrice"><button class="table-sort-button" type="button"><span data-i18n="table.cache_price">Cache (per 1M)</span> <span class="sort-icon">↕</span></button></th>
+                <th class="sortable" data-sort="outputPrice"><button class="table-sort-button" type="button"><span data-i18n="table.output_price">Output (per 1M)</span> <span class="sort-icon">↕</span></button></th>
+                <th class="sortable" data-sort="contextWindow"><button class="table-sort-button" type="button"><span data-i18n="table.context">Context</span> <span class="sort-icon">↕</span></button></th>
+                <th class="sortable" data-sort="category"><button class="table-sort-button" type="button"><span data-i18n="table.category">Category</span> <span class="sort-icon">↕</span></button></th>
+                <th class="sortable" data-sort="updatedAt"><button class="table-sort-button" type="button"><span data-i18n="table.updated">Updated</span> <span class="sort-icon">↕</span></button></th>
               </tr>
             </thead>
             <tbody id="price-table-body">
@@ -204,7 +204,7 @@
     </section>
 
     <!-- ── COMPARE ────────────────────────────────────────── -->
-    <section class="section" id="section-compare" aria-label="Multi-provider price comparison">
+    <section class="section hidden" id="section-compare" aria-label="Multi-provider price comparison">
       <div style="display:flex; align-items:center; justify-content:flex-start; gap:var(--space-xl); flex-wrap:wrap; margin-bottom:var(--space-2xl);">
         <div>
           <h2 class="section-title" style="margin-bottom:var(--space-xs);" data-i18n="compare.title">Multi-Provider Price Comparison</h2>
@@ -233,7 +233,7 @@
     </section>
 
     <!-- ── PROMOS ─────────────────────────────────────────── -->
-    <section class="section hidden" id="section-promos" aria-label="Major AI model promos">
+    <section class="section" id="section-promos" aria-label="Major AI model promos">
       <h2 class="section-title" data-i18n="promo.title">Promo</h2>
       <p class="section-subtitle" data-i18n="promo.subtitle">AI models currently at least 50% cheaper than their official price, detected from connected API pricing sources</p>
 
