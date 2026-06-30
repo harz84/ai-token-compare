@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-06-30T08:28:15.023Z",
-  "generatedAt": "2026-06-30T08:28:15.095Z",
+  "fetchedAt": "2026-06-30T18:59:57.332Z",
+  "generatedAt": "2026-06-30T18:59:57.418Z",
   "mappedCount": 89,
   "matchedCount": 88,
   "missingCount": 1,
@@ -705,9 +705,9 @@
     {
       "internalId": "deepseek-v4-flash",
       "openrouterId": "deepseek/deepseek-v4-flash",
-      "inputPrice": 0.09,
+      "inputPrice": 0.098,
       "cachePrice": 0.02,
-      "outputPrice": 0.18,
+      "outputPrice": 0.196,
       "contextWindow": 1048576
     }
   ],

@@ -14,8 +14,8 @@
     "minimax": "https://www.minimax.io/platform",
     "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
   },
-  "fetchedAt": "2026-06-30T08:28:15.129Z",
-  "count": 44,
+  "fetchedAt": "2026-06-30T18:59:57.456Z",
+  "count": 43,
   "patches": [
     [
       "gpt-5-5-official",
@@ -329,33 +329,6 @@
         "inputPrice": 0.3,
         "cachePrice": 0.03,
         "outputPrice": 2.5,
-        "pricingSource": "official-docs",
-        "pricingSourceType": "official",
-        "confidence": "high",
-        "official": {
-          "provider": "google",
-          "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-          "updatedAt": "2026-06-30"
-        },
-        "contextWindow": 1000000,
-        "maxOutput": 65536
-      }
-    ],
-    [
-      "gemini-2-5-flash-lite",
-      {
-        "officialPricing": {
-          "inputPrice": 0.1,
-          "cachePrice": 0.01,
-          "outputPrice": 0.4,
-          "source": "official-docs",
-          "sourceType": "official",
-          "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-          "updatedAt": "2026-06-30"
-        },
-        "inputPrice": 0.1,
-        "cachePrice": 0.01,
-        "outputPrice": 0.4,
         "pricingSource": "official-docs",
         "pricingSourceType": "official",
         "confidence": "high",

@@ -14,11 +14,11 @@
     "minimax": "https://www.minimax.io/platform",
     "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
   },
-  "fetchedAt": "2026-06-30T08:28:15.129Z",
-  "generatedAt": "2026-06-30T08:28:19.040Z",
+  "fetchedAt": "2026-06-30T18:59:57.456Z",
+  "generatedAt": "2026-06-30T19:00:00.970Z",
   "mappedCount": 64,
-  "matchedCount": 44,
-  "missingCount": 20,
+  "matchedCount": 43,
+  "missingCount": 21,
   "fetchErrors": [
     {
       "provider": "deepseek",
@@ -132,15 +132,6 @@
       "inputPrice": 0.3,
       "cachePrice": 0.03,
       "outputPrice": 2.5,
-      "contextWindow": 1000000,
-      "maxOutput": 65536
-    },
-    {
-      "internalId": "gemini-2-5-flash-lite",
-      "provider": "google",
-      "inputPrice": 0.1,
-      "cachePrice": 0.01,
-      "outputPrice": 0.4,
       "contextWindow": 1000000,
       "maxOutput": 65536
     },
@@ -428,6 +419,11 @@
     {
       "internalId": "claude-opus-4-8-fast",
       "provider": "anthropic",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "gemini-2-5-flash-lite",
+      "provider": "google",
       "reason": "alias-not-found"
     },
     {

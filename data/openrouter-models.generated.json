@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-06-30T08:28:15.023Z",
-  "count": 338,
+  "fetchedAt": "2026-06-30T18:59:57.332Z",
+  "count": 339,
   "models": [
     {
       "id": "~anthropic/claude-fable-latest",
@@ -171,9 +171,9 @@
       "modelSlug": "claude-sonnet-latest",
       "canonicalSlug": "~anthropic/claude-sonnet-latest",
       "contextWindow": 1000000,
-      "inputPrice": 3,
-      "outputPrice": 15,
-      "cachePrice": 0.3,
+      "inputPrice": 2,
+      "outputPrice": 10,
+      "cachePrice": 0.2,
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
@@ -186,11 +186,8 @@
         "response_format",
         "stop",
         "structured_outputs",
-        "temperature",
         "tool_choice",
         "tools",
-        "top_k",
-        "top_p",
         "verbosity"
       ],
       "architecture": {
@@ -213,12 +210,12 @@
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.000003",
-        "completion": "0.000015",
+        "prompt": "0.000002",
+        "completion": "0.00001",
         "web_search": "0.01",
-        "input_cache_read": "0.0000003",
-        "input_cache_write": "0.00000375",
-        "input_cache_write_1h": "0.000006"
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "input_cache_write_1h": "0.000004"
       }
     },
     {
@@ -1808,6 +1805,60 @@
       }
     },
     {
+      "id": "anthropic/claude-sonnet-5",
+      "name": "Anthropic: Claude Sonnet 5",
+      "provider": "anthropic",
+      "modelSlug": "claude-sonnet-5",
+      "canonicalSlug": "anthropic/claude-sonnet-5-20260630",
+      "contextWindow": 1000000,
+      "inputPrice": 2,
+      "outputPrice": 10,
+      "cachePrice": 0.2,
+      "source": "openrouter-api",
+      "sourceType": "curated",
+      "sourceUrl": "https://openrouter.ai/api/v1/models",
+      "updatedAt": "2026-06-30",
+      "supportedParameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "topProvider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "modality": null,
+      "rawPricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "input_cache_write_1h": "0.000004"
+      }
+    },
+    {
       "id": "arcee-ai/coder-large",
       "name": "Arcee AI: Coder Large",
       "provider": "arcee-ai",
@@ -3160,8 +3211,8 @@
       "modelSlug": "deepseek-v4-flash",
       "canonicalSlug": "deepseek/deepseek-v4-flash-20260423",
       "contextWindow": 1048576,
-      "inputPrice": 0.09,
-      "outputPrice": 0.18,
+      "inputPrice": 0.098,
+      "outputPrice": 0.196,
       "cachePrice": 0.02,
       "source": "openrouter-api",
       "sourceType": "curated",
@@ -3200,14 +3251,14 @@
         "instruct_type": null
       },
       "topProvider": {
-        "context_length": 1000000,
-        "max_completion_tokens": 65536,
+        "context_length": 1048575,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.00000009",
-        "completion": "0.00000018",
+        "prompt": "0.000000098",
+        "completion": "0.000000196",
         "input_cache_read": "0.00000002"
       }
     },
@@ -4001,6 +4052,54 @@
         "internal_reasoning": "0.0000015",
         "input_cache_read": "0.000000025",
         "input_cache_write": "0.00000008333333333333334"
+      }
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite-image",
+      "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+      "provider": "google",
+      "modelSlug": "gemini-3.1-flash-lite-image",
+      "canonicalSlug": "google/gemini-3.1-flash-lite-image-20260630",
+      "contextWindow": 65536,
+      "inputPrice": 0.25,
+      "outputPrice": 1.5,
+      "cachePrice": 0,
+      "source": "openrouter-api",
+      "sourceType": "curated",
+      "sourceUrl": "https://openrouter.ai/api/v1/models",
+      "updatedAt": "2026-06-30",
+      "supportedParameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "temperature",
+        "top_p"
+      ],
+      "architecture": {
+        "modality": "text+image->text+image",
+        "input_modalities": [
+          "image",
+          "text"
+        ],
+        "output_modalities": [
+          "image",
+          "text"
+        ],
+        "tokenizer": "Gemini",
+        "instruct_type": null
+      },
+      "topProvider": {
+        "context_length": 65536,
+        "max_completion_tokens": 66000,
+        "is_moderated": false
+      },
+      "modality": null,
+      "rawPricing": {
+        "prompt": "0.00000025",
+        "completion": "0.0000015",
+        "web_search": "0.014"
       }
     },
     {
@@ -12393,57 +12492,6 @@
       }
     },
     {
-      "id": "openrouter/owl-alpha",
-      "name": "Owl Alpha",
-      "provider": "openrouter",
-      "modelSlug": "owl-alpha",
-      "canonicalSlug": "openrouter/owl-alpha",
-      "contextWindow": 1048756,
-      "inputPrice": 0,
-      "outputPrice": 0,
-      "cachePrice": 0,
-      "source": "openrouter-api",
-      "sourceType": "curated",
-      "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-06-30",
-      "supportedParameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "topProvider": {
-        "context_length": 1048756,
-        "max_completion_tokens": 262144,
-        "is_moderated": false
-      },
-      "modality": null,
-      "rawPricing": {
-        "prompt": "0",
-        "completion": "0"
-      }
-    },
-    {
       "id": "openrouter/pareto-code",
       "name": "Pareto Code Router",
       "provider": "openrouter",
@@ -15230,8 +15278,8 @@
       "modelSlug": "qwen3.6-27b",
       "canonicalSlug": "qwen/qwen3.6-27b-20260422",
       "contextWindow": 262144,
-      "inputPrice": 0.2596,
-      "outputPrice": 2.385,
+      "inputPrice": 0.285,
+      "outputPrice": 2.4,
       "cachePrice": 0,
       "source": "openrouter-api",
       "sourceType": "curated",
@@ -15278,8 +15326,8 @@
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.0000002596",
-        "completion": "0.000002385"
+        "prompt": "0.000000285",
+        "completion": "0.0000024"
       }
     },
     {

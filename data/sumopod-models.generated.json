@@ -1,6 +1,6 @@
 {
   "source": "https://ai.sumopod.com/model/info",
-  "fetchedAt": "2026-06-30T07:58:59.382Z",
+  "fetchedAt": "2026-06-30T19:00:01.012Z",
   "count": 61,
   "models": [
     {
@@ -2026,50 +2026,6 @@
     },
     {
       "id": "glm-5-turbo",
-      "provider": "openai",
-      "mode": null,
-      "inputPrice": 1.2,
-      "cachePrice": 0.26,
-      "outputPrice": 4,
-      "contextWindow": null,
-      "maxOutput": null,
-      "supportsPromptCaching": false,
-      "supportsVision": false,
-      "supportsFunctionCalling": false,
-      "supportsReasoning": false,
-      "source": "sumopod-api",
-      "sourceType": "router",
-      "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-06-30",
-      "raw": {
-        "model_name": "glm-5-turbo",
-        "litellm_params": {
-          "input_cost_per_token": 0.0000012,
-          "output_cost_per_token": 0.000004,
-          "cache_creation_input_token_cost": 0.0000012,
-          "cache_read_input_token_cost": 2.6e-7,
-          "custom_llm_provider": "openai",
-          "litellm_credential_name": "tokenhubtencent-dev@sumopod.com",
-          "use_in_pass_through": false,
-          "use_litellm_proxy": false,
-          "merge_reasoning_content_in_choices": false,
-          "model": "glm-5-turbo"
-        },
-        "model_info": {
-          "id": "1b1a7fd7-add0-4cc2-99b0-9742f9b7deb3",
-          "db_model": true,
-          "blocked": false,
-          "input_cost_per_token": 0.0000012,
-          "output_cost_per_token": 0.000004,
-          "cache_read_input_token_cost": 2.6e-7,
-          "cache_creation_input_token_cost": 0.0000012,
-          "access_via_team_ids": [],
-          "direct_access": false
-        }
-      }
-    },
-    {
-      "id": "glm-5-turbo",
       "provider": "z.ai",
       "mode": null,
       "inputPrice": 1.2,
@@ -2114,6 +2070,50 @@
           "output_cost_per_token": 0.000004,
           "cache_read_input_token_cost": 2.6e-7,
           "cache_creation_input_token_cost": 0.0000012
+        }
+      }
+    },
+    {
+      "id": "glm-5-turbo",
+      "provider": "openai",
+      "mode": null,
+      "inputPrice": 1.2,
+      "cachePrice": 0.26,
+      "outputPrice": 4,
+      "contextWindow": null,
+      "maxOutput": null,
+      "supportsPromptCaching": false,
+      "supportsVision": false,
+      "supportsFunctionCalling": false,
+      "supportsReasoning": false,
+      "source": "sumopod-api",
+      "sourceType": "router",
+      "sourceUrl": "https://ai.sumopod.com/model/info",
+      "updatedAt": "2026-06-30",
+      "raw": {
+        "model_name": "glm-5-turbo",
+        "litellm_params": {
+          "input_cost_per_token": 0.0000012,
+          "output_cost_per_token": 0.000004,
+          "cache_creation_input_token_cost": 0.0000012,
+          "cache_read_input_token_cost": 2.6e-7,
+          "custom_llm_provider": "openai",
+          "litellm_credential_name": "tokenhubtencent-dev@sumopod.com",
+          "use_in_pass_through": false,
+          "use_litellm_proxy": false,
+          "merge_reasoning_content_in_choices": false,
+          "model": "glm-5-turbo"
+        },
+        "model_info": {
+          "id": "1b1a7fd7-add0-4cc2-99b0-9742f9b7deb3",
+          "db_model": true,
+          "blocked": false,
+          "input_cost_per_token": 0.0000012,
+          "output_cost_per_token": 0.000004,
+          "cache_read_input_token_cost": 2.6e-7,
+          "cache_creation_input_token_cost": 0.0000012,
+          "access_via_team_ids": [],
+          "direct_access": false
         }
       }
     },
