@@ -39,6 +39,7 @@
 
     renderPriceTable();
     renderCompareSection();
+    renderFreeModels();
     renderBestPicks();
     renderPromos();
 
@@ -135,6 +136,7 @@
     applyI18n();
     renderPriceTable();
     renderCompareSection();
+    renderFreeModels();
     renderBestPicks();
     renderPromos();
   }
@@ -142,6 +144,7 @@
   function onCurrencyChanged() {
     renderPriceTable();
     renderCompareSection();
+    renderFreeModels();
     renderBestPicks();
   }
 
@@ -310,6 +313,7 @@
     const map = {
       models:     'section-models',
       compare:    'section-compare',
+      freeModels: 'section-free-models',
       bestPicks:  'section-best-picks',
       promos:     'section-promos',
     };
@@ -762,6 +766,68 @@
     grid.innerHTML = html;
 
     updateSortHeaders(grid, 'compare', compareSort, compareSortDir);
+  }
+
+  /* ==========================================================
+     FREE MODELS
+     ========================================================== */
+  function renderFreeModels() {
+    const grid = document.getElementById('free-models-grid');
+    if (!grid) return;
+
+    const models = typeof FREE_API_MODELS !== 'undefined' ? FREE_API_MODELS : [];
+    if (!models.length) {
+      grid.innerHTML = '<p class="compare-placeholder">' +
+        (typeof t === 'function' ? t('general.no_results') || 'No free models found' : 'No free models found') +
+        '</p>';
+      return;
+    }
+
+    const isId = typeof getLanguage === 'function' && getLanguage() === 'id';
+    const endpointLabel = typeof t === 'function' ? t('free_models.endpoint') || 'Endpoint' : 'Endpoint';
+    const rateLimitsLabel = typeof t === 'function' ? t('free_models.rate_limits') || 'Rate limits' : 'Rate limits';
+    const signupLabel = typeof t === 'function' ? t('free_models.signup') || 'Get API Key' : 'Get API Key';
+    const docsLabel = typeof t === 'function' ? t('free_models.docs') || 'Docs' : 'Docs';
+    const noCardLabel = typeof t === 'function' ? t('free_models.no_card') || 'No card' : 'No card';
+    const cardRequiredLabel = typeof t === 'function' ? t('free_models.card_required') || 'Card required' : 'Card required';
+
+    const html = models.map(model => {
+      const provider = getProvider(model.provider);
+      const providerName = provider ? provider.name : model.provider;
+      const providerColor = provider ? provider.color : 'var(--primary)';
+      const note = isId ? (model.note_id || model.note_en || '') : (model.note_en || model.note_id || '');
+      const capabilityBadges = (model.capabilities || []).map(capability => `<span class="free-model-chip">${escHtml(capability)}</span>`).join('');
+
+      return `
+        <article class="free-model-card" style="--provider-color:${providerColor}">
+          <div class="free-model-header">
+            <div>
+              <span class="provider-pill compact">
+                <span class="provider-dot" style="background:${providerColor}"></span>
+                ${escHtml(providerName)}
+              </span>
+              <h3 class="free-model-name">${escHtml(model.modelName)}</h3>
+            </div>
+            <span class="free-model-price">$0</span>
+          </div>
+          <p class="free-model-id">${escHtml(model.modelId)}</p>
+          <p class="free-model-note">${escHtml(note)}</p>
+          <div class="free-model-meta">
+            <span><b>${escHtml(endpointLabel)}</b> ${escHtml(model.apiEndpoint)}</span>
+            <span><b>Context</b> ${formatContext(model.contextWindow)}</span>
+            <span><b>${escHtml(rateLimitsLabel)}</b> ${escHtml(model.rateLimits)}</span>
+            <span><b>${model.requiresCard ? escHtml(cardRequiredLabel) : escHtml(noCardLabel)}</b></span>
+          </div>
+          <div class="free-model-capabilities">${capabilityBadges}</div>
+          <div class="free-model-actions">
+            <a class="free-model-action primary" href="${escHtml(model.signup)}" target="_blank" rel="noopener">${escHtml(signupLabel)}</a>
+            <a class="free-model-action" href="${escHtml(model.docs)}" target="_blank" rel="noopener">${escHtml(docsLabel)}</a>
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    grid.innerHTML = html;
   }
 
   /* ==========================================================

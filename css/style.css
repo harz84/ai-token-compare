@@ -327,6 +327,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--space-md);
   height: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
@@ -337,6 +338,7 @@ button {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  flex: 0 0 auto;
   font-weight: 800;
   font-size: 1.25rem;
   white-space: nowrap;
@@ -361,21 +363,32 @@ button {
   object-fit: cover;
 }
 
+.logo-text {
+  white-space: nowrap;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
-  gap: var(--space-xl);
+  justify-content: center;
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: clamp(0.25rem, 0.9vw, 0.875rem);
 }
 
 .nav-links a {
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: clamp(0.72rem, 0.85vw, 0.875rem);
+  font-weight: 700;
   color: var(--text-secondary);
   transition: all var(--transition-base);
-  padding: var(--space-sm) var(--space-lg);
+  padding: 0.45rem clamp(0.55rem, 0.9vw, 0.95rem);
   border-radius: var(--radius-full);
   background: transparent;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  white-space: nowrap;
   text-decoration: none;
 }
 
@@ -395,6 +408,7 @@ button {
 .nav-dropdown-container {
   position: relative;
   display: inline-block;
+  flex: 0 1 auto;
 }
 
 .nav-dropdown-menu {
@@ -496,10 +510,22 @@ button {
   }
 }
 
+@media (max-width: 1180px) and (min-width: 769px) {
+  .logo {
+    font-size: 1.05rem;
+  }
+
+  .header-controls .toggle-container {
+    display: none;
+  }
+}
+
 .header-controls {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  gap: clamp(0.35rem, 0.75vw, var(--space-md));
 }
 
 .theme-toggle-btn {
@@ -1319,6 +1345,143 @@ tr.cheapest:hover {
 .price-diff-badge.expensive-diff {
   background: rgba(239, 68, 68, 0.15);
   color: var(--danger);
+}
+
+/* ============================================================
+   FREE MODELS SECTION
+   ============================================================ */
+.free-models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.free-model-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 100%;
+  padding: var(--space-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--provider-color, var(--accent));
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.free-model-card:hover {
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.free-model-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.free-model-name {
+  margin-top: var(--space-sm);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.free-model-price {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.14);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.free-model-id {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.free-model-note {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.free-model-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+}
+
+.free-model-meta b {
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.free-model-capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.free-model-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-full);
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  color: var(--primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.free-model-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: auto;
+}
+
+.free-model-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: 38px;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 800;
+  background: var(--bg-card-alt);
+}
+
+.free-model-action.primary {
+  border-color: rgba(16, 185, 129, 0.28);
+  background: rgba(16, 185, 129, 0.14);
+  color: var(--accent);
+}
+
+.free-model-action:hover {
+  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--primary);
 }
 
 /* ============================================================
@@ -2346,6 +2509,10 @@ tr.cheapest:hover {
     grid-template-columns: 1fr;
   }
 
+  .free-model-actions {
+    flex-direction: column;
+  }
+
   .best-pick-card.compact {
     align-items: stretch;
     flex-direction: column;
@@ -2410,53 +2577,64 @@ tr.cheapest:hover {
     font-size: 0.8125rem;
   }
 
-  .price-table:not(.compare-price-table) table {
-    font-size: 0.8125rem;
-    display: block;
+  #price-table {
+    min-width: 860px;
+    font-size: 0.78rem;
   }
 
-  .price-table:not(.compare-price-table) thead {
-    display: none; /* Hide header on mobile */
+  #price-table thead {
+    display: table-header-group;
   }
 
-  .price-table:not(.compare-price-table) tbody {
-    display: block;
-    width: 100%;
+  #price-table tbody {
+    display: table-row-group;
+    width: auto;
   }
 
-  .price-table:not(.compare-price-table) tbody tr {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: var(--space-md);
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    padding: var(--space-sm) 0;
+  #price-table tbody tr {
+    display: table-row;
+    margin-bottom: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
   }
 
-  .price-table:not(.compare-price-table) tbody tr:hover {
-    background: rgba(255, 255, 255, 0.04);
+  #price-table tbody tr:hover {
+    background: var(--bg-card-hover);
   }
 
-  .price-table:not(.compare-price-table) tbody td {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--space-sm) var(--space-md);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    text-align: right; /* Right align the value */
+  #price-table tbody td {
+    display: table-cell;
+    padding: 0.65rem 0.6rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+    vertical-align: top;
   }
 
-  .price-table:not(.compare-price-table) tbody td:last-child {
-    border-bottom: none;
+  #price-table tbody td::before {
+    content: none;
   }
 
-  .price-table:not(.compare-price-table) tbody td::before {
-    content: attr(data-label);
-    font-weight: 600;
-    color: var(--text-secondary);
-    margin-right: var(--space-md);
-    text-align: left; /* Left align the label */
+  #price-table thead th {
+    padding: 0.7rem 0.6rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  #price-table .cap-badges {
+    gap: 0.25rem;
+    margin-top: 0.35rem;
+  }
+
+  #price-table .cap-badge {
+    font-size: 0.62rem;
+    padding: 0.16rem 0.42rem;
+  }
+
+  #price-table .model-name-cell {
+    min-width: 180px;
   }
 
   .calculator-container {
@@ -2494,6 +2672,12 @@ tr.cheapest:hover {
 
   .price-table {
     border-radius: var(--radius-lg);
+  }
+
+  .price-table-container .table-wrapper {
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -3005,14 +3189,13 @@ textarea {
     flex-wrap: wrap;
   }
 
-  .price-table:not(.compare-price-table),
   .table-wrapper:not(.compare-table-wrapper) {
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
-  .price-table:not(.compare-price-table) table,
-  .price-table:not(.compare-price-table) {
-    min-width: 0;
+  #price-table {
+    min-width: 860px;
   }
 
   .compare-table-wrapper {

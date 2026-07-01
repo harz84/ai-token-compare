@@ -15,6 +15,7 @@ const TRANSLATIONS = {
     'nav.compare': 'Compare',
     'nav.best_picks': 'Best Picks',
     'nav.promos': 'Promo',
+    'nav.free_models': 'Free Models',
 
     // ─── Table Headers ────────────────────────────────────────────────────────
     'table.provider': 'Provider',
@@ -53,6 +54,16 @@ const TRANSLATIONS = {
     'compare.vs_official': 'vs official price',
     'compare.official_price': 'Official Price',
     'compare.no_alternatives': 'No third-party alternatives available for this model',
+
+    // ─── Free Models ─────────────────────────────────────────────────────────
+    'free_models.title': 'Free AI Models',
+    'free_models.subtitle': 'Models with free API access, free tiers, or near-zero cost offers for testing and lightweight production usage',
+    'free_models.signup': 'Get API Key',
+    'free_models.docs': 'Docs',
+    'free_models.no_card': 'No card',
+    'free_models.card_required': 'Card required',
+    'free_models.rate_limits': 'Rate limits',
+    'free_models.endpoint': 'Endpoint',
 
     // ─── Best Picks ───────────────────────────────────────────────────────────
     'best_picks.title': 'Best Picks',
@@ -129,6 +140,7 @@ const TRANSLATIONS = {
     'nav.compare': 'Bandingkan',
     'nav.best_picks': 'Best Picks',
     'nav.promos': 'Promo',
+    'nav.free_models': 'Model Gratis',
 
     // ─── Table Headers ────────────────────────────────────────────────────────
     'table.provider': 'Penyedia',
@@ -167,6 +179,16 @@ const TRANSLATIONS = {
     'compare.vs_official': 'vs harga resmi',
     'compare.official_price': 'Harga Resmi',
     'compare.no_alternatives': 'Tidak ada alternatif pihak ketiga untuk model ini',
+
+    // ─── Free Models ─────────────────────────────────────────────────────────
+    'free_models.title': 'Model AI Gratis',
+    'free_models.subtitle': 'Model dengan akses API gratis, free tier, atau biaya nyaris nol untuk testing dan penggunaan ringan',
+    'free_models.signup': 'Ambil API Key',
+    'free_models.docs': 'Dokumentasi',
+    'free_models.no_card': 'Tanpa kartu',
+    'free_models.card_required': 'Perlu kartu',
+    'free_models.rate_limits': 'Rate limit',
+    'free_models.endpoint': 'Endpoint',
 
     // ─── Best Picks ───────────────────────────────────────────────────────────
     'best_picks.title': 'Best Picks',
