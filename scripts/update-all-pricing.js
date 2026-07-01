@@ -8,6 +8,7 @@ const REPORT_PATH = path.join(PROJECT_ROOT, 'data', 'pricing-update-report.json'
 const DATA_JS_PATH = path.join(PROJECT_ROOT, 'js', 'data.js');
 const INDEX_HTML_PATH = path.join(PROJECT_ROOT, 'index.html');
 const OPENROUTER_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'openrouter-merge.generated.js');
+const OPENROUTER_FREE_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'openrouter-free-models.generated.js');
 const OFFICIAL_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'official-pricing.generated.js');
 const SUMOPOD_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'sumopod-merge.generated.js');
 const DEEPINFRA_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'deepinfra-merge.generated.js');
@@ -24,6 +25,12 @@ const STEPS = [
     command: 'node',
     args: ['scripts/merge-openrouter-pricing.js'],
     outputs: ['js/openrouter-merge.generated.js', 'data/openrouter-merge-report.json'],
+  },
+  {
+    name: 'build-openrouter-free-models',
+    command: 'node',
+    args: ['scripts/build-openrouter-free-models.js'],
+    outputs: ['js/openrouter-free-models.generated.js', 'data/openrouter-free-models-report.json'],
   },
   {
     name: 'fetch-official-pricing',
@@ -110,6 +117,7 @@ function readJsonIfExists(relativePath) {
 
 function buildSummary() {
   const openrouterReport = readJsonIfExists('data/openrouter-merge-report.json');
+  const openrouterFreeReport = readJsonIfExists('data/openrouter-free-models-report.json');
   const officialReport = readJsonIfExists('data/official-pricing-report.json');
   const sumopodReport = readJsonIfExists('data/sumopod-merge-report.json');
   const deepinfraReport = readJsonIfExists('data/deepinfra-merge-report.json');
@@ -120,6 +128,12 @@ function buildSummary() {
           matched: openrouterReport.matchedCount,
           missing: openrouterReport.missingCount,
           fetchedAt: openrouterReport.fetchedAt,
+        }
+      : null,
+    openrouterFreeModels: openrouterFreeReport
+      ? {
+          count: openrouterFreeReport.count,
+          fetchedAt: openrouterFreeReport.fetchedAt,
         }
       : null,
     official: officialReport
@@ -178,7 +192,7 @@ function validateRuntimePatches() {
   context.globalThis = context;
   vm.createContext(context);
 
-  [DATA_JS_PATH, OFFICIAL_PATCH_PATH, OPENROUTER_PATCH_PATH, SUMOPOD_PATCH_PATH, DEEPINFRA_PATCH_PATH].forEach(filePath => {
+  [DATA_JS_PATH, OFFICIAL_PATCH_PATH, OPENROUTER_PATCH_PATH, OPENROUTER_FREE_PATCH_PATH, SUMOPOD_PATCH_PATH, DEEPINFRA_PATCH_PATH].forEach(filePath => {
     vm.runInContext(fs.readFileSync(filePath, 'utf8'), context, { filename: filePath });
   });
 
@@ -191,6 +205,11 @@ function validateRuntimePatches() {
   const sumopodPatched = models.filter(model => model.thirdPartyPricing && model.thirdPartyPricing.sumopod && model.thirdPartyPricing.sumopod.source === 'sumopod-api').length;
   const deepinfraPatched = models.filter(model => model.thirdPartyPricing && model.thirdPartyPricing.deepinfra && model.thirdPartyPricing.deepinfra.source === 'deepinfra-api').length;
 
+  const freeModels = context.window.FREE_API_MODELS;
+  assert(Array.isArray(freeModels), 'window.FREE_API_MODELS is not available after runtime validation');
+  const openrouterFreeCount = freeModels.filter(model => model.provider === 'openrouter').length;
+  assert(openrouterFreeCount > 0, 'No OpenRouter free models were merged into FREE_API_MODELS');
+
   assert(openrouterPatched > 0, 'No models received OpenRouter patches');
   assert(officialPatched > 0, 'No models received official pricing patches');
 
@@ -200,6 +219,8 @@ function validateRuntimePatches() {
     officialPatched,
     sumopodPatched,
     deepinfraPatched,
+    freeModelCount: freeModels.length,
+    openrouterFreeCount,
   };
 }
 
@@ -209,6 +230,7 @@ function updateIndexScriptVersions(version) {
     'js/data.js',
     'js/official-pricing.generated.js',
     'js/openrouter-merge.generated.js',
+    'js/openrouter-free-models.generated.js',
     'js/sumopod-merge.generated.js',
     'js/deepinfra-merge.generated.js',
     'js/i18n.js',
@@ -229,9 +251,11 @@ function validateOutputs() {
   const files = [
     validateGeneratedFile('data/openrouter-models.generated.json'),
     validateGeneratedFile('data/openrouter-merge-report.json'),
+    validateGeneratedFile('data/openrouter-free-models-report.json'),
     validateGeneratedFile('data/official-pricing.generated.json'),
     validateGeneratedFile('data/official-pricing-report.json'),
     validateGeneratedFile('js/openrouter-merge.generated.js'),
+    validateGeneratedFile('js/openrouter-free-models.generated.js'),
     validateGeneratedFile('js/official-pricing.generated.js'),
     validateGeneratedFile('js/sumopod-merge.generated.js'),
     validateGeneratedFile('js/deepinfra-merge.generated.js'),
@@ -245,15 +269,19 @@ function validateOutputs() {
   files.push(validateGeneratedFile('data/deepinfra-merge-report.json'));
 
   checkSyntax('scripts/update-all-pricing.js');
+  checkSyntax('scripts/build-openrouter-free-models.js');
   checkSyntax('scripts/fetch-sumopod-models.js');
   checkSyntax('scripts/fetch-deepinfra-models.js');
+  checkSyntax('js/openrouter-free-models.generated.js');
   checkSyntax('js/deepinfra-merge.generated.js');
 
   const openrouterReport = readJsonIfExists('data/openrouter-merge-report.json');
+  const openrouterFreeReport = readJsonIfExists('data/openrouter-free-models-report.json');
   const officialReport = readJsonIfExists('data/official-pricing-report.json');
   const sumopodReport = readJsonIfExists('data/sumopod-merge-report.json');
   const deepinfraReport = readJsonIfExists('data/deepinfra-merge-report.json');
   assert(openrouterReport && Number.isFinite(openrouterReport.matchedCount), 'OpenRouter merge report is invalid');
+  assert(openrouterFreeReport && Number.isFinite(openrouterFreeReport.count), 'OpenRouter free-models report is invalid');
   assert(officialReport && Number.isFinite(officialReport.matchedCount), 'Official pricing report is invalid');
   if (process.env.SUMOPOD_API_KEY) {
     assert(sumopodReport && Number.isFinite(sumopodReport.matchedCount), 'Sumopod merge report is invalid');

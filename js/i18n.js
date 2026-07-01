@@ -64,6 +64,12 @@ const TRANSLATIONS = {
     'free_models.card_required': 'Card required',
     'free_models.rate_limits': 'Rate limits',
     'free_models.endpoint': 'Endpoint',
+    'free_models.api_section_title': 'Free API Models',
+    'free_models.api_section_subtitle': 'Call these directly with an API key — no cost, or near-zero cost as noted per model.',
+    'free_models.type_free_credit': 'Free credit',
+    'free_models.type_free_tier': 'Free tier',
+    'free_models.type_trial': 'Trial',
+    'free_models.claim_offer': 'Claim offer',
 
     // ─── Best Picks ───────────────────────────────────────────────────────────
     'best_picks.title': 'Best Picks',
@@ -189,6 +195,12 @@ const TRANSLATIONS = {
     'free_models.card_required': 'Perlu kartu',
     'free_models.rate_limits': 'Rate limit',
     'free_models.endpoint': 'Endpoint',
+    'free_models.api_section_title': 'Model API Gratis',
+    'free_models.api_section_subtitle': 'Panggil langsung pakai API key — tanpa biaya, atau biaya nyaris nol sesuai catatan tiap model.',
+    'free_models.type_free_credit': 'Kredit gratis',
+    'free_models.type_free_tier': 'Free tier',
+    'free_models.type_trial': 'Uji coba',
+    'free_models.claim_offer': 'Ambil penawaran',
 
     // ─── Best Picks ───────────────────────────────────────────────────────────
     'best_picks.title': 'Best Picks',

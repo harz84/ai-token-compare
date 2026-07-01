@@ -797,6 +797,10 @@
       const providerColor = provider ? provider.color : 'var(--primary)';
       const note = isId ? (model.note_id || model.note_en || '') : (model.note_en || model.note_id || '');
       const capabilityBadges = (model.capabilities || []).map(capability => `<span class="free-model-chip">${escHtml(capability)}</span>`).join('');
+      const price = typeof model.priceUsdPerMillion === 'number' ? model.priceUsdPerMillion : 0;
+      const isTrulyFree = price <= 0;
+      const priceLabel = isTrulyFree ? '$0' : `~$${price}`;
+      const priceClass = isTrulyFree ? 'free-model-price' : 'free-model-price near-zero';
 
       return `
         <article class="free-model-card" style="--provider-color:${providerColor}">
@@ -808,7 +812,7 @@
               </span>
               <h3 class="free-model-name">${escHtml(model.modelName)}</h3>
             </div>
-            <span class="free-model-price">$0</span>
+            <span class="${priceClass}">${priceLabel}</span>
           </div>
           <p class="free-model-id">${escHtml(model.modelId)}</p>
           <p class="free-model-note">${escHtml(note)}</p>
