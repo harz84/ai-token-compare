@@ -14,16 +14,21 @@
     "minimax": "https://www.minimax.io/platform",
     "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
   },
-  "fetchedAt": "2026-06-30T18:59:57.456Z",
-  "generatedAt": "2026-06-30T19:00:00.970Z",
+  "fetchedAt": "2026-07-01T19:02:05.999Z",
+  "generatedAt": "2026-07-01T19:02:27.525Z",
   "mappedCount": 64,
-  "matchedCount": 43,
-  "missingCount": 21,
+  "matchedCount": 47,
+  "missingCount": 17,
   "fetchErrors": [
     {
       "provider": "deepseek",
       "url": "https://platform.deepseek.com/api-docs",
       "message": "Request failed for https://platform.deepseek.com/api-docs: 403 Forbidden"
+    },
+    {
+      "provider": "minimax",
+      "url": "https://www.minimax.io/platform",
+      "message": "Request failed for https://www.minimax.io/platform: 504 Gateway Timeout"
     }
   ],
   "matched": [
@@ -132,6 +137,15 @@
       "inputPrice": 0.3,
       "cachePrice": 0.03,
       "outputPrice": 2.5,
+      "contextWindow": 1000000,
+      "maxOutput": 65536
+    },
+    {
+      "internalId": "gemini-2-5-flash-lite",
+      "provider": "google",
+      "inputPrice": 0.1,
+      "cachePrice": 0.01,
+      "outputPrice": 0.4,
       "contextWindow": 1000000,
       "maxOutput": 65536
     },
@@ -379,6 +393,15 @@
       "maxOutput": 80000
     },
     {
+      "internalId": "minimax-m1",
+      "provider": "minimax",
+      "inputPrice": 0.4,
+      "cachePrice": 0.1,
+      "outputPrice": 2.2,
+      "contextWindow": 1000000,
+      "maxOutput": 80000
+    },
+    {
       "internalId": "minimax-m3",
       "provider": "minimax",
       "inputPrice": 1,
@@ -386,6 +409,24 @@
       "outputPrice": 3,
       "contextWindow": 128000,
       "maxOutput": 16384
+    },
+    {
+      "internalId": "minimax-vl-01",
+      "provider": "minimax",
+      "inputPrice": 0.2,
+      "cachePrice": 0.05,
+      "outputPrice": 1.1,
+      "contextWindow": 1000000,
+      "maxOutput": 8192
+    },
+    {
+      "internalId": "minimax-text-01",
+      "provider": "minimax",
+      "inputPrice": 0.2,
+      "cachePrice": 0.05,
+      "outputPrice": 1.1,
+      "contextWindow": 1000000,
+      "maxOutput": 8192
     },
     {
       "internalId": "mimo-7b-rl",
@@ -419,11 +460,6 @@
     {
       "internalId": "claude-opus-4-8-fast",
       "provider": "anthropic",
-      "reason": "alias-not-found"
-    },
-    {
-      "internalId": "gemini-2-5-flash-lite",
-      "provider": "google",
       "reason": "alias-not-found"
     },
     {
@@ -489,21 +525,6 @@
     {
       "internalId": "llama-3-1-405b-instruct",
       "provider": "meta",
-      "reason": "alias-not-found"
-    },
-    {
-      "internalId": "minimax-m1",
-      "provider": "minimax",
-      "reason": "alias-not-found"
-    },
-    {
-      "internalId": "minimax-vl-01",
-      "provider": "minimax",
-      "reason": "alias-not-found"
-    },
-    {
-      "internalId": "minimax-text-01",
-      "provider": "minimax",
       "reason": "alias-not-found"
     },
     {
