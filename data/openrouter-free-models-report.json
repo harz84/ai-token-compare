@@ -1,8 +1,8 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-01T19:02:05.906Z",
-  "generatedAt": "2026-07-01T19:02:05.970Z",
-  "count": 22,
+  "fetchedAt": "2026-07-02T18:39:56.766Z",
+  "generatedAt": "2026-07-02T18:39:56.886Z",
+  "count": 23,
   "modelIds": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "cohere/north-mini-code:free",
@@ -23,6 +23,7 @@
     "openai/gpt-oss-120b:free",
     "openai/gpt-oss-20b:free",
     "poolside/laguna-m.1:free",
+    "poolside/laguna-xs-2.1:free",
     "poolside/laguna-xs.2:free",
     "qwen/qwen3-coder:free",
     "qwen/qwen3-next-80b-a3b-instruct:free"

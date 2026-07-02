@@ -1,10 +1,10 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-01T19:02:05.906Z",
-  "generatedAt": "2026-07-01T19:02:05.942Z",
+  "fetchedAt": "2026-07-02T18:39:56.766Z",
+  "generatedAt": "2026-07-02T18:39:56.851Z",
   "mappedCount": 89,
-  "matchedCount": 87,
-  "missingCount": 2,
+  "matchedCount": 88,
+  "missingCount": 1,
   "matched": [
     {
       "internalId": "gpt-5-5-official",
@@ -37,6 +37,14 @@
       "cachePrice": 0.02,
       "outputPrice": 1.25,
       "contextWindow": 400000
+    },
+    {
+      "internalId": "claude-fable-5",
+      "openrouterId": "anthropic/claude-fable-5",
+      "inputPrice": 10,
+      "cachePrice": 1,
+      "outputPrice": 50,
+      "contextWindow": 1000000
     },
     {
       "internalId": "claude-opus-4-8",
@@ -81,9 +89,9 @@
     {
       "internalId": "claude-mythos-5",
       "openrouterId": "~anthropic/claude-fable-latest",
-      "inputPrice": -1000000,
-      "cachePrice": 0,
-      "outputPrice": -1000000,
+      "inputPrice": 10,
+      "cachePrice": 1,
+      "outputPrice": 50,
       "contextWindow": 1000000
     },
     {
@@ -345,9 +353,9 @@
     {
       "internalId": "kimi-k2-6",
       "openrouterId": "moonshotai/kimi-k2.6",
-      "inputPrice": 0.55,
-      "cachePrice": 0.11,
-      "outputPrice": 3.2,
+      "inputPrice": 0.66,
+      "cachePrice": 0.14,
+      "outputPrice": 3.41,
       "contextWindow": 262144
     },
     {
@@ -697,17 +705,13 @@
     {
       "internalId": "deepseek-v4-flash",
       "openrouterId": "deepseek/deepseek-v4-flash",
-      "inputPrice": 0.09,
+      "inputPrice": 0.089,
       "cachePrice": 0.018,
       "outputPrice": 0.18,
       "contextWindow": 1048576
     }
   ],
   "missing": [
-    {
-      "internalId": "claude-fable-5",
-      "openrouterId": "anthropic/claude-fable-5"
-    },
     {
       "internalId": "kimi-k1-5-long",
       "openrouterId": "moonshotai/kimi-latest"
