@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-02T18:39:56.766Z",
-  "generatedAt": "2026-07-02T18:39:56.851Z",
+  "fetchedAt": "2026-07-03T18:16:58.019Z",
+  "generatedAt": "2026-07-03T18:16:58.105Z",
   "mappedCount": 89,
   "matchedCount": 88,
   "missingCount": 1,
@@ -665,9 +665,9 @@
     {
       "internalId": "glm-5-1",
       "openrouterId": "z-ai/glm-5.1",
-      "inputPrice": 0.975,
-      "cachePrice": 0,
-      "outputPrice": 4.3,
+      "inputPrice": 0.966,
+      "cachePrice": 0.1794,
+      "outputPrice": 3.036,
       "contextWindow": 202752
     },
     {
@@ -705,7 +705,7 @@
     {
       "internalId": "deepseek-v4-flash",
       "openrouterId": "deepseek/deepseek-v4-flash",
-      "inputPrice": 0.089,
+      "inputPrice": 0.09,
       "cachePrice": 0.018,
       "outputPrice": 0.18,
       "contextWindow": 1048576
