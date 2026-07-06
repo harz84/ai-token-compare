@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-05T18:09:51.169Z",
-  "generatedAt": "2026-07-05T18:09:51.251Z",
+  "fetchedAt": "2026-07-06T19:00:17.952Z",
+  "generatedAt": "2026-07-06T19:00:18.036Z",
   "mappedCount": 89,
   "matchedCount": 88,
   "missingCount": 1,
@@ -377,17 +377,17 @@
     {
       "internalId": "glm-5-2",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.574,
-      "cachePrice": 0.1066,
-      "outputPrice": 1.804,
+      "inputPrice": 0.9086,
+      "cachePrice": 0.16874,
+      "outputPrice": 2.8556,
       "contextWindow": 1048576
     },
     {
       "internalId": "glm-5-2-air",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.574,
-      "cachePrice": 0.1066,
-      "outputPrice": 1.804,
+      "inputPrice": 0.9086,
+      "cachePrice": 0.16874,
+      "outputPrice": 2.8556,
       "contextWindow": 1048576
     },
     {
@@ -434,7 +434,7 @@
       "internalId": "mimo-vl-7b",
       "openrouterId": "xiaomi/mimo-v2.5",
       "inputPrice": 0.105,
-      "cachePrice": 0,
+      "cachePrice": 0.028,
       "outputPrice": 0.28,
       "contextWindow": 1048576
     },
@@ -650,7 +650,7 @@
       "internalId": "mimo-v2-5",
       "openrouterId": "xiaomi/mimo-v2.5",
       "inputPrice": 0.105,
-      "cachePrice": 0,
+      "cachePrice": 0.028,
       "outputPrice": 0.28,
       "contextWindow": 1048576
     },
@@ -658,7 +658,7 @@
       "internalId": "mimo-v2",
       "openrouterId": "xiaomi/mimo-v2.5",
       "inputPrice": 0.105,
-      "cachePrice": 0,
+      "cachePrice": 0.028,
       "outputPrice": 0.28,
       "contextWindow": 1048576
     },
