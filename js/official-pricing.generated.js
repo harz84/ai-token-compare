@@ -1238,8 +1238,8 @@
     "minimax": "https://www.minimax.io/platform",
     "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
   },
-  "fetchedAt": "2026-07-07T09:44:13.444Z",
-  "generatedAt": "2026-07-07T09:44:17.407Z",
+  "fetchedAt": "2026-07-07T19:06:06.988Z",
+  "generatedAt": "2026-07-07T19:06:12.477Z",
   "mappedCount": 64,
   "matchedCount": 44,
   "missingCount": 20,
