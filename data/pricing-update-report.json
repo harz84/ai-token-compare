@@ -1,154 +1,178 @@
 {
-  "generatedAt": "2026-07-03T18:16:57.790Z",
+  "generatedAt": "2026-07-07T06:16:37.832Z",
   "status": "ok",
   "steps": [
     {
       "name": "fetch-openrouter-models",
       "command": "node scripts/fetch-openrouter-models.js",
-      "startedAt": "2026-07-03T18:16:57.790Z",
-      "finishedAt": "2026-07-03T18:16:58.080Z",
+      "startedAt": "2026-07-07T06:16:37.832Z",
+      "finishedAt": "2026-07-07T06:16:38.254Z",
       "status": "ok",
       "exitCode": 0,
-      "stdout": "Generated 340 OpenRouter models at /home/runner/work/ai-token-compare/ai-token-compare/data/openrouter-models.generated.json",
+      "stdout": "Generated 343 OpenRouter models at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/openrouter-models.generated.json",
       "stderr": "",
       "outputs": [
         {
           "path": "data/openrouter-models.generated.json",
           "exists": true,
-          "size": 460683,
-          "updatedAt": "2026-07-03T18:16:58.031Z"
+          "size": 465079,
+          "updatedAt": "2026-07-07T06:16:38.234Z"
         }
       ]
     },
     {
       "name": "merge-openrouter-pricing",
       "command": "node scripts/merge-openrouter-pricing.js",
-      "startedAt": "2026-07-03T18:16:58.080Z",
-      "finishedAt": "2026-07-03T18:16:58.114Z",
+      "startedAt": "2026-07-07T06:16:38.254Z",
+      "finishedAt": "2026-07-07T06:16:38.284Z",
       "status": "ok",
       "exitCode": 0,
-      "stdout": "Generated 88 OpenRouter patches at /home/runner/work/ai-token-compare/ai-token-compare/js/openrouter-merge.generated.js\nGenerated merge report at /home/runner/work/ai-token-compare/ai-token-compare/data/openrouter-merge-report.json\nMissing mappings: 1",
+      "stdout": "Generated 88 OpenRouter patches at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/js/openrouter-merge.generated.js\nGenerated merge report at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/openrouter-merge-report.json\nMissing mappings: 1",
       "stderr": "",
       "outputs": [
         {
           "path": "js/openrouter-merge.generated.js",
           "exists": true,
-          "size": 158752,
-          "updatedAt": "2026-07-03T18:16:58.105Z"
+          "size": 158915,
+          "updatedAt": "2026-07-07T06:16:38.280Z"
         },
         {
           "path": "data/openrouter-merge-report.json",
           "exists": true,
-          "size": 18261,
-          "updatedAt": "2026-07-03T18:16:58.105Z"
+          "size": 18293,
+          "updatedAt": "2026-07-07T06:16:38.280Z"
         }
       ]
     },
     {
       "name": "build-openrouter-free-models",
       "command": "node scripts/build-openrouter-free-models.js",
-      "startedAt": "2026-07-03T18:16:58.114Z",
-      "finishedAt": "2026-07-03T18:16:58.148Z",
+      "startedAt": "2026-07-07T06:16:38.284Z",
+      "finishedAt": "2026-07-07T06:16:38.310Z",
       "status": "ok",
       "exitCode": 0,
-      "stdout": "Generated 23 free OpenRouter models at /home/runner/work/ai-token-compare/ai-token-compare/js/openrouter-free-models.generated.js\nGenerated report at /home/runner/work/ai-token-compare/ai-token-compare/data/openrouter-free-models-report.json",
+      "stdout": "Generated 24 free OpenRouter models at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/js/openrouter-free-models.generated.js\nGenerated report at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/openrouter-free-models-report.json",
       "stderr": "",
       "outputs": [
         {
           "path": "js/openrouter-free-models.generated.js",
           "exists": true,
-          "size": 22209,
-          "updatedAt": "2026-07-03T18:16:58.139Z"
+          "size": 23075,
+          "updatedAt": "2026-07-07T06:16:38.307Z"
         },
         {
           "path": "data/openrouter-free-models-report.json",
           "exists": true,
-          "size": 1134,
-          "updatedAt": "2026-07-03T18:16:58.139Z"
+          "size": 1158,
+          "updatedAt": "2026-07-07T06:16:38.307Z"
         }
       ]
     },
     {
       "name": "fetch-official-pricing",
       "command": "node scripts/fetch-official-pricing.js",
-      "startedAt": "2026-07-03T18:16:58.148Z",
-      "finishedAt": "2026-07-03T18:17:06.763Z",
+      "startedAt": "2026-07-07T06:16:38.310Z",
+      "finishedAt": "2026-07-07T06:16:42.970Z",
       "status": "ok",
       "exitCode": 0,
-      "stdout": "Generated 44 official pricing patches at /home/runner/work/ai-token-compare/ai-token-compare/js/official-pricing.generated.js\nGenerated official pricing data at /home/runner/work/ai-token-compare/ai-token-compare/data/official-pricing.generated.json\nGenerated official pricing report at /home/runner/work/ai-token-compare/ai-token-compare/data/official-pricing-report.json\nMissing official pricing entries: 20",
+      "stdout": "Generated 44 official pricing patches at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/js/official-pricing.generated.js\nGenerated official pricing data at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/official-pricing.generated.json\nGenerated official pricing report at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/official-pricing-report.json\nMissing official pricing entries: 20",
       "stderr": "",
       "outputs": [
         {
           "path": "js/official-pricing.generated.js",
           "exists": true,
           "size": 45849,
-          "updatedAt": "2026-07-03T18:17:06.744Z"
+          "updatedAt": "2026-07-07T06:16:42.963Z"
         },
         {
           "path": "data/official-pricing-report.json",
           "exists": true,
           "size": 12704,
-          "updatedAt": "2026-07-03T18:17:06.744Z"
+          "updatedAt": "2026-07-07T06:16:42.963Z"
         }
       ]
     },
     {
       "name": "fetch-sumopod-models",
       "command": "node scripts/fetch-sumopod-models.js",
-      "startedAt": "2026-07-03T18:17:06.763Z",
-      "finishedAt": "2026-07-03T18:17:08.482Z",
-      "status": "ok",
-      "exitCode": 0,
-      "stdout": "Generated 62 Sumopod models at /home/runner/work/ai-token-compare/ai-token-compare/data/sumopod-models.generated.json\nGenerated 52 Sumopod patches at /home/runner/work/ai-token-compare/ai-token-compare/js/sumopod-merge.generated.js\nGenerated Sumopod merge report at /home/runner/work/ai-token-compare/ai-token-compare/data/sumopod-merge-report.json",
-      "stderr": "",
+      "startedAt": "2026-07-07T06:16:42.970Z",
+      "finishedAt": "2026-07-07T06:16:42.970Z",
+      "status": "skipped",
+      "exitCode": null,
+      "stdout": "",
+      "stderr": "Skipped: missing SUMOPOD_API_KEY",
       "outputs": [
         {
           "path": "data/sumopod-models.generated.json",
           "exists": true,
           "size": 210941,
-          "updatedAt": "2026-07-03T18:17:08.474Z"
+          "updatedAt": "2026-07-04T04:08:17.207Z"
         },
         {
           "path": "js/sumopod-merge.generated.js",
           "exists": true,
           "size": 37898,
-          "updatedAt": "2026-07-03T18:17:08.474Z"
+          "updatedAt": "2026-07-04T04:08:17.211Z"
         },
         {
           "path": "data/sumopod-merge-report.json",
           "exists": true,
           "size": 13681,
-          "updatedAt": "2026-07-03T18:17:08.474Z"
+          "updatedAt": "2026-07-04T04:08:17.207Z"
         }
       ]
     },
     {
       "name": "fetch-deepinfra-models",
       "command": "node scripts/fetch-deepinfra-models.js",
-      "startedAt": "2026-07-03T18:17:08.482Z",
-      "finishedAt": "2026-07-03T18:17:09.495Z",
+      "startedAt": "2026-07-07T06:16:42.970Z",
+      "finishedAt": "2026-07-07T06:16:45.003Z",
       "status": "ok",
       "exitCode": 0,
-      "stdout": "Fetched 169 DeepInfra models, kept 114 with token pricing\nMatched 48/48 internal models\nGenerated /home/runner/work/ai-token-compare/ai-token-compare/js/deepinfra-merge.generated.js",
+      "stdout": "Fetched 172 DeepInfra models, kept 117 with token pricing\nMatched 48/48 internal models\nGenerated /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/js/deepinfra-merge.generated.js",
       "stderr": "",
       "outputs": [
         {
           "path": "data/deepinfra-models.generated.json",
           "exists": true,
-          "size": 170426,
-          "updatedAt": "2026-07-03T18:17:09.488Z"
+          "size": 174977,
+          "updatedAt": "2026-07-07T06:16:44.996Z"
         },
         {
           "path": "js/deepinfra-merge.generated.js",
           "exists": true,
           "size": 35575,
-          "updatedAt": "2026-07-03T18:17:09.489Z"
+          "updatedAt": "2026-07-07T06:16:44.997Z"
         },
         {
           "path": "data/deepinfra-merge-report.json",
           "exists": true,
           "size": 10167,
-          "updatedAt": "2026-07-03T18:17:09.489Z"
+          "updatedAt": "2026-07-07T06:16:44.997Z"
+        }
+      ]
+    },
+    {
+      "name": "fetch-exchange-rate",
+      "command": "node scripts/fetch-exchange-rate.js",
+      "startedAt": "2026-07-07T06:16:45.003Z",
+      "finishedAt": "2026-07-07T06:16:45.558Z",
+      "status": "ok",
+      "exitCode": 0,
+      "stdout": "Fetched 1 USD = 18016.490543 IDR from open.er-api.com at /Users/telkom/.gemini/antigravity/scratch/ai-token-compare/data/exchange-rate.generated.json",
+      "stderr": "",
+      "outputs": [
+        {
+          "path": "data/exchange-rate.generated.json",
+          "exists": true,
+          "size": 169,
+          "updatedAt": "2026-07-07T06:16:45.515Z"
+        },
+        {
+          "path": "js/exchange-rate.generated.js",
+          "exists": true,
+          "size": 468,
+          "updatedAt": "2026-07-07T06:16:45.516Z"
         }
       ]
     }
@@ -157,73 +181,73 @@
     "files": [
       {
         "path": "data/openrouter-models.generated.json",
-        "size": 460683,
-        "updatedAt": "2026-07-03T18:16:58.031Z"
+        "size": 465079,
+        "updatedAt": "2026-07-07T06:16:38.234Z"
       },
       {
         "path": "data/openrouter-merge-report.json",
-        "size": 18261,
-        "updatedAt": "2026-07-03T18:16:58.105Z"
+        "size": 18293,
+        "updatedAt": "2026-07-07T06:16:38.280Z"
       },
       {
         "path": "data/openrouter-free-models-report.json",
-        "size": 1134,
-        "updatedAt": "2026-07-03T18:16:58.139Z"
+        "size": 1158,
+        "updatedAt": "2026-07-07T06:16:38.307Z"
       },
       {
         "path": "data/official-pricing.generated.json",
         "size": 34996,
-        "updatedAt": "2026-07-03T18:17:06.744Z"
+        "updatedAt": "2026-07-07T06:16:42.962Z"
       },
       {
         "path": "data/official-pricing-report.json",
         "size": 12704,
-        "updatedAt": "2026-07-03T18:17:06.744Z"
+        "updatedAt": "2026-07-07T06:16:42.963Z"
       },
       {
         "path": "js/openrouter-merge.generated.js",
-        "size": 158752,
-        "updatedAt": "2026-07-03T18:16:58.105Z"
+        "size": 158915,
+        "updatedAt": "2026-07-07T06:16:38.280Z"
       },
       {
         "path": "js/openrouter-free-models.generated.js",
-        "size": 22209,
-        "updatedAt": "2026-07-03T18:16:58.139Z"
+        "size": 23075,
+        "updatedAt": "2026-07-07T06:16:38.307Z"
       },
       {
         "path": "js/official-pricing.generated.js",
         "size": 45849,
-        "updatedAt": "2026-07-03T18:17:06.744Z"
+        "updatedAt": "2026-07-07T06:16:42.963Z"
       },
       {
         "path": "js/sumopod-merge.generated.js",
         "size": 37898,
-        "updatedAt": "2026-07-03T18:17:08.474Z"
+        "updatedAt": "2026-07-04T04:08:17.211Z"
       },
       {
         "path": "js/deepinfra-merge.generated.js",
         "size": 35575,
-        "updatedAt": "2026-07-03T18:17:09.489Z"
+        "updatedAt": "2026-07-07T06:16:44.997Z"
       },
       {
-        "path": "data/sumopod-models.generated.json",
-        "size": 210941,
-        "updatedAt": "2026-07-03T18:17:08.474Z"
+        "path": "data/exchange-rate.generated.json",
+        "size": 169,
+        "updatedAt": "2026-07-07T06:16:45.515Z"
       },
       {
-        "path": "data/sumopod-merge-report.json",
-        "size": 13681,
-        "updatedAt": "2026-07-03T18:17:08.474Z"
+        "path": "js/exchange-rate.generated.js",
+        "size": 468,
+        "updatedAt": "2026-07-07T06:16:45.516Z"
       },
       {
         "path": "data/deepinfra-models.generated.json",
-        "size": 170426,
-        "updatedAt": "2026-07-03T18:17:09.488Z"
+        "size": 174977,
+        "updatedAt": "2026-07-07T06:16:44.996Z"
       },
       {
         "path": "data/deepinfra-merge-report.json",
         "size": 10167,
-        "updatedAt": "2026-07-03T18:17:09.489Z"
+        "updatedAt": "2026-07-07T06:16:44.997Z"
       }
     ],
     "runtime": {
@@ -232,8 +256,8 @@
       "officialPatched": 45,
       "sumopodPatched": 52,
       "deepinfraPatched": 48,
-      "freeModelCount": 28,
-      "openrouterFreeCount": 23
+      "freeModelCount": 29,
+      "openrouterFreeCount": 24
     }
   },
   "validationError": null,
@@ -241,11 +265,11 @@
     "openrouter": {
       "matched": 88,
       "missing": 1,
-      "fetchedAt": "2026-07-03T18:16:58.019Z"
+      "fetchedAt": "2026-07-07T06:16:38.221Z"
     },
     "openrouterFreeModels": {
-      "count": 23,
-      "fetchedAt": "2026-07-03T18:16:58.019Z"
+      "count": 24,
+      "fetchedAt": "2026-07-07T06:16:38.221Z"
     },
     "official": {
       "matched": 44,
@@ -257,7 +281,7 @@
           "message": "Request failed for https://platform.deepseek.com/api-docs: 403 Forbidden"
         }
       ],
-      "fetchedAt": "2026-07-03T18:16:58.175Z"
+      "fetchedAt": "2026-07-07T06:16:38.335Z"
     },
     "sumopod": {
       "matched": 52,
@@ -268,8 +292,13 @@
     "deepinfra": {
       "matched": 48,
       "missing": 0,
-      "available": 114,
-      "fetchedAt": "2026-07-03T18:17:08.509Z"
+      "available": 117,
+      "fetchedAt": "2026-07-07T06:16:42.993Z"
+    },
+    "exchangeRate": {
+      "rate": 18016.490543,
+      "source": "open.er-api.com",
+      "fetchedAt": "2026-07-07T06:16:45.513Z"
     }
   }
 }

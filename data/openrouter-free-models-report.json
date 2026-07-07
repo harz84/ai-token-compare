@@ -1,8 +1,8 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-03T18:16:58.019Z",
-  "generatedAt": "2026-07-03T18:16:58.140Z",
-  "count": 23,
+  "fetchedAt": "2026-07-07T06:16:38.221Z",
+  "generatedAt": "2026-07-07T06:16:38.306Z",
+  "count": 24,
   "modelIds": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "cohere/north-mini-code:free",
@@ -26,6 +26,7 @@
     "poolside/laguna-xs-2.1:free",
     "poolside/laguna-xs.2:free",
     "qwen/qwen3-coder:free",
-    "qwen/qwen3-next-80b-a3b-instruct:free"
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "tencent/hy3:free"
   ]
 }

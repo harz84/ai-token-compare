@@ -5,7 +5,7 @@
 
 const EXCHANGE_RATES = {
   USD: 1,
-  IDR: 16500, // 1 USD = 16,500 IDR — update this value as needed
+  IDR: 16500, // Fallback default; overwritten at load time by js/exchange-rate.generated.js (auto-fetched daily)
 };
 
 // ─── State ──────────────────────────────────────────────────────────────────────

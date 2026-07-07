@@ -52,6 +52,13 @@ const STEPS = [
     outputs: ['data/deepinfra-models.generated.json', 'js/deepinfra-merge.generated.js', 'data/deepinfra-merge-report.json'],
     // No API key required — DeepInfra model list is public
   },
+  {
+    name: 'fetch-exchange-rate',
+    command: 'node',
+    args: ['scripts/fetch-exchange-rate.js'],
+    outputs: ['data/exchange-rate.generated.json', 'js/exchange-rate.generated.js'],
+    // No API key required — public, no-auth exchange rate APIs
+  },
 ];
 
 function runStep(step) {
@@ -121,6 +128,7 @@ function buildSummary() {
   const officialReport = readJsonIfExists('data/official-pricing-report.json');
   const sumopodReport = readJsonIfExists('data/sumopod-merge-report.json');
   const deepinfraReport = readJsonIfExists('data/deepinfra-merge-report.json');
+  const exchangeRateReport = readJsonIfExists('data/exchange-rate.generated.json');
 
   return {
     openrouter: openrouterReport
@@ -158,6 +166,13 @@ function buildSummary() {
           missing: deepinfraReport.missingCount,
           available: deepinfraReport.availableCount,
           fetchedAt: deepinfraReport.fetchedAt,
+        }
+      : null,
+    exchangeRate: exchangeRateReport
+      ? {
+          rate: exchangeRateReport.rate,
+          source: exchangeRateReport.source,
+          fetchedAt: exchangeRateReport.fetchedAt,
         }
       : null,
   };
@@ -235,6 +250,7 @@ function updateIndexScriptVersions(version) {
     'js/deepinfra-merge.generated.js',
     'js/i18n.js',
     'js/currency.js',
+    'js/exchange-rate.generated.js',
     'js/app.js',
   ];
 
@@ -259,6 +275,8 @@ function validateOutputs() {
     validateGeneratedFile('js/official-pricing.generated.js'),
     validateGeneratedFile('js/sumopod-merge.generated.js'),
     validateGeneratedFile('js/deepinfra-merge.generated.js'),
+    validateGeneratedFile('data/exchange-rate.generated.json'),
+    validateGeneratedFile('js/exchange-rate.generated.js'),
   ];
 
   if (process.env.SUMOPOD_API_KEY) {
@@ -274,6 +292,7 @@ function validateOutputs() {
   checkSyntax('scripts/fetch-deepinfra-models.js');
   checkSyntax('js/openrouter-free-models.generated.js');
   checkSyntax('js/deepinfra-merge.generated.js');
+  checkSyntax('js/exchange-rate.generated.js');
 
   const openrouterReport = readJsonIfExists('data/openrouter-merge-report.json');
   const openrouterFreeReport = readJsonIfExists('data/openrouter-free-models-report.json');
