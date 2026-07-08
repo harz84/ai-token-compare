@@ -1,7 +1,7 @@
 {
   "source": "https://api.deepinfra.com/v1/openai/models",
-  "fetchedAt": "2026-07-07T09:44:17.438Z",
-  "count": 117,
+  "fetchedAt": "2026-07-07T19:06:14.111Z",
+  "count": 118,
   "note": "DeepInfra /v1/openai/models exposes real per-token pricing in metadata.pricing.",
   "models": [
     {
@@ -689,6 +689,52 @@
             "chat",
             "vlm",
             "vision",
+            "prompt_cache",
+            "reasoning"
+          ],
+          "default_width": null,
+          "default_height": null,
+          "default_iterations": null
+        }
+      }
+    },
+    {
+      "id": "deepreinforce-ai/Ornith-1.0-35B",
+      "ownedBy": "deepinfra",
+      "contextLength": 262144,
+      "maxTokens": 262144,
+      "inputPrice": 0.14,
+      "outputPrice": 1,
+      "cachePrice": 0.05,
+      "hasVision": false,
+      "hasReasoning": true,
+      "tags": [
+        "chat",
+        "prompt_cache",
+        "reasoning"
+      ],
+      "source": "deepinfra-api",
+      "sourceType": "inference-platform",
+      "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
+      "updatedAt": "2026-07-07",
+      "raw": {
+        "id": "deepreinforce-ai/Ornith-1.0-35B",
+        "object": "model",
+        "created": 0,
+        "owned_by": "deepinfra",
+        "root": "deepreinforce-ai/Ornith-1.0-35B",
+        "parent": null,
+        "metadata": {
+          "description": "Ornith-1.0-35B is DeepReinforce's open (MIT-licensed) agentic-coding model: an RL post-train of Qwen3.5-35B-A3B, a 35B-total / ~3B-active Mixture-of-Experts with hybrid Gated-DeltaNet attention. It targets state-of-the-art open-model coding-agent performance (SWE-bench Verified 75.6, Terminal-Bench 2.1 64.2) with a 262K-token context, thinking/reasoning mode, tool calling, and image + video understanding.",
+          "context_length": 262144,
+          "max_tokens": 262144,
+          "pricing": {
+            "input_tokens": 0.14,
+            "output_tokens": 1,
+            "cache_read_tokens": 0.05000000040000001
+          },
+          "tags": [
+            "chat",
             "prompt_cache",
             "reasoning"
           ],
@@ -1675,10 +1721,12 @@
       "inputPrice": 0.12,
       "outputPrice": 0.37,
       "cachePrice": null,
-      "hasVision": false,
+      "hasVision": true,
       "hasReasoning": true,
       "tags": [
         "chat",
+        "vlm",
+        "vision",
         "reasoning"
       ],
       "source": "deepinfra-api",
@@ -1702,6 +1750,8 @@
           },
           "tags": [
             "chat",
+            "vlm",
+            "vision",
             "reasoning"
           ],
           "default_width": null,

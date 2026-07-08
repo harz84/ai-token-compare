@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-07T09:44:13.342Z",
-  "count": 343,
+  "fetchedAt": "2026-07-07T19:06:06.820Z",
+  "count": 341,
   "models": [
     {
       "id": "~anthropic/claude-fable-latest",
@@ -72,6 +72,7 @@
       "updatedAt": "2026-07-07",
       "supportedParameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -546,92 +547,6 @@
       }
     },
     {
-      "id": "aion-labs/aion-1.0",
-      "name": "AionLabs: Aion-1.0",
-      "provider": "aion-labs",
-      "modelSlug": "aion-1.0",
-      "canonicalSlug": "aion-labs/aion-1.0",
-      "contextWindow": 131072,
-      "inputPrice": 4,
-      "outputPrice": 8,
-      "cachePrice": 0,
-      "source": "openrouter-api",
-      "sourceType": "curated",
-      "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-07",
-      "supportedParameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "top_p"
-      ],
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "topProvider": {
-        "context_length": 131072,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "modality": null,
-      "rawPricing": {
-        "prompt": "0.000004",
-        "completion": "0.000008"
-      }
-    },
-    {
-      "id": "aion-labs/aion-1.0-mini",
-      "name": "AionLabs: Aion-1.0-Mini",
-      "provider": "aion-labs",
-      "modelSlug": "aion-1.0-mini",
-      "canonicalSlug": "aion-labs/aion-1.0-mini",
-      "contextWindow": 131072,
-      "inputPrice": 0.7,
-      "outputPrice": 1.4,
-      "cachePrice": 0,
-      "source": "openrouter-api",
-      "sourceType": "curated",
-      "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-07",
-      "supportedParameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "top_p"
-      ],
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "topProvider": {
-        "context_length": 131072,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "modality": null,
-      "rawPricing": {
-        "prompt": "0.0000007",
-        "completion": "0.0000014"
-      }
-    },
-    {
       "id": "aion-labs/aion-2.0",
       "name": "AionLabs: Aion-2.0",
       "provider": "aion-labs",
@@ -649,7 +564,10 @@
         "include_reasoning",
         "max_tokens",
         "reasoning",
+        "response_format",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_p"
       ],
       "architecture": {
@@ -1171,6 +1089,7 @@
       "updatedAt": "2026-07-07",
       "supportedParameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -1278,6 +1197,7 @@
       "updatedAt": "2026-07-07",
       "supportedParameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -1333,6 +1253,7 @@
       "updatedAt": "2026-07-07",
       "supportedParameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -1713,6 +1634,7 @@
       "updatedAt": "2026-07-07",
       "supportedParameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -8266,6 +8188,8 @@
         "max_tokens",
         "reasoning",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -17773,9 +17697,9 @@
       "modelSlug": "glm-5.2",
       "canonicalSlug": "z-ai/glm-5.2-20260616",
       "contextWindow": 1048576,
-      "inputPrice": 0.9,
-      "outputPrice": 2.86,
-      "cachePrice": 0.17,
+      "inputPrice": 0.93,
+      "outputPrice": 3,
+      "cachePrice": 0.18,
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
@@ -17816,14 +17740,14 @@
       },
       "topProvider": {
         "context_length": 1048576,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 32768,
         "is_moderated": false
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.0000009",
-        "completion": "0.00000286",
-        "input_cache_read": "0.00000017"
+        "prompt": "0.00000093",
+        "completion": "0.000003",
+        "input_cache_read": "0.00000018"
       }
     },
     {
