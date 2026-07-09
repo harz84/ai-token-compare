@@ -14,11 +14,11 @@
     "minimax": "https://www.minimax.io/platform",
     "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
   },
-  "fetchedAt": "2026-07-08T18:22:27.626Z",
-  "generatedAt": "2026-07-08T18:22:31.939Z",
+  "fetchedAt": "2026-07-09T18:52:43.444Z",
+  "generatedAt": "2026-07-09T18:52:46.289Z",
   "mappedCount": 64,
-  "matchedCount": 44,
-  "missingCount": 20,
+  "matchedCount": 39,
+  "missingCount": 25,
   "fetchErrors": [
     {
       "provider": "deepseek",
@@ -28,15 +28,6 @@
   ],
   "matched": [
     {
-      "internalId": "gpt-5-5-official",
-      "provider": "openai",
-      "inputPrice": 5,
-      "cachePrice": 0.5,
-      "outputPrice": 30,
-      "contextWindow": 1000000,
-      "maxOutput": 128000
-    },
-    {
       "internalId": "gpt-5-4-official",
       "provider": "openai",
       "inputPrice": 2.5,
@@ -44,24 +35,6 @@
       "outputPrice": 15,
       "contextWindow": 1000000,
       "maxOutput": 128000
-    },
-    {
-      "internalId": "gpt-5-4-mini",
-      "provider": "openai",
-      "inputPrice": 0.75,
-      "cachePrice": 0.075,
-      "outputPrice": 4.5,
-      "contextWindow": 400000,
-      "maxOutput": 128000
-    },
-    {
-      "internalId": "gpt-5-4-nano",
-      "provider": "openai",
-      "inputPrice": 0.15,
-      "cachePrice": 0.015,
-      "outputPrice": 0.6,
-      "contextWindow": 128000,
-      "maxOutput": 32768
     },
     {
       "internalId": "claude-fable-5",
@@ -307,24 +280,6 @@
       "maxOutput": 8192
     },
     {
-      "internalId": "llama-4-maverick",
-      "provider": "meta",
-      "inputPrice": 0.2,
-      "cachePrice": 0.02,
-      "outputPrice": 0.6,
-      "contextWindow": 1000000,
-      "maxOutput": 16384
-    },
-    {
-      "internalId": "llama-4-scout",
-      "provider": "meta",
-      "inputPrice": 0.1,
-      "cachePrice": 0.01,
-      "outputPrice": 0.3,
-      "contextWindow": 10000000,
-      "maxOutput": 16384
-    },
-    {
       "internalId": "llama-guard-4",
       "provider": "meta",
       "inputPrice": 0.05,
@@ -426,6 +381,21 @@
   ],
   "missing": [
     {
+      "internalId": "gpt-5-5-official",
+      "provider": "openai",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "gpt-5-4-mini",
+      "provider": "openai",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "gpt-5-4-nano",
+      "provider": "openai",
+      "reason": "alias-not-found"
+    },
+    {
       "internalId": "claude-opus-4-8-fast",
       "provider": "anthropic",
       "reason": "alias-not-found"
@@ -483,6 +453,16 @@
     {
       "internalId": "qwen3-turbo",
       "provider": "alibaba",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "llama-4-maverick",
+      "provider": "meta",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "llama-4-scout",
+      "provider": "meta",
       "reason": "alias-not-found"
     },
     {
