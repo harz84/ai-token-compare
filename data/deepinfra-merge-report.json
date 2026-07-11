@@ -1,11 +1,11 @@
 {
   "source": "https://api.deepinfra.com/v1/openai/models",
-  "fetchedAt": "2026-07-10T18:25:32.887Z",
-  "generatedAt": "2026-07-10T18:25:33.514Z",
-  "availableCount": 117,
+  "fetchedAt": "2026-07-11T17:58:56.570Z",
+  "generatedAt": "2026-07-11T17:58:56.989Z",
+  "availableCount": 113,
   "mappedCount": 48,
-  "matchedCount": 48,
-  "missingCount": 0,
+  "matchedCount": 47,
+  "missingCount": 1,
   "matched": [
     {
       "internalId": "deepseek-r1",
@@ -69,14 +69,6 @@
       "inputPrice": 0.25,
       "cachePrice": 0.05,
       "outputPrice": 1,
-      "contextLength": 196608
-    },
-    {
-      "internalId": "minimax-m2-5",
-      "deepinfraId": "MiniMaxAI/MiniMax-M2.5",
-      "inputPrice": 0.15,
-      "cachePrice": 0.03,
-      "outputPrice": 1.15,
       "contextLength": 196608
     },
     {
@@ -392,5 +384,12 @@
       "contextLength": 131072
     }
   ],
-  "missing": []
+  "missing": [
+    {
+      "internalId": "minimax-m2-5",
+      "candidates": [
+        "MiniMaxAI/MiniMax-M2.5"
+      ]
+    }
+  ]
 }
