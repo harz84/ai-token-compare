@@ -14,11 +14,11 @@
     "minimax": "https://www.minimax.io/platform",
     "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
   },
-  "fetchedAt": "2026-07-11T17:58:52.654Z",
-  "generatedAt": "2026-07-11T17:58:55.237Z",
+  "fetchedAt": "2026-07-12T18:02:38.190Z",
+  "generatedAt": "2026-07-12T18:02:41.103Z",
   "mappedCount": 64,
-  "matchedCount": 39,
-  "missingCount": 25,
+  "matchedCount": 38,
+  "missingCount": 26,
   "fetchErrors": [
     {
       "provider": "deepseek",
@@ -170,15 +170,6 @@
       "outputPrice": 15,
       "contextWindow": 256000,
       "maxOutput": 16384
-    },
-    {
-      "internalId": "grok-3",
-      "provider": "xai",
-      "inputPrice": 3,
-      "cachePrice": 0.75,
-      "outputPrice": 15,
-      "contextWindow": 131000,
-      "maxOutput": 8192
     },
     {
       "internalId": "kimi-k2-7",
@@ -403,6 +394,11 @@
     {
       "internalId": "gemini-1-5-pro",
       "provider": "google",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "grok-3",
+      "provider": "xai",
       "reason": "alias-not-found"
     },
     {

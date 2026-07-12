@@ -1,8 +1,8 @@
 {
   "source": "https://api.deepinfra.com/v1/openai/models",
-  "fetchedAt": "2026-07-11T17:58:56.570Z",
-  "generatedAt": "2026-07-11T17:58:56.989Z",
-  "availableCount": 113,
+  "fetchedAt": "2026-07-12T18:02:42.689Z",
+  "generatedAt": "2026-07-12T18:02:43.255Z",
+  "availableCount": 114,
   "mappedCount": 48,
   "matchedCount": 47,
   "missingCount": 1,
@@ -82,9 +82,9 @@
     {
       "internalId": "glm-4-plus",
       "deepinfraId": "zai-org/GLM-4.6",
-      "inputPrice": 0.43,
-      "cachePrice": 0.08,
-      "outputPrice": 1.74,
+      "inputPrice": 0.5,
+      "cachePrice": 0.1,
+      "outputPrice": 2,
       "contextLength": 202752
     },
     {
@@ -148,7 +148,7 @@
       "deepinfraId": "Qwen/Qwen3-235B-A22B-Instruct-2507",
       "inputPrice": 0.09,
       "cachePrice": null,
-      "outputPrice": 0.1,
+      "outputPrice": 0.55,
       "contextLength": 262144
     },
     {
@@ -330,9 +330,9 @@
     {
       "internalId": "llama-4-maverick",
       "deepinfraId": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
-      "inputPrice": 0.15,
+      "inputPrice": 0.2,
       "cachePrice": null,
-      "outputPrice": 0.6,
+      "outputPrice": 0.8,
       "contextLength": 1048576
     },
     {

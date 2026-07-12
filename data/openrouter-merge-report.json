@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-11T17:58:52.480Z",
-  "generatedAt": "2026-07-11T17:58:52.576Z",
+  "fetchedAt": "2026-07-12T18:02:38.071Z",
+  "generatedAt": "2026-07-12T18:02:38.129Z",
   "mappedCount": 89,
   "matchedCount": 88,
   "missingCount": 1,
@@ -241,9 +241,9 @@
     {
       "internalId": "llama-4-maverick",
       "openrouterId": "meta-llama/llama-4-maverick",
-      "inputPrice": 0.15,
+      "inputPrice": 0.2,
       "cachePrice": 0,
-      "outputPrice": 0.6,
+      "outputPrice": 0.8,
       "contextWindow": 1048576
     },
     {
@@ -377,17 +377,17 @@
     {
       "internalId": "glm-5-2",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.35,
-      "cachePrice": 0.065,
-      "outputPrice": 1.1,
+      "inputPrice": 0.42,
+      "cachePrice": 0.078,
+      "outputPrice": 1.32,
       "contextWindow": 1048576
     },
     {
       "internalId": "glm-5-2-air",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.35,
-      "cachePrice": 0.065,
-      "outputPrice": 1.1,
+      "inputPrice": 0.42,
+      "cachePrice": 0.078,
+      "outputPrice": 1.32,
       "contextWindow": 1048576
     },
     {

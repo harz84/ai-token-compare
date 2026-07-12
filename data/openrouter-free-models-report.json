@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-11T17:58:52.480Z",
-  "generatedAt": "2026-07-11T17:58:52.618Z",
+  "fetchedAt": "2026-07-12T18:02:38.071Z",
+  "generatedAt": "2026-07-12T18:02:38.158Z",
   "count": 23,
   "modelIds": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
