@@ -1,7 +1,7 @@
 {
   "source": "https://api.deepinfra.com/v1/openai/models",
-  "fetchedAt": "2026-07-12T18:02:42.689Z",
-  "generatedAt": "2026-07-12T18:02:43.255Z",
+  "fetchedAt": "2026-07-13T18:46:45.200Z",
+  "generatedAt": "2026-07-13T18:46:45.563Z",
   "availableCount": 114,
   "mappedCount": 48,
   "matchedCount": 47,
@@ -26,9 +26,9 @@
     {
       "internalId": "deepseek-v3-1",
       "deepinfraId": "deepseek-ai/DeepSeek-V3.1",
-      "inputPrice": 0.21,
+      "inputPrice": 0.25,
       "cachePrice": 0.13,
-      "outputPrice": 0.79,
+      "outputPrice": 0.95,
       "contextLength": 163840
     },
     {

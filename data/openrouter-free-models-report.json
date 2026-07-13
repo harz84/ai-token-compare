@@ -1,15 +1,13 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-12T18:02:38.071Z",
-  "generatedAt": "2026-07-12T18:02:38.158Z",
-  "count": 23,
+  "fetchedAt": "2026-07-13T18:46:41.352Z",
+  "generatedAt": "2026-07-13T18:46:41.464Z",
+  "count": 21,
   "modelIds": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
-    "liquid/lfm-2.5-1.2b-instruct:free",
-    "liquid/lfm-2.5-1.2b-thinking:free",
     "meta-llama/llama-3.2-3b-instruct:free",
     "meta-llama/llama-3.3-70b-instruct:free",
     "nousresearch/hermes-3-llama-3.1-405b:free",
