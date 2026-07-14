@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-13T18:46:41.352Z",
-  "generatedAt": "2026-07-13T18:46:41.431Z",
+  "fetchedAt": "2026-07-14T18:09:09.352Z",
+  "generatedAt": "2026-07-14T18:09:09.448Z",
   "mappedCount": 89,
   "matchedCount": 88,
   "missingCount": 1,
@@ -377,17 +377,17 @@
     {
       "internalId": "glm-5-2",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.93,
-      "cachePrice": 0.18,
-      "outputPrice": 3,
+      "inputPrice": 0.91,
+      "cachePrice": 0.169,
+      "outputPrice": 2.86,
       "contextWindow": 1048576
     },
     {
       "internalId": "glm-5-2-air",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.93,
-      "cachePrice": 0.18,
-      "outputPrice": 3,
+      "inputPrice": 0.91,
+      "cachePrice": 0.169,
+      "outputPrice": 2.86,
       "contextWindow": 1048576
     },
     {
