@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-14T18:09:09.352Z",
-  "generatedAt": "2026-07-14T18:09:09.448Z",
+  "fetchedAt": "2026-07-15T18:12:53.358Z",
+  "generatedAt": "2026-07-15T18:12:53.499Z",
   "mappedCount": 89,
   "matchedCount": 88,
   "missingCount": 1,
@@ -257,9 +257,9 @@
     {
       "internalId": "llama-3-3-70b-instruct",
       "openrouterId": "meta-llama/llama-3.3-70b-instruct",
-      "inputPrice": 0.1,
+      "inputPrice": 0.13,
       "cachePrice": 0,
-      "outputPrice": 0.32,
+      "outputPrice": 0.4,
       "contextWindow": 131072
     },
     {
@@ -314,9 +314,9 @@
       "internalId": "deepseek-v3-1",
       "openrouterId": "deepseek/deepseek-v3.1-terminus",
       "inputPrice": 0.27,
-      "cachePrice": 0.13,
-      "outputPrice": 0.95,
-      "contextWindow": 163840
+      "cachePrice": 0.135,
+      "outputPrice": 1,
+      "contextWindow": 131072
     },
     {
       "internalId": "deepseek-r1",
@@ -330,9 +330,9 @@
       "internalId": "deepseek-v3",
       "openrouterId": "deepseek/deepseek-v3.1-terminus",
       "inputPrice": 0.27,
-      "cachePrice": 0.13,
-      "outputPrice": 0.95,
-      "contextWindow": 163840
+      "cachePrice": 0.135,
+      "outputPrice": 1,
+      "contextWindow": 131072
     },
     {
       "internalId": "deepseek-chat",
@@ -354,7 +354,7 @@
       "internalId": "kimi-k2-6",
       "openrouterId": "moonshotai/kimi-k2.6",
       "inputPrice": 0.66,
-      "cachePrice": 0.15,
+      "cachePrice": 0.144,
       "outputPrice": 3.41,
       "contextWindow": 262144
     },
@@ -370,24 +370,24 @@
       "internalId": "kimi-k2-thinking",
       "openrouterId": "moonshotai/kimi-k2-thinking",
       "inputPrice": 0.6,
-      "cachePrice": 0.15,
+      "cachePrice": 0,
       "outputPrice": 2.5,
       "contextWindow": 262144
     },
     {
       "internalId": "glm-5-2",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.91,
-      "cachePrice": 0.169,
-      "outputPrice": 2.86,
+      "inputPrice": 0.854,
+      "cachePrice": 0.1586,
+      "outputPrice": 2.684,
       "contextWindow": 1048576
     },
     {
       "internalId": "glm-5-2-air",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.91,
-      "cachePrice": 0.169,
-      "outputPrice": 2.86,
+      "inputPrice": 0.854,
+      "cachePrice": 0.1586,
+      "outputPrice": 2.684,
       "contextWindow": 1048576
     },
     {
@@ -417,10 +417,10 @@
     {
       "internalId": "glm-4-flash",
       "openrouterId": "z-ai/glm-4.7-flash",
-      "inputPrice": 0.06,
-      "cachePrice": 0.01,
+      "inputPrice": 0.0605,
+      "cachePrice": 0,
       "outputPrice": 0.4,
-      "contextWindow": 202752
+      "contextWindow": 200000
     },
     {
       "internalId": "mimo-v2-5-pro",
@@ -433,31 +433,31 @@
     {
       "internalId": "mimo-vl-7b",
       "openrouterId": "xiaomi/mimo-v2.5",
-      "inputPrice": 0.105,
-      "cachePrice": 0.028,
+      "inputPrice": 0.14,
+      "cachePrice": 0.0028,
       "outputPrice": 0.28,
       "contextWindow": 1048576
     },
     {
       "internalId": "minimax-m2-7-highspeed",
       "openrouterId": "minimax/minimax-m2.7",
-      "inputPrice": 0.24,
-      "cachePrice": 0,
-      "outputPrice": 0.96,
+      "inputPrice": 0.3,
+      "cachePrice": 0.06,
+      "outputPrice": 1.2,
       "contextWindow": 204800
     },
     {
       "internalId": "minimax-m2-7",
       "openrouterId": "minimax/minimax-m2.7",
-      "inputPrice": 0.24,
-      "cachePrice": 0,
-      "outputPrice": 0.96,
+      "inputPrice": 0.3,
+      "cachePrice": 0.06,
+      "outputPrice": 1.2,
       "contextWindow": 204800
     },
     {
       "internalId": "minimax-m1",
       "openrouterId": "minimax/minimax-m1",
-      "inputPrice": 0.4,
+      "inputPrice": 0.55,
       "cachePrice": 0,
       "outputPrice": 2.2,
       "contextWindow": 1000000
@@ -617,26 +617,26 @@
     {
       "internalId": "qwen-3-7-max",
       "openrouterId": "qwen/qwen3.7-max",
-      "inputPrice": 1.25,
-      "cachePrice": 0.25,
-      "outputPrice": 3.75,
+      "inputPrice": 1.475,
+      "cachePrice": 0.295,
+      "outputPrice": 4.425,
       "contextWindow": 1000000
     },
     {
       "internalId": "qwen3-coder",
       "openrouterId": "qwen/qwen3-coder",
-      "inputPrice": 0.22,
-      "cachePrice": 0,
-      "outputPrice": 1.8,
+      "inputPrice": 0.3,
+      "cachePrice": 0.1,
+      "outputPrice": 1,
       "contextWindow": 1048576
     },
     {
       "internalId": "qwen3-vl",
       "openrouterId": "qwen/qwen3-vl-235b-a22b-instruct",
-      "inputPrice": 0.2,
-      "cachePrice": 0.11,
-      "outputPrice": 0.88,
-      "contextWindow": 262144
+      "inputPrice": 0.21,
+      "cachePrice": 0.1,
+      "outputPrice": 1.9,
+      "contextWindow": 131072
     },
     {
       "internalId": "minimax-m2-5",
@@ -649,16 +649,16 @@
     {
       "internalId": "mimo-v2-5",
       "openrouterId": "xiaomi/mimo-v2.5",
-      "inputPrice": 0.105,
-      "cachePrice": 0.028,
+      "inputPrice": 0.14,
+      "cachePrice": 0.0028,
       "outputPrice": 0.28,
       "contextWindow": 1048576
     },
     {
       "internalId": "mimo-v2",
       "openrouterId": "xiaomi/mimo-v2.5",
-      "inputPrice": 0.105,
-      "cachePrice": 0.028,
+      "inputPrice": 0.14,
+      "cachePrice": 0.0028,
       "outputPrice": 0.28,
       "contextWindow": 1048576
     },
@@ -673,9 +673,9 @@
     {
       "internalId": "glm-5",
       "openrouterId": "z-ai/glm-5",
-      "inputPrice": 0.6,
-      "cachePrice": 0.12,
-      "outputPrice": 1.92,
+      "inputPrice": 0.95,
+      "cachePrice": 0.19,
+      "outputPrice": 3.15,
       "contextWindow": 202752
     },
     {
@@ -705,9 +705,9 @@
     {
       "internalId": "deepseek-v4-flash",
       "openrouterId": "deepseek/deepseek-v4-flash",
-      "inputPrice": 0.09,
-      "cachePrice": 0.018,
-      "outputPrice": 0.18,
+      "inputPrice": 0.098,
+      "cachePrice": 0.02,
+      "outputPrice": 0.196,
       "contextWindow": 1048576
     }
   ],

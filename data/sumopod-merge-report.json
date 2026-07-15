@@ -1,7 +1,7 @@
 {
   "source": "https://ai.sumopod.com/model/info",
-  "fetchedAt": "2026-07-14T18:09:16.538Z",
-  "generatedAt": "2026-07-14T18:09:18.150Z",
+  "fetchedAt": "2026-07-15T18:12:56.466Z",
+  "generatedAt": "2026-07-15T18:12:58.164Z",
   "availableCount": 64,
   "mappedCount": 59,
   "matchedCount": 44,
@@ -441,7 +441,7 @@
       "internalId": "deepseek-v4-flash",
       "sumopodId": "deepseek-v4-flash",
       "provider": "deepseek",
-      "mode": null,
+      "mode": "chat",
       "inputPrice": 0.14,
       "cachePrice": 0.0028,
       "outputPrice": 0.28,
