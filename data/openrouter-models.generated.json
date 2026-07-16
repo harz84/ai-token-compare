@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-15T18:12:53.358Z",
-  "count": 342,
+  "fetchedAt": "2026-07-16T18:11:00.594Z",
+  "count": 344,
   "models": [
     {
       "id": "~anthropic/claude-fable-latest",
@@ -16,7 +16,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -70,7 +70,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -126,7 +126,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -182,7 +182,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -237,7 +237,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -298,7 +298,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -362,35 +362,26 @@
       "provider": "~moonshotai",
       "modelSlug": "kimi-latest",
       "canonicalSlug": "~moonshotai/kimi-latest",
-      "contextWindow": 262144,
-      "inputPrice": 0.66,
-      "outputPrice": 3.41,
-      "cachePrice": 0.15,
+      "contextWindow": 1048576,
+      "inputPrice": 3,
+      "outputPrice": 15,
+      "cachePrice": 0.3,
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
-        "logprobs",
         "max_tokens",
-        "min_p",
-        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
-        "repetition_penalty",
+        "reasoning_effort",
         "response_format",
-        "seed",
         "stop",
         "structured_outputs",
-        "temperature",
         "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
+        "tools"
       ],
       "architecture": {
         "modality": "text+image->text",
@@ -405,15 +396,15 @@
         "instruct_type": null
       },
       "topProvider": {
-        "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "context_length": 1048576,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000341",
-        "input_cache_read": "0.00000015"
+        "prompt": "0.000003",
+        "completion": "0.000015",
+        "input_cache_read": "0.0000003"
       }
     },
     {
@@ -429,7 +420,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -491,7 +482,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -543,7 +534,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -609,7 +600,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "response_format",
@@ -654,7 +645,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -701,7 +692,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -748,7 +739,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -795,7 +786,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "temperature",
@@ -836,7 +827,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -888,7 +879,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -938,7 +929,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "stop",
@@ -983,7 +974,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "stop",
@@ -1027,7 +1018,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "stop",
@@ -1073,7 +1064,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "stop",
@@ -1118,7 +1109,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -1172,7 +1163,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "stop",
@@ -1222,7 +1213,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -1276,7 +1267,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -1332,7 +1323,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -1384,7 +1375,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -1440,7 +1431,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -1496,7 +1487,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -1554,7 +1545,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -1609,7 +1600,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -1663,7 +1654,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -1719,7 +1710,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -1773,7 +1764,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -1836,7 +1827,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -1902,7 +1893,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -1960,7 +1951,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -2015,7 +2006,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -2062,7 +2053,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -2112,7 +2103,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -2162,7 +2153,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -2220,7 +2211,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -2278,7 +2269,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -2337,7 +2328,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -2396,7 +2387,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -2449,7 +2440,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -2495,7 +2486,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -2542,7 +2533,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -2590,7 +2581,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -2640,7 +2631,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -2690,7 +2681,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -2738,7 +2729,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -2788,7 +2779,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -2840,7 +2831,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -2893,7 +2884,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -2947,7 +2938,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3005,7 +2996,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3059,7 +3050,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3117,7 +3108,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3166,7 +3157,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3222,7 +3213,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3280,7 +3271,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3337,7 +3328,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3396,7 +3387,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3455,7 +3446,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -3515,7 +3506,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "response_format",
@@ -3570,7 +3561,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -3630,7 +3621,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -3700,7 +3691,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -3769,7 +3760,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -3839,7 +3830,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -3900,7 +3891,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -3959,7 +3950,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4016,7 +4007,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4067,7 +4058,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4118,7 +4109,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4179,7 +4170,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4205,7 +4196,7 @@
       },
       "topProvider": {
         "context_length": 65536,
-        "max_completion_tokens": 66000,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "modality": null,
@@ -4229,7 +4220,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4289,7 +4280,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4360,7 +4351,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4430,7 +4421,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4491,7 +4482,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -4539,7 +4530,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -4593,7 +4584,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -4650,7 +4641,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -4702,7 +4693,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -4752,7 +4743,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -4811,7 +4802,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -4868,7 +4859,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -4928,7 +4919,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -4977,7 +4968,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "response_format",
@@ -5022,7 +5013,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "response_format",
@@ -5067,7 +5058,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -5121,7 +5112,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -5173,7 +5164,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -5227,7 +5218,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -5276,7 +5267,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -5330,7 +5321,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -5384,7 +5375,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -5438,7 +5429,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "stop",
@@ -5480,7 +5471,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "stop",
@@ -5522,7 +5513,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -5573,7 +5564,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -5629,7 +5620,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -5680,7 +5671,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -5734,7 +5725,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -5789,7 +5780,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -5845,7 +5836,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -5896,7 +5887,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -5939,13 +5930,13 @@
       "modelSlug": "llama-3.2-3b-instruct",
       "canonicalSlug": "meta-llama/llama-3.2-3b-instruct",
       "contextWindow": 131072,
-      "inputPrice": 0.05,
-      "outputPrice": 0.33,
+      "inputPrice": 0.0509,
+      "outputPrice": 0.335,
       "cachePrice": 0,
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -5974,14 +5965,14 @@
         "instruct_type": "llama3"
       },
       "topProvider": {
-        "context_length": 131072,
-        "max_completion_tokens": 131072,
+        "context_length": 80000,
+        "max_completion_tokens": 80000,
         "is_moderated": false
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.00000005",
-        "completion": "0.00000033"
+        "prompt": "0.0000000509",
+        "completion": "0.000000335"
       }
     },
     {
@@ -5997,7 +5988,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -6042,7 +6033,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -6097,7 +6088,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -6144,7 +6135,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -6200,7 +6191,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -6254,7 +6245,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -6293,6 +6284,62 @@
       }
     },
     {
+      "id": "meta/muse-spark-1.1",
+      "name": "Meta: Muse Spark 1.1",
+      "provider": "meta",
+      "modelSlug": "muse-spark-1.1",
+      "canonicalSlug": "meta/muse-spark-1.1-20260709",
+      "contextWindow": 1048576,
+      "inputPrice": 1.25,
+      "outputPrice": 4.25,
+      "cachePrice": 0.15,
+      "source": "openrouter-api",
+      "sourceType": "curated",
+      "sourceUrl": "https://openrouter.ai/api/v1/models",
+      "updatedAt": "2026-07-16",
+      "supportedParameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "architecture": {
+        "modality": "text+image+file+audio+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "topProvider": {
+        "context_length": 1048576,
+        "max_completion_tokens": null,
+        "is_moderated": true
+      },
+      "modality": null,
+      "rawPricing": {
+        "prompt": "0.00000125",
+        "completion": "0.00000425",
+        "web_search": "0.0025",
+        "input_cache_read": "0.00000015"
+      }
+    },
+    {
       "id": "microsoft/phi-4",
       "name": "Microsoft: Phi 4",
       "provider": "microsoft",
@@ -6305,7 +6352,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -6356,7 +6403,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -6404,7 +6451,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "temperature",
@@ -6446,7 +6493,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -6497,7 +6544,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -6552,7 +6599,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "temperature",
@@ -6594,7 +6641,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -6647,7 +6694,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -6706,7 +6753,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -6764,7 +6811,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -6824,7 +6871,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -6876,7 +6923,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -6927,7 +6974,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -6981,7 +7028,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -7035,7 +7082,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -7089,7 +7136,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7140,7 +7187,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7191,7 +7238,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7243,7 +7290,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7295,7 +7342,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -7349,7 +7396,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7401,7 +7448,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -7456,7 +7503,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7507,7 +7554,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -7558,7 +7605,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -7613,7 +7660,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -7665,7 +7712,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -7722,7 +7769,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7773,7 +7820,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7826,7 +7873,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7875,7 +7922,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -7926,7 +7973,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -7981,7 +8028,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8034,13 +8081,13 @@
       "modelSlug": "kimi-k2.6",
       "canonicalSlug": "moonshotai/kimi-k2.6-20260420",
       "contextWindow": 262144,
-      "inputPrice": 0.66,
-      "outputPrice": 3.41,
-      "cachePrice": 0.144,
+      "inputPrice": 0.95,
+      "outputPrice": 4,
+      "cachePrice": 0.16,
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8077,14 +8124,14 @@
       },
       "topProvider": {
         "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000341",
-        "input_cache_read": "0.000000144"
+        "prompt": "0.00000095",
+        "completion": "0.000004",
+        "input_cache_read": "0.00000016"
       }
     },
     {
@@ -8094,13 +8141,13 @@
       "modelSlug": "kimi-k2.7-code",
       "canonicalSlug": "moonshotai/kimi-k2.7-code-20260612",
       "contextWindow": 262144,
-      "inputPrice": 0.719,
-      "outputPrice": 3.49,
-      "cachePrice": 0.149,
+      "inputPrice": 0.75,
+      "outputPrice": 3.5,
+      "cachePrice": 0.16,
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8142,9 +8189,60 @@
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.000000719",
-        "completion": "0.00000349",
-        "input_cache_read": "0.000000149"
+        "prompt": "0.00000075",
+        "completion": "0.0000035",
+        "input_cache_read": "0.00000016"
+      }
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "provider": "moonshot",
+      "modelSlug": "kimi-k3",
+      "canonicalSlug": "moonshotai/kimi-k3-20260715",
+      "contextWindow": 1048576,
+      "inputPrice": 3,
+      "outputPrice": 15,
+      "cachePrice": 0.3,
+      "source": "openrouter-api",
+      "sourceType": "curated",
+      "sourceUrl": "https://openrouter.ai/api/v1/models",
+      "updatedAt": "2026-07-16",
+      "supportedParameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools"
+      ],
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "topProvider": {
+        "context_length": 1048576,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "modality": null,
+      "rawPricing": {
+        "prompt": "0.000003",
+        "completion": "0.000015",
+        "input_cache_read": "0.0000003"
       }
     },
     {
@@ -8160,7 +8258,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "stop",
@@ -8201,7 +8299,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "logprobs",
         "max_tokens",
@@ -8246,7 +8344,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -8298,7 +8396,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8349,7 +8447,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -8400,7 +8498,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -8445,7 +8543,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -8496,7 +8594,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8544,7 +8642,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8592,7 +8690,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8646,7 +8744,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8703,7 +8801,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -8749,7 +8847,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -8798,7 +8896,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8857,7 +8955,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -8906,7 +9004,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -8963,7 +9061,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -9010,7 +9108,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -9055,7 +9153,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -9103,7 +9201,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -9151,7 +9249,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9203,7 +9301,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9255,7 +9353,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9308,7 +9406,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9358,7 +9456,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9411,7 +9509,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9464,7 +9562,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9516,7 +9614,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_completion_tokens",
         "max_tokens",
@@ -9567,7 +9665,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_completion_tokens",
         "max_tokens",
@@ -9618,7 +9716,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_completion_tokens",
         "max_tokens",
@@ -9669,7 +9767,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9727,7 +9825,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9763,7 +9861,7 @@
       "topProvider": {
         "context_length": 128000,
         "max_completion_tokens": 4096,
-        "is_moderated": false
+        "is_moderated": true
       },
       "modality": null,
       "rawPricing": {
@@ -9784,7 +9882,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9842,7 +9940,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9899,7 +9997,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -9957,7 +10055,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -10014,7 +10112,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "response_format",
@@ -10057,7 +10155,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "response_format",
@@ -10100,7 +10198,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -10152,7 +10250,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "response_format",
@@ -10198,7 +10296,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -10247,7 +10345,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -10305,7 +10403,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -10363,7 +10461,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -10415,7 +10513,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -10467,7 +10565,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -10517,7 +10615,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -10569,7 +10667,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_completion_tokens",
         "max_tokens",
@@ -10618,7 +10716,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -10669,7 +10767,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -10720,7 +10818,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -10771,7 +10869,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -10823,7 +10921,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_completion_tokens",
         "max_tokens",
@@ -10872,7 +10970,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -10923,7 +11021,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -10973,7 +11071,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_completion_tokens",
         "max_tokens",
@@ -11022,7 +11120,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11074,7 +11172,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11134,7 +11232,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -11191,7 +11289,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11243,7 +11341,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11295,7 +11393,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11353,7 +11451,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11413,7 +11511,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -11470,7 +11568,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11532,7 +11630,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11594,7 +11692,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11656,7 +11754,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11718,7 +11816,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11780,7 +11878,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_completion_tokens",
@@ -11842,7 +11940,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -11898,7 +11996,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -11954,7 +12052,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "response_format",
@@ -12002,7 +12100,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -12061,7 +12159,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -12120,7 +12218,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -12176,7 +12274,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -12226,7 +12324,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -12276,7 +12374,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -12323,7 +12421,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -12373,7 +12471,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -12431,7 +12529,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -12480,7 +12578,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -12530,7 +12628,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -12579,7 +12677,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -12629,7 +12727,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -12687,7 +12785,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -12738,7 +12836,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -12805,7 +12903,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [],
       "architecture": {
         "modality": "text->text",
@@ -12842,7 +12940,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -12899,7 +12997,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [],
       "architecture": {
         "modality": "text->text",
@@ -12936,7 +13034,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [],
       "architecture": {
         "modality": "text->text",
@@ -12973,7 +13071,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -13022,7 +13120,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -13069,7 +13167,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -13118,7 +13216,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -13165,7 +13263,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -13215,7 +13313,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -13264,7 +13362,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -13309,7 +13407,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -13353,7 +13451,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -13398,7 +13496,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -13442,7 +13540,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -13495,7 +13593,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -13550,7 +13648,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -13599,7 +13697,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "logprobs",
         "max_tokens",
@@ -13659,7 +13757,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "logprobs",
         "max_tokens",
@@ -13715,7 +13813,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -13773,7 +13871,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -13821,13 +13919,13 @@
       "modelSlug": "qwen3-14b",
       "canonicalSlug": "qwen/qwen3-14b-04-28",
       "contextWindow": 131702,
-      "inputPrice": 0.1,
+      "inputPrice": 0.12,
       "outputPrice": 0.24,
       "cachePrice": 0,
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -13862,12 +13960,12 @@
       },
       "topProvider": {
         "context_length": 40960,
-        "max_completion_tokens": 40960,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.0000001",
+        "prompt": "0.00000012",
         "completion": "0.00000024"
       }
     },
@@ -13884,7 +13982,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -13932,7 +14030,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -13987,7 +14085,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -14043,7 +14141,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -14100,7 +14198,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -14155,7 +14253,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -14203,7 +14301,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -14260,7 +14358,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -14308,7 +14406,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -14364,7 +14462,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -14417,7 +14515,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "logprobs",
         "max_tokens",
@@ -14477,13 +14575,13 @@
       "modelSlug": "qwen3-coder-next",
       "canonicalSlug": "qwen/qwen3-coder-next-2025-02-03",
       "contextWindow": 262144,
-      "inputPrice": 0.12,
+      "inputPrice": 0.11,
       "outputPrice": 0.8,
       "cachePrice": 0.07,
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -14520,7 +14618,7 @@
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.00000012",
+        "prompt": "0.00000011",
         "completion": "0.0000008",
         "input_cache_read": "0.00000007"
       }
@@ -14538,7 +14636,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "logprobs",
         "max_tokens",
@@ -14605,7 +14703,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -14652,7 +14750,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "logprobs",
         "max_tokens",
@@ -14719,7 +14817,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -14782,7 +14880,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -14838,7 +14936,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "max_tokens",
@@ -14887,7 +14985,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -14942,7 +15040,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -14999,7 +15097,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -15055,7 +15153,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -15111,7 +15209,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -15165,7 +15263,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "logprobs",
         "max_tokens",
@@ -15215,7 +15313,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -15270,7 +15368,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -15322,7 +15420,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -15381,7 +15479,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -15440,7 +15538,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -15499,7 +15597,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -15559,7 +15657,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -15618,7 +15716,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -15669,7 +15767,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -15729,7 +15827,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -15791,7 +15889,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -15850,7 +15948,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -15909,7 +16007,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -15971,7 +16069,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -16031,7 +16129,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -16093,7 +16191,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -16146,7 +16244,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -16209,7 +16307,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -16262,7 +16360,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -16313,7 +16411,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "seed",
@@ -16354,7 +16452,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "response_format",
@@ -16400,7 +16498,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "reasoning",
@@ -16456,7 +16554,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -16507,7 +16605,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -16560,7 +16658,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -16610,7 +16708,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -16657,7 +16755,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -16718,7 +16816,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -16765,7 +16863,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -16822,7 +16920,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -16874,7 +16972,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -16927,7 +17025,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -16980,7 +17078,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -17032,7 +17130,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -17085,7 +17183,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logprobs",
@@ -17137,7 +17235,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "logit_bias",
@@ -17191,7 +17289,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -17238,7 +17336,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "max_tokens",
         "stop",
@@ -17281,7 +17379,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -17343,7 +17441,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "logprobs",
@@ -17404,7 +17502,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -17470,7 +17568,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -17536,7 +17634,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -17601,7 +17699,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -17662,7 +17760,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -17720,7 +17818,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -17768,7 +17866,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -17820,7 +17918,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -17874,7 +17972,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -17930,7 +18028,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -17985,7 +18083,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -18043,7 +18141,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -18100,7 +18198,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -18158,7 +18256,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
@@ -18206,7 +18304,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -18258,13 +18356,13 @@
       "modelSlug": "glm-5.2",
       "canonicalSlug": "z-ai/glm-5.2-20260616",
       "contextWindow": 1048576,
-      "inputPrice": 0.854,
-      "outputPrice": 2.684,
-      "cachePrice": 0.1586,
+      "inputPrice": 0.9184,
+      "outputPrice": 2.8864,
+      "cachePrice": 0.17056,
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -18306,9 +18404,9 @@
       },
       "modality": null,
       "rawPricing": {
-        "prompt": "0.000000854",
-        "completion": "0.000002684",
-        "input_cache_read": "0.0000001586"
+        "prompt": "0.0000009184",
+        "completion": "0.0000028864",
+        "input_cache_read": "0.00000017056"
       }
     },
     {
@@ -18324,7 +18422,7 @@
       "source": "openrouter-api",
       "sourceType": "curated",
       "sourceUrl": "https://openrouter.ai/api/v1/models",
-      "updatedAt": "2026-07-15",
+      "updatedAt": "2026-07-16",
       "supportedParameters": [
         "include_reasoning",
         "max_tokens",
