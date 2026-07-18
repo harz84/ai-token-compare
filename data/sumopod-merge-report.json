@@ -1,8 +1,8 @@
 {
   "source": "https://ai.sumopod.com/model/info",
-  "fetchedAt": "2026-07-17T18:10:44.740Z",
-  "generatedAt": "2026-07-17T18:10:46.025Z",
-  "availableCount": 65,
+  "fetchedAt": "2026-07-18T18:00:21.791Z",
+  "generatedAt": "2026-07-18T18:00:23.074Z",
+  "availableCount": 66,
   "mappedCount": 59,
   "matchedCount": 44,
   "missingCount": 15,
@@ -250,22 +250,22 @@
     {
       "internalId": "kimi-k2-6",
       "sumopodId": "kimi-k2.6",
-      "provider": "openai",
+      "provider": "moonshoot",
       "mode": null,
       "inputPrice": 0.67,
       "cachePrice": 0.14,
       "outputPrice": 3.39,
-      "contextWindow": null
+      "contextWindow": 262100
     },
     {
       "internalId": "kimi-k2",
       "sumopodId": "kimi-k2.6",
-      "provider": "openai",
+      "provider": "moonshoot",
       "mode": null,
       "inputPrice": 0.67,
       "cachePrice": 0.14,
       "outputPrice": 3.39,
-      "contextWindow": null
+      "contextWindow": 262100
     },
     {
       "internalId": "minimax-m2-7-highspeed",
