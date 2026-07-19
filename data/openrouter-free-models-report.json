@@ -1,16 +1,12 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-18T18:00:18.958Z",
-  "generatedAt": "2026-07-18T18:00:19.092Z",
-  "count": 20,
+  "fetchedAt": "2026-07-19T18:01:30.162Z",
+  "generatedAt": "2026-07-19T18:01:30.295Z",
+  "count": 14,
   "modelIds": [
-    "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
-    "meta-llama/llama-3.2-3b-instruct:free",
-    "meta-llama/llama-3.3-70b-instruct:free",
-    "nousresearch/hermes-3-llama-3.1-405b:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-super-120b-a12b:free",
@@ -21,8 +17,6 @@
     "openai/gpt-oss-20b:free",
     "poolside/laguna-m.1:free",
     "poolside/laguna-xs-2.1:free",
-    "qwen/qwen3-coder:free",
-    "qwen/qwen3-next-80b-a3b-instruct:free",
     "tencent/hy3:free"
   ]
 }
