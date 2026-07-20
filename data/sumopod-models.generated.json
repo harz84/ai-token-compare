@@ -1,6 +1,6 @@
 {
   "source": "https://ai.sumopod.com/model/info",
-  "fetchedAt": "2026-07-19T18:01:34.125Z",
+  "fetchedAt": "2026-07-20T18:57:22.145Z",
   "count": 66,
   "models": [
     {
@@ -19,7 +19,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "claude-fable-5",
         "litellm_params": {
@@ -112,6 +112,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": true,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -125,6 +127,7 @@
             "search_context_size_low": 0.01,
             "search_context_size_medium": 0.01
           },
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -174,7 +177,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "claude-haiku-4-5",
         "litellm_params": {
@@ -267,6 +270,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -276,6 +281,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": true,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -323,7 +329,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "claude-opus-4-7",
         "litellm_params": {
@@ -412,10 +418,12 @@
           "supports_pdf_input": true,
           "supports_embedding_image_input": null,
           "supports_native_streaming": null,
-          "supports_native_structured_output": null,
+          "supports_native_structured_output": true,
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": true,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -429,6 +437,7 @@
             "search_context_size_low": 0.01,
             "search_context_size_medium": 0.01
           },
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -479,7 +488,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "claude-opus-4-8",
         "litellm_params": {
@@ -568,10 +577,12 @@
           "supports_pdf_input": true,
           "supports_embedding_image_input": null,
           "supports_native_streaming": null,
-          "supports_native_structured_output": null,
+          "supports_native_structured_output": true,
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": true,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -585,6 +596,7 @@
             "search_context_size_low": 0.01,
             "search_context_size_medium": 0.01
           },
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -635,7 +647,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "claude-sonnet-4-6",
         "litellm_params": {
@@ -724,10 +736,12 @@
           "supports_pdf_input": true,
           "supports_embedding_image_input": null,
           "supports_native_streaming": null,
-          "supports_native_structured_output": null,
+          "supports_native_structured_output": true,
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": true,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -741,6 +755,7 @@
             "search_context_size_low": 0.01,
             "search_context_size_medium": 0.01
           },
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -788,7 +803,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "claude-sonnet-5",
         "litellm_params": {
@@ -881,6 +896,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": true,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -894,6 +911,7 @@
             "search_context_size_low": 0.01,
             "search_context_size_medium": 0.01
           },
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -943,7 +961,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "deepseek-v4-flash",
         "litellm_params": {
@@ -994,7 +1012,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "deepseek-v4-flash",
         "litellm_params": {
@@ -1090,6 +1108,8 @@
           "supports_embedding_image_input": null,
           "supports_native_streaming": true,
           "supports_native_structured_output": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -1099,6 +1119,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -1127,7 +1148,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "deepseek-v4-pro",
         "litellm_params": {
@@ -1178,7 +1199,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "deepseek-v4-pro",
         "litellm_params": {
@@ -1274,6 +1295,8 @@
           "supports_embedding_image_input": null,
           "supports_native_streaming": true,
           "supports_native_structured_output": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -1283,6 +1306,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -1311,7 +1335,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gemini/gemini-2.5-flash",
         "litellm_params": {
@@ -1404,6 +1428,8 @@
           "supports_web_search": true,
           "supports_url_context": true,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -1417,6 +1443,7 @@
             "search_context_size_medium": 0.035,
             "search_context_size_high": 0.035
           },
+          "web_search_billing_unit": null,
           "tpm": 8000000,
           "rpm": 100000,
           "ocr_cost_per_page": null,
@@ -1467,7 +1494,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gemini/gemini-2.5-flash-lite",
         "litellm_params": {
@@ -1560,6 +1587,8 @@
           "supports_web_search": true,
           "supports_url_context": true,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -1573,6 +1602,7 @@
             "search_context_size_medium": 0.035,
             "search_context_size_high": 0.035
           },
+          "web_search_billing_unit": null,
           "tpm": 250000,
           "rpm": 15,
           "ocr_cost_per_page": null,
@@ -1623,7 +1653,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gemini/gemini-3-flash-preview",
         "litellm_params": {
@@ -1716,6 +1746,8 @@
           "supports_web_search": true,
           "supports_url_context": true,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -1729,6 +1761,7 @@
             "search_context_size_medium": 0.014,
             "search_context_size_high": 0.014
           },
+          "web_search_billing_unit": "per_query",
           "tpm": 800000,
           "rpm": 2000,
           "ocr_cost_per_page": null,
@@ -1779,7 +1812,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gemini/gemini-3.1-flash-lite",
         "litellm_params": {
@@ -1872,6 +1905,8 @@
           "supports_web_search": true,
           "supports_url_context": true,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -1885,6 +1920,7 @@
             "search_context_size_medium": 0.014,
             "search_context_size_high": 0.014
           },
+          "web_search_billing_unit": "per_query",
           "tpm": 250000,
           "rpm": 15,
           "ocr_cost_per_page": null,
@@ -1935,7 +1971,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gemini/gemini-3.1-flash-lite",
         "litellm_params": {
@@ -2028,6 +2064,8 @@
           "supports_web_search": true,
           "supports_url_context": true,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -2041,6 +2079,7 @@
             "search_context_size_medium": 0.014,
             "search_context_size_high": 0.014
           },
+          "web_search_billing_unit": "per_query",
           "tpm": 250000,
           "rpm": 15,
           "ocr_cost_per_page": null,
@@ -2091,7 +2130,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gemini/gemini-3.1-pro-preview",
         "litellm_params": {
@@ -2184,6 +2223,8 @@
           "supports_web_search": true,
           "supports_url_context": true,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -2197,6 +2238,7 @@
             "search_context_size_medium": 0.014,
             "search_context_size_high": 0.014
           },
+          "web_search_billing_unit": "per_query",
           "tpm": 800000,
           "rpm": 2000,
           "ocr_cost_per_page": null,
@@ -2247,7 +2289,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gemini/gemini-3.5-flash",
         "litellm_params": {
@@ -2340,6 +2382,8 @@
           "supports_web_search": true,
           "supports_url_context": true,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -2353,6 +2397,7 @@
             "search_context_size_medium": 0.014,
             "search_context_size_high": 0.014
           },
+          "web_search_billing_unit": "per_query",
           "tpm": 800000,
           "rpm": 2000,
           "ocr_cost_per_page": null,
@@ -2403,7 +2448,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gemini/gemini-embedding-001",
         "litellm_params": {
@@ -2496,6 +2541,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -2505,6 +2552,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": 10000000,
           "rpm": 10000,
           "ocr_cost_per_page": null,
@@ -2533,15 +2581,7 @@
             "web_search_options",
             "include_server_side_tool_invocations",
             "service_tier"
-          ],
-          "updated_at": null,
-          "updated_by": null,
-          "created_at": null,
-          "created_by": null,
-          "base_model": null,
-          "tier": null,
-          "team_id": null,
-          "team_public_model_name": null
+          ]
         }
       }
     },
@@ -2561,7 +2601,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "glm-5",
         "litellm_params": {
@@ -2611,7 +2651,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "glm-5",
         "litellm_params": {
@@ -2661,7 +2701,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "glm-5-turbo",
         "litellm_params": {
@@ -2711,7 +2751,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "glm-5-turbo",
         "litellm_params": {
@@ -2756,7 +2796,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "glm-5.1",
         "litellm_params": {
@@ -2806,7 +2846,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "glm-5.1",
         "litellm_params": {
@@ -2851,7 +2891,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "glm-5.2",
         "litellm_params": {
@@ -2901,7 +2941,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "glm-5.2",
         "litellm_params": {
@@ -2951,7 +2991,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "glm-5v-turbo",
         "litellm_params": {
@@ -3001,7 +3041,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-4.1",
         "litellm_params": {
@@ -3094,6 +3134,8 @@
           "supports_web_search": true,
           "supports_url_context": null,
           "supports_reasoning": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -3103,6 +3145,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -3164,7 +3207,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-4.1-mini",
         "litellm_params": {
@@ -3257,6 +3300,8 @@
           "supports_web_search": true,
           "supports_url_context": null,
           "supports_reasoning": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -3266,6 +3311,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -3327,7 +3373,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-4.1-nano",
         "litellm_params": {
@@ -3420,6 +3466,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -3429,6 +3477,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -3490,7 +3539,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-4o",
         "litellm_params": {
@@ -3583,6 +3632,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -3592,6 +3643,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -3653,7 +3705,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-4o-mini",
         "litellm_params": {
@@ -3746,6 +3798,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -3755,6 +3809,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -3816,7 +3871,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-5",
         "litellm_params": {
@@ -3909,6 +3964,8 @@
           "supports_web_search": true,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": false,
           "supports_minimal_reasoning_effort": true,
           "supports_low_reasoning_effort": null,
@@ -3918,6 +3975,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -3970,7 +4028,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-5-mini",
         "litellm_params": {
@@ -4063,6 +4121,8 @@
           "supports_web_search": true,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": false,
           "supports_minimal_reasoning_effort": true,
           "supports_low_reasoning_effort": null,
@@ -4072,6 +4132,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -4124,7 +4185,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-5-nano",
         "litellm_params": {
@@ -4217,6 +4278,8 @@
           "supports_web_search": true,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": false,
           "supports_minimal_reasoning_effort": true,
           "supports_low_reasoning_effort": null,
@@ -4226,6 +4289,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -4278,7 +4342,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-5.4",
         "litellm_params": {
@@ -4371,6 +4435,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": true,
           "supports_minimal_reasoning_effort": true,
           "supports_low_reasoning_effort": null,
@@ -4380,6 +4446,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -4435,7 +4502,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-5.4-mini",
         "litellm_params": {
@@ -4528,6 +4595,8 @@
           "supports_web_search": true,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": true,
           "supports_minimal_reasoning_effort": false,
           "supports_low_reasoning_effort": null,
@@ -4537,6 +4606,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -4592,7 +4662,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "gpt-5.4-nano",
         "litellm_params": {
@@ -4685,6 +4755,8 @@
           "supports_web_search": true,
           "supports_url_context": null,
           "supports_reasoning": true,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": true,
           "supports_minimal_reasoning_effort": false,
           "supports_low_reasoning_effort": null,
@@ -4694,6 +4766,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -4749,7 +4822,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "hy3",
         "litellm_params": {
@@ -4799,57 +4872,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
-      "raw": {
-        "model_name": "kimi-k2.6",
-        "litellm_params": {
-          "input_cost_per_token": 6.7e-7,
-          "output_cost_per_token": 0.00000339,
-          "cache_creation_input_token_cost": 6.7e-7,
-          "cache_read_input_token_cost": 1.4e-7,
-          "custom_llm_provider": "openai",
-          "litellm_credential_name": "tokenhubtencent-dev@sumopod.com",
-          "use_in_pass_through": false,
-          "use_litellm_proxy": false,
-          "use_xai_oauth": false,
-          "merge_reasoning_content_in_choices": false,
-          "tags": [],
-          "model": "kimi-k2.6",
-          "guardrails": []
-        },
-        "model_info": {
-          "id": "bfc937f1-d739-4989-843d-a1b5d3060b04",
-          "db_model": true,
-          "blocked": true,
-          "access_groups": [],
-          "direct_access": false,
-          "litellm_provider": "moonshoot",
-          "max_input_tokens": 262100,
-          "access_via_team_ids": [],
-          "input_cost_per_token": 6.7e-7,
-          "output_cost_per_token": 0.00000339,
-          "cache_read_input_token_cost": 1.4e-7,
-          "cache_creation_input_token_cost": 6.7e-7
-        }
-      }
-    },
-    {
-      "id": "kimi-k2.6",
-      "provider": "moonshoot",
-      "mode": null,
-      "inputPrice": 0.67,
-      "cachePrice": 0.14,
-      "outputPrice": 3.39,
-      "contextWindow": 262100,
-      "maxOutput": null,
-      "supportsPromptCaching": false,
-      "supportsVision": false,
-      "supportsFunctionCalling": false,
-      "supportsReasoning": false,
-      "source": "sumopod-api",
-      "sourceType": "router",
-      "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "kimi-k2.6",
         "litellm_params": {
@@ -4884,6 +4907,56 @@
       }
     },
     {
+      "id": "kimi-k2.6",
+      "provider": "moonshoot",
+      "mode": null,
+      "inputPrice": 0.67,
+      "cachePrice": 0.14,
+      "outputPrice": 3.39,
+      "contextWindow": 262100,
+      "maxOutput": null,
+      "supportsPromptCaching": false,
+      "supportsVision": false,
+      "supportsFunctionCalling": false,
+      "supportsReasoning": false,
+      "source": "sumopod-api",
+      "sourceType": "router",
+      "sourceUrl": "https://ai.sumopod.com/model/info",
+      "updatedAt": "2026-07-20",
+      "raw": {
+        "model_name": "kimi-k2.6",
+        "litellm_params": {
+          "input_cost_per_token": 6.7e-7,
+          "output_cost_per_token": 0.00000339,
+          "cache_creation_input_token_cost": 6.7e-7,
+          "cache_read_input_token_cost": 1.4e-7,
+          "custom_llm_provider": "openai",
+          "litellm_credential_name": "tokenhubtencent-dev@sumopod.com",
+          "use_in_pass_through": false,
+          "use_litellm_proxy": false,
+          "use_xai_oauth": false,
+          "merge_reasoning_content_in_choices": false,
+          "tags": [],
+          "model": "kimi-k2.6",
+          "guardrails": []
+        },
+        "model_info": {
+          "id": "bfc937f1-d739-4989-843d-a1b5d3060b04",
+          "db_model": true,
+          "blocked": true,
+          "access_groups": [],
+          "direct_access": false,
+          "litellm_provider": "moonshoot",
+          "max_input_tokens": 262100,
+          "access_via_team_ids": [],
+          "input_cost_per_token": 6.7e-7,
+          "output_cost_per_token": 0.00000339,
+          "cache_read_input_token_cost": 1.4e-7,
+          "cache_creation_input_token_cost": 6.7e-7
+        }
+      }
+    },
+    {
       "id": "kimi-k2.7",
       "provider": "moonshoot",
       "mode": null,
@@ -4899,7 +4972,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "kimi-k2.7",
         "litellm_params": {
@@ -4949,7 +5022,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "kimi-k3",
         "litellm_params": {
@@ -4999,7 +5072,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "mimo-v2.5",
         "litellm_params": {
@@ -5050,7 +5123,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "mimo-v2.5",
         "litellm_params": {
@@ -5101,7 +5174,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "mimo-v2.5",
         "litellm_params": {
@@ -5152,7 +5225,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "mimo-v2.5-pro",
         "litellm_params": {
@@ -5203,7 +5276,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "mimo-v2.5-pro",
         "litellm_params": {
@@ -5254,7 +5327,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "mimo-v2.5-pro",
         "litellm_params": {
@@ -5305,7 +5378,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5355,7 +5428,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5405,7 +5478,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5455,7 +5528,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5507,7 +5580,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5557,7 +5630,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "MiniMax-M3",
         "litellm_params": {
@@ -5607,7 +5680,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "MiniMax-M3",
         "litellm_params": {
@@ -5660,7 +5733,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "qwen3.6-flash",
         "litellm_params": {
@@ -5710,7 +5783,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "qwen3.6-plus",
         "litellm_params": {
@@ -5760,7 +5833,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "qwen3.7-max",
         "litellm_params": {
@@ -5810,7 +5883,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "qwen3.7-plus",
         "litellm_params": {
@@ -5860,7 +5933,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "seed-2-0-code",
         "litellm_params": {
@@ -5910,7 +5983,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "seed-2-0-lite",
         "litellm_params": {
@@ -5960,7 +6033,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "seed-2-0-mini",
         "litellm_params": {
@@ -6008,7 +6081,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "seed-2-0-pro",
         "litellm_params": {
@@ -6058,7 +6131,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "text-embedding-3-large",
         "litellm_params": {
@@ -6151,6 +6224,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -6160,6 +6235,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
@@ -6221,7 +6297,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/model/info",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-07-20",
       "raw": {
         "model_name": "text-embedding-3-small",
         "litellm_params": {
@@ -6314,6 +6390,8 @@
           "supports_web_search": null,
           "supports_url_context": null,
           "supports_reasoning": null,
+          "supports_adaptive_thinking": null,
+          "supports_mid_conversation_system": null,
           "supports_none_reasoning_effort": null,
           "supports_minimal_reasoning_effort": null,
           "supports_low_reasoning_effort": null,
@@ -6323,6 +6401,7 @@
           "bedrock_converse_supports_strict_tools": null,
           "supports_computer_use": null,
           "search_context_cost_per_query": null,
+          "web_search_billing_unit": null,
           "tpm": null,
           "rpm": null,
           "ocr_cost_per_page": null,
