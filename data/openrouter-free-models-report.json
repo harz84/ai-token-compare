@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-21T18:18:44.611Z",
-  "generatedAt": "2026-07-21T18:18:44.755Z",
+  "fetchedAt": "2026-07-22T18:13:14.668Z",
+  "generatedAt": "2026-07-22T18:13:14.817Z",
   "count": 14,
   "modelIds": [
     "cohere/north-mini-code:free",
