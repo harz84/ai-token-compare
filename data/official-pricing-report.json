@@ -14,11 +14,11 @@
     "minimax": "https://www.minimax.io/platform",
     "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
   },
-  "fetchedAt": "2026-07-22T18:13:14.918Z",
-  "generatedAt": "2026-07-22T18:13:19.241Z",
+  "fetchedAt": "2026-07-23T18:16:58.845Z",
+  "generatedAt": "2026-07-23T18:17:01.126Z",
   "mappedCount": 64,
-  "matchedCount": 38,
-  "missingCount": 26,
+  "matchedCount": 37,
+  "missingCount": 27,
   "fetchErrors": [
     {
       "provider": "deepseek",
@@ -197,15 +197,6 @@
       "outputPrice": 2.3,
       "contextWindow": 131072,
       "maxOutput": 16384
-    },
-    {
-      "internalId": "kimi-k2-thinking",
-      "provider": "moonshot",
-      "inputPrice": 0.8,
-      "cachePrice": 0.2,
-      "outputPrice": 3,
-      "contextWindow": 131000,
-      "maxOutput": 32768
     },
     {
       "internalId": "glm-5-2",
@@ -409,6 +400,11 @@
     {
       "internalId": "grok-code-fast-1",
       "provider": "xai",
+      "reason": "alias-not-found"
+    },
+    {
+      "internalId": "kimi-k2-thinking",
+      "provider": "moonshot",
       "reason": "alias-not-found"
     },
     {

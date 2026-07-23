@@ -1075,7 +1075,7 @@ const MODELS = [
   },
 ];
 
-const DEFAULT_DATA_UPDATED_AT = '2026-07-22';
+const DEFAULT_DATA_UPDATED_AT = '2026-07-23';
 
 const DEPRECATED_CURATED_MODEL_IDS = new Set([
   'grok-4-3-high',
