@@ -1,12 +1,13 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-23T18:16:58.715Z",
-  "generatedAt": "2026-07-23T18:16:58.817Z",
-  "count": 14,
+  "fetchedAt": "2026-07-24T18:22:52.896Z",
+  "generatedAt": "2026-07-24T18:22:53.046Z",
+  "count": 15,
   "modelIds": [
     "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
+    "inclusionai/ling-3.0-flash:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-super-120b-a12b:free",
