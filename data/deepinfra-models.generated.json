@@ -1,6 +1,6 @@
 {
   "source": "https://api.deepinfra.com/v1/openai/models",
-  "fetchedAt": "2026-07-24T18:22:56.995Z",
+  "fetchedAt": "2026-07-25T18:01:56.403Z",
   "count": 115,
   "note": "DeepInfra /v1/openai/models exposes real per-token pricing in metadata.pricing.",
   "models": [
@@ -24,7 +24,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "anthropic/claude-fable-5",
         "object": "model",
@@ -73,7 +73,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "anthropic/claude-haiku-4-5",
         "object": "model",
@@ -122,7 +122,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "anthropic/claude-opus-4-7",
         "object": "model",
@@ -171,7 +171,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "anthropic/claude-opus-4-8",
         "object": "model",
@@ -220,7 +220,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "anthropic/claude-sonnet-4-6",
         "object": "model",
@@ -269,7 +269,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "anthropic/claude-sonnet-5",
         "object": "model",
@@ -314,7 +314,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "BAAI/bge-base-en-v1.5",
         "object": "model",
@@ -354,7 +354,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "BAAI/bge-en-icl",
         "object": "model",
@@ -394,7 +394,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "BAAI/bge-large-en-v1.5",
         "object": "model",
@@ -434,7 +434,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "BAAI/bge-m3",
         "object": "model",
@@ -474,7 +474,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "BAAI/bge-m3-multi",
         "object": "model",
@@ -518,7 +518,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "ByteDance/Seed-1.8",
         "object": "model",
@@ -568,7 +568,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "ByteDance/Seed-2.0-code",
         "object": "model",
@@ -618,7 +618,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "ByteDance/Seed-2.0-mini",
         "object": "model",
@@ -668,7 +668,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "ByteDance/Seed-2.0-pro",
         "object": "model",
@@ -716,7 +716,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "deepseek-ai/DeepSeek-R1-0528",
         "object": "model",
@@ -760,7 +760,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V3",
         "object": "model",
@@ -802,7 +802,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V3-0324",
         "object": "model",
@@ -848,7 +848,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V3.1",
         "object": "model",
@@ -896,7 +896,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V3.1-Terminus",
         "object": "model",
@@ -942,7 +942,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V3.2",
         "object": "model",
@@ -987,7 +987,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V4-Flash",
         "object": "model",
@@ -1032,7 +1032,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V4-Pro",
         "object": "model",
@@ -1075,7 +1075,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/embeddinggemma-300m",
         "object": "model",
@@ -1118,7 +1118,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemini-1.5-flash",
         "object": "model",
@@ -1165,7 +1165,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemini-1.5-flash-8b",
         "object": "model",
@@ -1213,7 +1213,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemini-2.5-flash",
         "object": "model",
@@ -1262,7 +1262,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemini-2.5-pro",
         "object": "model",
@@ -1311,7 +1311,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemini-3.1-flash-lite",
         "object": "model",
@@ -1360,7 +1360,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemini-3.1-pro",
         "object": "model",
@@ -1409,7 +1409,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemini-3.5-flash",
         "object": "model",
@@ -1456,7 +1456,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemma-3-12b-it",
         "object": "model",
@@ -1501,7 +1501,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemma-3-27b-it",
         "object": "model",
@@ -1546,7 +1546,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemma-3-4b-it",
         "object": "model",
@@ -1592,7 +1592,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemma-4-26B-A4B-it",
         "object": "model",
@@ -1639,7 +1639,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemma-4-31B-it",
         "object": "model",
@@ -1686,7 +1686,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemma-4-31B-it-turbo",
         "object": "model",
@@ -1731,7 +1731,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "google/gemma-4-E4B-it",
         "object": "model",
@@ -1773,7 +1773,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Gryphe/MythoMax-L2-13b",
         "object": "model",
@@ -1814,7 +1814,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "intfloat/e5-base-v2",
         "object": "model",
@@ -1854,7 +1854,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "intfloat/e5-large-v2",
         "object": "model",
@@ -1894,7 +1894,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "intfloat/multilingual-e5-large",
         "object": "model",
@@ -1934,7 +1934,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "intfloat/multilingual-e5-large-instruct",
         "object": "model",
@@ -1974,7 +1974,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
         "object": "model",
@@ -2017,7 +2017,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
         "object": "model",
@@ -2062,7 +2062,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
         "object": "model",
@@ -2107,7 +2107,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "meta-llama/Llama-Guard-4-12B",
         "object": "model",
@@ -2150,7 +2150,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
         "object": "model",
@@ -2191,7 +2191,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
         "object": "model",
@@ -2232,7 +2232,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "microsoft/phi-4",
         "object": "model",
@@ -2275,7 +2275,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "MiniMaxAI/MiniMax-M2.7",
         "object": "model",
@@ -2320,7 +2320,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "MiniMaxAI/MiniMax-M2.7-Turbo",
         "object": "model",
@@ -2366,7 +2366,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "MiniMaxAI/MiniMax-M3",
         "object": "model",
@@ -2412,7 +2412,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "mistralai/Mistral-Nemo-Instruct-2407",
         "object": "model",
@@ -2453,7 +2453,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "mistralai/Mistral-Small-24B-Instruct-2501",
         "object": "model",
@@ -2496,7 +2496,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
         "object": "model",
@@ -2543,7 +2543,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "moonshotai/Kimi-K2.5",
         "object": "model",
@@ -2593,7 +2593,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "moonshotai/Kimi-K2.6",
         "object": "model",
@@ -2643,7 +2643,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "moonshotai/Kimi-K2.7-Code",
         "object": "model",
@@ -2689,7 +2689,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "NousResearch/Hermes-3-Llama-3.1-405B",
         "object": "model",
@@ -2730,7 +2730,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "NousResearch/Hermes-3-Llama-3.1-70B",
         "object": "model",
@@ -2771,7 +2771,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "nvidia/llama-nemotron-embed-vl-1b-v2",
         "object": "model",
@@ -2812,7 +2812,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "nvidia/Nemotron-3-Nano-30B-A3B",
         "object": "model",
@@ -2856,7 +2856,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "nvidia/Nemotron-Content-Safety-3.5",
         "object": "model",
@@ -2900,7 +2900,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
         "object": "model",
@@ -2946,7 +2946,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
         "object": "model",
@@ -2994,7 +2994,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "openai/gpt-oss-120b",
         "object": "model",
@@ -3039,7 +3039,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "openai/gpt-oss-120b-Turbo",
         "object": "model",
@@ -3084,7 +3084,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "openai/gpt-oss-20b",
         "object": "model",
@@ -3127,7 +3127,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen2.5-72B-Instruct",
         "object": "model",
@@ -3170,7 +3170,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-14B",
         "object": "model",
@@ -3214,7 +3214,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
         "object": "model",
@@ -3259,7 +3259,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
         "object": "model",
@@ -3306,7 +3306,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-30B-A3B",
         "object": "model",
@@ -3351,7 +3351,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-32B",
         "object": "model",
@@ -3395,7 +3395,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
         "object": "model",
@@ -3438,7 +3438,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-Embedding-0.6B",
         "object": "model",
@@ -3478,7 +3478,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-Embedding-4B",
         "object": "model",
@@ -3518,7 +3518,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-Embedding-8B",
         "object": "model",
@@ -3560,7 +3560,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-Max",
         "object": "model",
@@ -3606,7 +3606,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-Max-Thinking",
         "object": "model",
@@ -3651,7 +3651,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
         "object": "model",
@@ -3697,7 +3697,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
         "object": "model",
@@ -3746,7 +3746,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
         "object": "model",
@@ -3794,7 +3794,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3.5-122B-A10B",
         "object": "model",
@@ -3843,7 +3843,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3.5-27B",
         "object": "model",
@@ -3893,7 +3893,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3.5-35B-A3B",
         "object": "model",
@@ -3945,7 +3945,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3.5-397B-A17B",
         "object": "model",
@@ -3995,7 +3995,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3.5-9B",
         "object": "model",
@@ -4043,7 +4043,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3.6-27B",
         "object": "model",
@@ -4092,7 +4092,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3.6-35B-A3B",
         "object": "model",
@@ -4139,7 +4139,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Qwen/Qwen3.7-Max",
         "object": "model",
@@ -4183,7 +4183,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Sao10K/L3-8B-Lunaris-v1-Turbo",
         "object": "model",
@@ -4224,7 +4224,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "Sao10K/L3.1-70B-Euryale-v2.2",
         "object": "model",
@@ -4265,7 +4265,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "sentence-transformers/all-MiniLM-L12-v2",
         "object": "model",
@@ -4305,7 +4305,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "sentence-transformers/all-MiniLM-L6-v2",
         "object": "model",
@@ -4345,7 +4345,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "sentence-transformers/all-mpnet-base-v2",
         "object": "model",
@@ -4385,7 +4385,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "sentence-transformers/clip-ViT-B-32",
         "object": "model",
@@ -4425,7 +4425,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "sentence-transformers/clip-ViT-B-32-multilingual-v1",
         "object": "model",
@@ -4465,7 +4465,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "sentence-transformers/multi-qa-mpnet-base-dot-v1",
         "object": "model",
@@ -4505,7 +4505,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "sentence-transformers/paraphrase-MiniLM-L6-v2",
         "object": "model",
@@ -4545,7 +4545,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "shibing624/text2vec-base-chinese",
         "object": "model",
@@ -4588,7 +4588,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "stepfun-ai/Step-3.7-Flash",
         "object": "model",
@@ -4635,7 +4635,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "tencent/Hy3",
         "object": "model",
@@ -4679,7 +4679,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "thenlper/gte-base",
         "object": "model",
@@ -4719,7 +4719,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "thenlper/gte-large",
         "object": "model",
@@ -4763,7 +4763,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "thinkingmachines/Inkling",
         "object": "model",
@@ -4813,7 +4813,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "XiaomiMiMo/MiMo-V2.5",
         "object": "model",
@@ -4861,7 +4861,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "XiaomiMiMo/MiMo-V2.5-Pro",
         "object": "model",
@@ -4907,7 +4907,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "zai-org/GLM-4.6",
         "object": "model",
@@ -4953,7 +4953,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "zai-org/GLM-4.7",
         "object": "model",
@@ -4999,7 +4999,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "zai-org/GLM-4.7-Flash",
         "object": "model",
@@ -5045,7 +5045,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "zai-org/GLM-5",
         "object": "model",
@@ -5091,7 +5091,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "zai-org/GLM-5.1",
         "object": "model",
@@ -5137,7 +5137,7 @@
       "source": "deepinfra-api",
       "sourceType": "inference-platform",
       "sourceUrl": "https://api.deepinfra.com/v1/openai/models",
-      "updatedAt": "2026-07-24",
+      "updatedAt": "2026-07-25",
       "raw": {
         "id": "zai-org/GLM-5.2",
         "object": "model",
