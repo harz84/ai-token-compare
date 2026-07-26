@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Token Price Compare | Bandingkan Harga Token AI</title>
+  <title>AI Mendang-Mending | Bandingkan Harga API AI</title>
   <meta name="description" content="Compare AI token prices across 20+ providers. Find the cheapest AI API for GPT-4, Claude, Gemini, DeepSeek, Qwen, and more.">
   <meta name="keywords" content="AI token price, API pricing, GPT-4 price, Claude price, Gemini price, AI comparison, DeepSeek, Qwen, Llama, Mistral, harga token AI">
-  <meta name="author" content="AI Token Price Compare">
+  <meta name="author" content="AI Mendang-Mending">
   <meta name="robots" content="index, follow">
 
   <!-- Favicon -->
@@ -14,13 +14,13 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="AI Token Price Compare — Find the Cheapest AI API">
+  <meta property="og:title" content="AI Mendang-Mending — Find the Cheapest AI API">
   <meta property="og:description" content="Compare AI token prices across 20+ providers. GPT-4, Claude, Gemini, DeepSeek, Qwen and more.">
-  <meta property="og:url" content="https://ai-token-compare.example.com">
+  <meta property="og:url" content="https://aimendangmending.web.id/">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Token Price Compare">
+  <meta name="twitter:title" content="AI Mendang-Mending">
   <meta name="twitter:description" content="Compare AI token prices across 20+ providers.">
 
   <!-- Fonts -->
@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css?v=20260701a">
+  <link rel="stylesheet" href="css/style.css?v=20260715">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWMCD0BKEX"></script>
@@ -63,6 +63,7 @@
           </ul>
         </div>
         <a href="#models" class="nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
+        <a href="#opencode-free" class="nav-link nav-link-featured" data-tab="openCodeFree" data-i18n="nav.opencode_free">OpenCode Free</a>
         <a href="#free-models" class="nav-link" data-tab="freeModels" data-i18n="nav.free_models">Free Models</a>
         <a href="#best-picks" class="nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
       </nav>
@@ -117,6 +118,7 @@
       <a href="#promos" class="mobile-nav-link active" data-tab="promos" data-i18n="nav.promos">Promo</a>
       <a href="#compare" class="mobile-nav-link" data-tab="compare" data-i18n="nav.compare">Compare</a>
       <a href="#models" class="mobile-nav-link" data-tab="models" data-i18n="nav.all_models">All Models</a>
+      <a href="#opencode-free" class="mobile-nav-link nav-link-featured" data-tab="openCodeFree" data-i18n="nav.opencode_free">OpenCode Free</a>
       <a href="#free-models" class="mobile-nav-link" data-tab="freeModels" data-i18n="nav.free_models">Free Models</a>
       <a href="#best-picks" class="mobile-nav-link" data-tab="bestPicks" data-i18n="nav.best_picks">Best Picks</a>
     </div>
@@ -128,8 +130,9 @@
   <section class="hero" id="hero" aria-label="Hero banner">
     <div class="hero-bg-animation" aria-hidden="true"></div>
     <div class="container hero-content">
-      <h1 class="hero-title gradient-text" data-i18n="site.tagline">Compare AI Token Prices Across All Platforms</h1>
-      <p class="hero-subtitle" data-i18n="site.subtitle">Find the best deals on AI API tokens from 20+ providers worldwide</p>
+      <h1 class="hero-title gradient-text" data-i18n="site.title">AI Mendang-Mending</h1>
+      <p class="hero-tagline" data-i18n="site.tagline">Compare AI API prices before your tokens burn through your budget.</p>
+      <p class="hero-subtitle" data-i18n="site.subtitle">Find the cheapest provider for GPT, Claude, Gemini, DeepSeek, Qwen, Llama, and other popular AI models. Compare input, output, cache, context window, promo, and free tier pricing in one place.</p>
     </div>
   </section>
 
@@ -245,6 +248,40 @@
       </div>
     </section>
 
+    <!-- ── OPENCODE FREE MODELS ───────────────────────────── -->
+    <section class="section hidden" id="section-opencode-free" aria-label="Free AI models on OpenCode Zen">
+      <div class="opencode-section-heading">
+        <div>
+          <span class="opencode-kicker">OpenCode Zen</span>
+          <h2 class="section-title" data-i18n="opencode_free.title">Best Free Models on OpenCode</h2>
+          <p class="section-subtitle" data-i18n="opencode_free.subtitle">A focused list of currently free OpenCode models, including published coding benchmarks where an exact-model source is available.</p>
+        </div>
+        <div class="opencode-free-count" aria-live="polite">
+          <strong id="opencode-free-count">0</strong>
+          <span data-i18n="opencode_free.active_models">active free models</span>
+        </div>
+      </div>
+
+      <div class="table-update-note" id="opencode-free-updated-note" aria-live="polite"></div>
+      <div class="opencode-free-table-wrapper">
+        <table class="opencode-free-table">
+          <thead>
+            <tr>
+              <th data-i18n="table.model">Model</th>
+              <th data-i18n="table.context">Context Window</th>
+              <th data-i18n="table.capabilities">Capabilities</th>
+              <th data-i18n="opencode_free.benchmark">Coding Benchmark</th>
+              <th data-i18n="general.action">Action</th>
+            </tr>
+          </thead>
+          <tbody id="opencode-free-table-body">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+      <p class="opencode-benchmark-disclaimer" data-i18n="opencode_free.benchmark_disclaimer">Benchmark scores come from first-party model cards or release pages. Empty entries mean no trustworthy exact-model result was found.</p>
+    </section>
+
     <!-- ── FREE MODELS ────────────────────────────────────── -->
     <section class="section hidden" id="section-free-models" aria-label="Free AI models">
       <h2 class="section-title" data-i18n="free_models.title">Free AI Models</h2>
@@ -303,15 +340,16 @@
   <!-- ============================================================
        SCRIPTS  (order matters: data → pricing patches → i18n → currency → app)
        ============================================================ -->
-  <script src="js/data.js?v=20260707"></script>
-  <script src="js/official-pricing.generated.js?v=20260707"></script>
-  <script src="js/openrouter-merge.generated.js?v=20260707"></script>
-  <script src="js/openrouter-free-models.generated.js?v=20260707"></script>
-  <script src="js/sumopod-merge.generated.js?v=20260707"></script>
-  <script src="js/deepinfra-merge.generated.js?v=20260707"></script>
-  <script src="js/i18n.js?v=20260707"></script>
-  <script src="js/currency.js?v=20260707"></script>
-  <script src="js/exchange-rate.generated.js?v=20260707"></script>
-  <script src="js/app.js?v=20260707"></script>
+  <script src="js/data.js?v=20260725"></script>
+  <script src="js/official-pricing.generated.js?v=20260725"></script>
+  <script src="js/openrouter-merge.generated.js?v=20260725"></script>
+  <script src="js/openrouter-free-models.generated.js?v=20260725"></script>
+  <script src="js/sumopod-merge.generated.js?v=20260725"></script>
+  <script src="js/deepinfra-merge.generated.js?v=20260725"></script>
+  <script src="js/opencode-models.generated.js?v=20260725"></script>
+  <script src="js/i18n.js?v=20260725"></script>
+  <script src="js/currency.js?v=20260725"></script>
+  <script src="js/exchange-rate.generated.js?v=20260725"></script>
+  <script src="js/app.js?v=20260725"></script>
 </body>
 </html>

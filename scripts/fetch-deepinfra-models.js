@@ -51,6 +51,7 @@ const DEEPINFRA_MODEL_MAP = {
   'qwen3-plus':        ['Qwen/Qwen3-30B-A3B'],
 
   // Added by mapping audit
+  'claude-opus-5': ['anthropic/claude-opus-5'],
   'claude-opus-4-8': ['anthropic/claude-opus-4-8'],
   'claude-opus-4-7': ['anthropic/claude-opus-4-7'],
   'claude-sonnet-4-6': ['anthropic/claude-sonnet-4-6'],

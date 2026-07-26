@@ -39,6 +39,7 @@
 
     renderPriceTable();
     renderCompareSection();
+    renderOpenCodeFreeModels();
     renderFreeModels();
     renderBestPicks();
     renderPromos();
@@ -136,6 +137,7 @@
     applyI18n();
     renderPriceTable();
     renderCompareSection();
+    renderOpenCodeFreeModels();
     renderFreeModels();
     renderBestPicks();
     renderPromos();
@@ -313,6 +315,7 @@
     const map = {
       models:     'section-models',
       compare:    'section-compare',
+      openCodeFree: 'section-opencode-free',
       freeModels: 'section-free-models',
       bestPicks:  'section-best-picks',
       promos:     'section-promos',
@@ -417,6 +420,7 @@
       const catBadge = categoryBadge(m.category);
       const capBadges = (m.capabilities || []).map(c => `<span class="cap-badge">${escHtml(c)}</span>`).join('');
       const sourceBadge = pricingSourceBadge(m);
+      const newBadge = isNewModel(m) ? `<span class="badge badge-new">${escHtml(getNewLabel())}</span>` : '';
 
       const lblProvider = typeof t === 'function' ? t('table.provider') || 'Provider' : 'Provider';
       const lblModel = typeof t === 'function' ? t('table.model') || 'Model' : 'Model';
@@ -436,7 +440,7 @@
         </td>
         <td data-label="${lblModel}">
           <span class="model-name-cell">${escHtml(m.name)}</span>
-          <span class="cap-badges">${capBadges}${sourceBadge}</span>
+          <span class="cap-badges">${newBadge}${capBadges}${sourceBadge}</span>
         </td>
         <td data-label="${lblInput}" class="${isInputCheap ? 'cheapest' : ''}">${inputPriceStr}</td>
         <td data-label="${lblCache}" style="color:var(--text-secondary);">${cachePriceStr}</td>
@@ -646,6 +650,7 @@
     // Original
     const origProvider = getProvider(model.provider);
       entries.push({
+        providerId: model.provider,
         providerName: origProvider ? origProvider.name : model.provider,
         color: origProvider ? origProvider.color : '#6366f1',
         website: origProvider ? origProvider.website : null,
@@ -677,6 +682,7 @@
 
       const p = getProvider(pid);
       entries.push({
+        providerId: pid,
         providerName: p ? p.name : pid,
         color: p ? p.color : '#94a3b8',
         website: p ? p.website : null,
@@ -696,6 +702,8 @@
 
     const cheapest = sortedEntries.length > 0 ? sortedEntries.reduce((p, c) => p.total < c.total ? p : c) : null;
     const expTotal = sortedEntries.length > 0 ? Math.max(...sortedEntries.map(e => e.total)) : 0;
+    const actionLabel = typeof t === 'function' ? t('compare.open_provider') || 'Open Provider' : 'Open Provider';
+    const actionHeader = typeof t === 'function' ? t('general.action') || 'Action' : 'Action';
 
     let html = `
       <div class="compare-results-panel">
@@ -712,6 +720,7 @@
               ${sortableHeader('Total', 'total', 'compare')}
               ${sortableHeader(typeof t === 'function' ? t('table.updated') || 'Updated' : 'Updated', 'updatedAt', 'compare')}
               <th>Status</th>
+              <th>${escHtml(actionHeader)}</th>
             </tr>
           </thead>
           <tbody>
@@ -758,6 +767,9 @@
               ${!isCheapest && savingsVal <= 0 ? `<span style="color:var(--text-muted);font-size:0.85em;">-</span>` : ''}
             </div>
           </td>
+          <td data-label="${escHtml(actionHeader)}">
+            <a class="provider-cta${isCheapest ? ' primary' : ''}" href="${escHtml(getProviderActionUrl(e.providerId))}" target="_blank" rel="noopener" data-provider-id="${escHtml(e.providerId)}" data-provider-placement="compare">${escHtml(actionLabel)}</a>
+          </td>
         </tr>
       `;
     });
@@ -772,10 +784,17 @@
      FREE MODELS
      ========================================================== */
   function renderFreeModels() {
-    const grid = document.getElementById('free-models-grid');
+    const models = typeof FREE_API_MODELS !== 'undefined'
+      ? FREE_API_MODELS.filter(model => model.provider !== 'opencode')
+      : [];
+    renderFreeModelCards('free-models-grid', models, 'free-models');
+  }
+
+  function renderFreeModelCards(gridId, sourceModels, placement) {
+    const grid = document.getElementById(gridId);
     if (!grid) return;
 
-    const models = typeof FREE_API_MODELS !== 'undefined' ? FREE_API_MODELS : [];
+    const models = [...sourceModels].sort((a, b) => Date.parse(b.releaseDate || b.updatedAt || 0) - Date.parse(a.releaseDate || a.updatedAt || 0));
     if (!models.length) {
       grid.innerHTML = '<p class="compare-placeholder">' +
         (typeof t === 'function' ? t('general.no_results') || 'No free models found' : 'No free models found') +
@@ -801,6 +820,7 @@
       const isTrulyFree = price <= 0;
       const priceLabel = isTrulyFree ? '$0' : `~$${price}`;
       const priceClass = isTrulyFree ? 'free-model-price' : 'free-model-price near-zero';
+      const newBadge = isNewModel(model) ? `<span class="badge badge-new">${escHtml(getNewLabel())}</span>` : '';
 
       return `
         <article class="free-model-card" style="--provider-color:${providerColor}">
@@ -810,7 +830,7 @@
                 <span class="provider-dot" style="background:${providerColor}"></span>
                 ${escHtml(providerName)}
               </span>
-              <h3 class="free-model-name">${escHtml(model.modelName)}</h3>
+              <h3 class="free-model-name">${escHtml(model.modelName)} ${newBadge}</h3>
             </div>
             <span class="${priceClass}">${priceLabel}</span>
           </div>
@@ -824,7 +844,7 @@
           </div>
           <div class="free-model-capabilities">${capabilityBadges}</div>
           <div class="free-model-actions">
-            <a class="free-model-action primary" href="${escHtml(model.signup)}" target="_blank" rel="noopener">${escHtml(signupLabel)}</a>
+            <a class="free-model-action primary" href="${escHtml(model.signup)}" target="_blank" rel="noopener" data-provider-id="${escHtml(model.provider)}" data-provider-placement="${escHtml(placement)}">${escHtml(signupLabel)}</a>
             <a class="free-model-action" href="${escHtml(model.docs)}" target="_blank" rel="noopener">${escHtml(docsLabel)}</a>
           </div>
         </article>
@@ -832,6 +852,71 @@
     }).join('');
 
     grid.innerHTML = html;
+  }
+
+  function renderOpenCodeFreeModels() {
+    const tbody = document.getElementById('opencode-free-table-body');
+    if (!tbody) return;
+
+    const models = typeof OPENCODE_FREE_MODELS !== 'undefined' ? [...OPENCODE_FREE_MODELS] : [];
+    const isId = typeof getLanguage === 'function' && getLanguage() === 'id';
+    const count = document.getElementById('opencode-free-count');
+    const updatedNote = document.getElementById('opencode-free-updated-note');
+    const benchmarkLabel = typeof t === 'function' ? t('opencode_free.benchmark') || 'Coding Benchmark' : 'Coding Benchmark';
+    const unavailableLabel = typeof t === 'function' ? t('opencode_free.benchmark_unavailable') || 'No exact public benchmark yet' : 'No exact public benchmark yet';
+    const signupLabel = typeof t === 'function' ? t('free_models.signup') || 'Get API Key' : 'Get API Key';
+    const docsLabel = typeof t === 'function' ? t('free_models.docs') || 'Docs' : 'Docs';
+
+    models.sort((a, b) => {
+      const benchmarkDiff = (b.benchmarks || []).length - (a.benchmarks || []).length;
+      return benchmarkDiff || a.modelName.localeCompare(b.modelName);
+    });
+
+    if (count) count.textContent = String(models.length);
+    if (updatedNote) {
+      const fetchedAt = typeof OPENCODE_MODELS_REPORT !== 'undefined' ? OPENCODE_MODELS_REPORT.fetchedAt : '';
+      updatedNote.textContent = fetchedAt ? `Last update: ${formatDate(fetchedAt)}` : '';
+    }
+
+    if (!models.length) {
+      tbody.innerHTML = `<tr><td colspan="5" class="opencode-empty">${escHtml(typeof t === 'function' ? t('general.no_results') || 'No models found' : 'No models found')}</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = models.map(model => {
+      const newBadge = isNewModel(model) ? `<span class="badge badge-new">${escHtml(getNewLabel())}</span>` : '';
+      const capabilityBadges = (model.capabilities || []).map(capability => `<span class="free-model-chip">${escHtml(capability)}</span>`).join('');
+      const benchmarkNote = isId ? model.benchmarkNote_id : model.benchmarkNote_en;
+      const benchmarks = (model.benchmarks || []).length
+        ? `<div class="benchmark-list">${model.benchmarks.map(benchmark => `
+            <a class="benchmark-item" href="${escHtml(benchmark.source)}" target="_blank" rel="noopener" title="${escHtml(benchmark.metric)}">
+              <span>${escHtml(benchmark.metric)}</span>
+              <strong>${formatBenchmarkScore(benchmark.score)}</strong>
+            </a>`).join('')}</div>
+            ${benchmarkNote ? `<p class="benchmark-note">${escHtml(benchmarkNote)}</p>` : ''}
+            ${model.benchmarkSourceDate ? `<span class="benchmark-date">Source: ${escHtml(formatDate(model.benchmarkSourceDate))}</span>` : ''}`
+        : `<span class="benchmark-unavailable">${escHtml(unavailableLabel)}</span>`;
+
+      return `
+        <tr>
+          <td data-label="Model">
+            <div class="opencode-model-cell">
+              <div class="opencode-model-title">${escHtml(model.modelName)} ${newBadge}</div>
+              <code>${escHtml(model.modelId)}</code>
+              <span class="opencode-free-status">$0 · ${escHtml(model.rateLimits)}</span>
+            </div>
+          </td>
+          <td data-label="Context"><strong class="opencode-context">${formatContext(model.contextWindow)}</strong></td>
+          <td data-label="Capabilities"><div class="free-model-capabilities">${capabilityBadges}</div></td>
+          <td data-label="${escHtml(benchmarkLabel)}">${benchmarks}</td>
+          <td data-label="Action">
+            <div class="opencode-table-actions">
+              <a class="free-model-action primary" href="${escHtml(model.signup)}" target="_blank" rel="noopener" data-provider-id="opencode" data-provider-placement="opencode-free">${escHtml(signupLabel)}</a>
+              <a class="free-model-action" href="${escHtml(model.docs)}" target="_blank" rel="noopener">${escHtml(docsLabel)}</a>
+            </div>
+          </td>
+        </tr>`;
+    }).join('');
   }
 
   /* ==========================================================
@@ -856,6 +941,7 @@
       const providerColor = provider ? provider.color : 'var(--primary)';
       const contextLabel = typeof t === 'function' ? t('table.context') || 'Context' : 'Context';
       const actionLabel = typeof t === 'function' ? t('best_picks.view_in_compare') || 'Compare' : 'Compare';
+      const providerActionLabel = typeof t === 'function' ? t('best_picks.open_provider') || 'Open Provider' : 'Open Provider';
       const noteLabel = typeof t === 'function' ? t('best_picks.free_tier_note') || 'Free tier available' : 'Free tier available';
       const freeTierBadge = pick.promo ? `<span class="best-pick-chip best-pick-chip-accent">${escHtml(noteLabel)}</span>` : '';
 
@@ -881,7 +967,10 @@
               ${freeTierBadge}
             </div>
           </div>
-          <button class="best-pick-action compact" type="button" data-best-pick-model="${escHtml(pick.model.id)}">${escHtml(actionLabel)}</button>
+          <div class="best-pick-actions">
+            <button class="best-pick-action compact secondary" type="button" data-best-pick-model="${escHtml(pick.model.id)}">${escHtml(actionLabel)}</button>
+            <a class="best-pick-action compact" href="${escHtml(getProviderActionUrl(pick.model.provider))}" target="_blank" rel="noopener" data-provider-id="${escHtml(pick.model.provider)}" data-provider-placement="best-picks">${escHtml(providerActionLabel)}</a>
+          </div>
         </article>
       `;
     });
@@ -1149,6 +1238,8 @@
     const updatedLabel = typeof t === 'function' ? t('table.updated') || 'Updated' : 'Updated';
     const modelLabel = typeof t === 'function' ? t('table.model') || 'Model' : 'Model';
     const discountLabel = typeof t === 'function' ? t('promo.discount') || 'Discount' : 'Discount';
+    const providerActionLabel = typeof t === 'function' ? t('promo.open_provider') || 'Open Provider' : 'Open Provider';
+    const actionHeader = typeof t === 'function' ? t('general.action') || 'Action' : 'Action';
 
     const rows = deals.map(deal => `
       <tr>
@@ -1172,7 +1263,12 @@
         <td data-label="${escHtml(promoLabel)}" class="promo-table-number promo-table-deal">${fmtPrice(deal.dealTotal)}</td>
         <td data-label="${escHtml(savingsLabel)}" class="promo-table-number promo-table-save">${fmtPrice(deal.savingsTotal)}</td>
         <td data-label="${escHtml(updatedLabel)}" class="promo-table-updated">${escHtml(formatDate(deal.updatedAt))}</td>
-        <td data-label="Action"><button class="promo-table-action" type="button" data-promo-model="${escHtml(deal.model.id)}">${escHtml(viewLabel)}</button></td>
+        <td data-label="${escHtml(actionHeader)}">
+          <div class="promo-table-actions">
+            <button class="promo-table-action secondary" type="button" data-promo-model="${escHtml(deal.model.id)}">${escHtml(viewLabel)}</button>
+            <a class="promo-table-action" href="${escHtml(getProviderActionUrl(deal.dealProviderId))}" target="_blank" rel="noopener" data-provider-id="${escHtml(deal.dealProviderId)}" data-provider-placement="promo">${escHtml(providerActionLabel)}</a>
+          </div>
+        </td>
       </tr>
     `).join('');
 
@@ -1188,7 +1284,7 @@
               ${sortableHeader(promoLabel, 'dealTotal', 'promo')}
               ${sortableHeader(savingsLabel, 'savingsTotal', 'promo')}
               ${sortableHeader(updatedLabel, 'updatedAt', 'promo')}
-              <th>Action</th>
+              <th>${escHtml(actionHeader)}</th>
             </tr>
           </thead>
           <tbody>${rows}</tbody>
@@ -1367,6 +1463,23 @@
     return p ? p.name : id;
   }
 
+  function getProviderActionUrl(id) {
+    const provider = getProvider(id);
+    return provider && provider.website ? provider.website : '#';
+  }
+
+  function isNewModel(model) {
+    if (!model || !model.releaseDate) return false;
+    const releasedAt = Date.parse(model.releaseDate);
+    if (Number.isNaN(releasedAt)) return false;
+    const ageDays = (Date.now() - releasedAt) / 86400000;
+    return ageDays >= 0 && ageDays <= 45;
+  }
+
+  function getNewLabel() {
+    return typeof t === 'function' ? t('general.new') || 'New' : 'New';
+  }
+
   function fmtPrice(usdAmount) {
     if (typeof formatPrice === 'function') return formatPrice(usdAmount);
     return '$' + usdAmount.toFixed(2);
@@ -1408,6 +1521,11 @@
     return tokens.toString();
   }
 
+  function formatBenchmarkScore(score) {
+    const value = Number(score);
+    return Number.isFinite(value) ? `${value.toFixed(1)}%` : escHtml(String(score || '-'));
+  }
+
   function formatDate(value) {
     if (!value) return '-';
     const date = new Date(value);
@@ -1426,6 +1544,8 @@
     const type = item.pricingSourceType || item.sourceType || (source === 'openrouter-api' ? 'curated' : 'curated');
     const label = source === 'openrouter-api'
       ? 'OpenRouter'
+      : source === 'models-dev-opencode'
+        ? 'OpenCode'
       : type === 'official'
         ? 'Official'
         : type === 'estimate'
@@ -1433,6 +1553,8 @@
           : 'Curated';
     const color = source === 'openrouter-api'
       ? 'var(--primary)'
+      : source === 'models-dev-opencode'
+        ? '#60a5fa'
       : type === 'official'
         ? 'var(--accent)'
         : type === 'estimate'

@@ -1,13 +1,15 @@
 {
   "scripts": {
     "update:openrouter": "node scripts/fetch-openrouter-models.js",
+    "update:opencode": "node scripts/fetch-opencode-models.js",
     "merge:openrouter": "node scripts/merge-openrouter-pricing.js",
     "update:official-pricing": "node scripts/fetch-official-pricing.js",
     "update:sumopod": "node scripts/fetch-sumopod-models.js",
     "update:deepinfra": "node scripts/fetch-deepinfra-models.js",
     "update:exchange-rate": "node scripts/fetch-exchange-rate.js",
     "update:all-pricing": "node scripts/update-all-pricing.js",
-    "check:data-health": "node scripts/check-data-health.js"
+    "check:data-health": "node scripts/check-data-health.js",
+    "test:model-catalog": "node scripts/test-model-catalog.js"
   },
   "dependencies": {
     "jsdom": "^29.1.1",

@@ -11,6 +11,8 @@ const OUTPUT_JS_PATH = path.join(PROJECT_ROOT, 'js', 'sumopod-merge.generated.js
 const REPORT_PATH = path.join(PROJECT_ROOT, 'data', 'sumopod-merge-report.json');
 
 const SUMOPOD_MODEL_MAP = {
+  'claude-opus-5': ['claude-opus-5'],
+  'claude-opus-5-fast': ['claude-opus-5'],
   'claude-opus-4-8': ['claude-opus-4-8'],
   'claude-opus-4-8-fast': ['claude-opus-4-8'],
   'claude-opus-4-7': ['claude-opus-4-7'],

@@ -347,6 +347,26 @@ const MODELS = [
     },
   },
   {
+    id: 'claude-opus-5',
+    name: 'Claude Opus 5',
+    provider: 'anthropic',
+    arenaRank: 2,
+    inputPrice: 5,
+    outputPrice: 25,
+    cachePrice: 0.5,
+    contextWindow: 1000000,
+    maxOutput: 128000,
+    capabilities: ['vision', 'reasoning', 'function-calling', 'json-mode', 'code'],
+    category: 'flagship',
+    releaseDate: '2026-07-24',
+    updatedAt: '2026-07-26',
+    sourceUrl: 'https://docs.anthropic.com/en/docs/about-claude/models',
+    confidence: 'medium',
+    thirdPartyPricing: {
+      openrouter: { inputPrice: 5, cachePrice: 0.5, outputPrice: 25, source: 'aggregator-curated' }
+    },
+  },
+  {
     id: 'claude-opus-4-8',
     name: 'Claude Opus 4.8 (Thinking)',
     provider: 'anthropic',
@@ -1075,7 +1095,7 @@ const MODELS = [
   },
 ];
 
-const DEFAULT_DATA_UPDATED_AT = '2026-07-07';
+const DEFAULT_DATA_UPDATED_AT = '2026-07-25';
 
 const DEPRECATED_CURATED_MODEL_IDS = new Set([
   'grok-4-3-high',
@@ -1218,6 +1238,26 @@ const CURATED_TOP_MODELS = [
     confidence: 'medium',
     thirdPartyPricing: {
       openrouter: { inputPrice: 5, cachePrice: 0.5, outputPrice: 25, source: 'aggregator-curated' }
+    },
+  },
+  {
+    id: 'claude-opus-5-fast',
+    name: 'Claude Opus 5 Fast',
+    provider: 'anthropic',
+    arenaRank: 3,
+    inputPrice: 10,
+    outputPrice: 50,
+    cachePrice: 1,
+    contextWindow: 1000000,
+    maxOutput: 128000,
+    capabilities: ['vision', 'reasoning', 'function-calling', 'json-mode', 'code'],
+    category: 'flagship',
+    releaseDate: '2026-07-24',
+    updatedAt: '2026-07-26',
+    sourceUrl: 'https://docs.anthropic.com/en/docs/about-claude/models',
+    confidence: 'medium',
+    thirdPartyPricing: {
+      openrouter: { inputPrice: 10, cachePrice: 1, outputPrice: 50, source: 'aggregator-curated' }
     },
   },
   {

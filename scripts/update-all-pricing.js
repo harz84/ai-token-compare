@@ -12,6 +12,7 @@ const OPENROUTER_FREE_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'openrouter-fre
 const OFFICIAL_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'official-pricing.generated.js');
 const SUMOPOD_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'sumopod-merge.generated.js');
 const DEEPINFRA_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'deepinfra-merge.generated.js');
+const OPENCODE_PATCH_PATH = path.join(PROJECT_ROOT, 'js', 'opencode-models.generated.js');
 
 const STEPS = [
   {
@@ -31,6 +32,12 @@ const STEPS = [
     command: 'node',
     args: ['scripts/build-openrouter-free-models.js'],
     outputs: ['js/openrouter-free-models.generated.js', 'data/openrouter-free-models-report.json'],
+  },
+  {
+    name: 'fetch-opencode-models',
+    command: 'node',
+    args: ['scripts/fetch-opencode-models.js'],
+    outputs: ['data/opencode-models.generated.json', 'js/opencode-models.generated.js', 'data/opencode-models-report.json'],
   },
   {
     name: 'fetch-official-pricing',
@@ -129,6 +136,7 @@ function buildSummary() {
   const sumopodReport = readJsonIfExists('data/sumopod-merge-report.json');
   const deepinfraReport = readJsonIfExists('data/deepinfra-merge-report.json');
   const exchangeRateReport = readJsonIfExists('data/exchange-rate.generated.json');
+  const opencodeReport = readJsonIfExists('data/opencode-models-report.json');
 
   return {
     openrouter: openrouterReport
@@ -142,6 +150,15 @@ function buildSummary() {
       ? {
           count: openrouterFreeReport.count,
           fetchedAt: openrouterFreeReport.fetchedAt,
+        }
+      : null,
+    opencode: opencodeReport
+      ? {
+          available: opencodeReport.availableCount,
+          activePaid: opencodeReport.activePaidCount,
+          free: opencodeReport.freeCount,
+          deprecated: opencodeReport.deprecatedCount,
+          fetchedAt: opencodeReport.fetchedAt,
         }
       : null,
     official: officialReport
@@ -207,7 +224,7 @@ function validateRuntimePatches() {
   context.globalThis = context;
   vm.createContext(context);
 
-  [DATA_JS_PATH, OFFICIAL_PATCH_PATH, OPENROUTER_PATCH_PATH, OPENROUTER_FREE_PATCH_PATH, SUMOPOD_PATCH_PATH, DEEPINFRA_PATCH_PATH].forEach(filePath => {
+  [DATA_JS_PATH, OFFICIAL_PATCH_PATH, OPENROUTER_PATCH_PATH, OPENROUTER_FREE_PATCH_PATH, SUMOPOD_PATCH_PATH, DEEPINFRA_PATCH_PATH, OPENCODE_PATCH_PATH].forEach(filePath => {
     vm.runInContext(fs.readFileSync(filePath, 'utf8'), context, { filename: filePath });
   });
 
@@ -223,7 +240,11 @@ function validateRuntimePatches() {
   const freeModels = context.window.FREE_API_MODELS;
   assert(Array.isArray(freeModels), 'window.FREE_API_MODELS is not available after runtime validation');
   const openrouterFreeCount = freeModels.filter(model => model.provider === 'openrouter').length;
+  const opencodeFreeCount = freeModels.filter(model => model.provider === 'opencode').length;
   assert(openrouterFreeCount > 0, 'No OpenRouter free models were merged into FREE_API_MODELS');
+  assert(opencodeFreeCount > 0, 'No OpenCode free models were merged into FREE_API_MODELS');
+  assert(models.some(model => model.opencodeId === 'claude-opus-5'), 'Claude Opus 5 was not captured from OpenCode');
+  assert(freeModels.some(model => model.modelId === 'opencode/ling-3.0-flash-free'), 'Ling 3.0 Flash Free was not captured from OpenCode');
 
   assert(openrouterPatched > 0, 'No models received OpenRouter patches');
   assert(officialPatched > 0, 'No models received official pricing patches');
@@ -236,6 +257,7 @@ function validateRuntimePatches() {
     deepinfraPatched,
     freeModelCount: freeModels.length,
     openrouterFreeCount,
+    opencodeFreeCount,
   };
 }
 
@@ -248,6 +270,7 @@ function updateIndexScriptVersions(version) {
     'js/openrouter-free-models.generated.js',
     'js/sumopod-merge.generated.js',
     'js/deepinfra-merge.generated.js',
+    'js/opencode-models.generated.js',
     'js/i18n.js',
     'js/currency.js',
     'js/exchange-rate.generated.js',
@@ -268,10 +291,13 @@ function validateOutputs() {
     validateGeneratedFile('data/openrouter-models.generated.json'),
     validateGeneratedFile('data/openrouter-merge-report.json'),
     validateGeneratedFile('data/openrouter-free-models-report.json'),
+    validateGeneratedFile('data/opencode-models.generated.json'),
+    validateGeneratedFile('data/opencode-models-report.json'),
     validateGeneratedFile('data/official-pricing.generated.json'),
     validateGeneratedFile('data/official-pricing-report.json'),
     validateGeneratedFile('js/openrouter-merge.generated.js'),
     validateGeneratedFile('js/openrouter-free-models.generated.js'),
+    validateGeneratedFile('js/opencode-models.generated.js'),
     validateGeneratedFile('js/official-pricing.generated.js'),
     validateGeneratedFile('js/sumopod-merge.generated.js'),
     validateGeneratedFile('js/deepinfra-merge.generated.js'),
@@ -288,19 +314,23 @@ function validateOutputs() {
 
   checkSyntax('scripts/update-all-pricing.js');
   checkSyntax('scripts/build-openrouter-free-models.js');
+  checkSyntax('scripts/fetch-opencode-models.js');
   checkSyntax('scripts/fetch-sumopod-models.js');
   checkSyntax('scripts/fetch-deepinfra-models.js');
   checkSyntax('js/openrouter-free-models.generated.js');
+  checkSyntax('js/opencode-models.generated.js');
   checkSyntax('js/deepinfra-merge.generated.js');
   checkSyntax('js/exchange-rate.generated.js');
 
   const openrouterReport = readJsonIfExists('data/openrouter-merge-report.json');
   const openrouterFreeReport = readJsonIfExists('data/openrouter-free-models-report.json');
   const officialReport = readJsonIfExists('data/official-pricing-report.json');
+  const opencodeReport = readJsonIfExists('data/opencode-models-report.json');
   const sumopodReport = readJsonIfExists('data/sumopod-merge-report.json');
   const deepinfraReport = readJsonIfExists('data/deepinfra-merge-report.json');
   assert(openrouterReport && Number.isFinite(openrouterReport.matchedCount), 'OpenRouter merge report is invalid');
   assert(openrouterFreeReport && Number.isFinite(openrouterFreeReport.count), 'OpenRouter free-models report is invalid');
+  assert(opencodeReport && Number.isFinite(opencodeReport.freeCount), 'OpenCode models report is invalid');
   assert(officialReport && Number.isFinite(officialReport.matchedCount), 'Official pricing report is invalid');
   if (process.env.SUMOPOD_API_KEY) {
     assert(sumopodReport && Number.isFinite(sumopodReport.matchedCount), 'Sumopod merge report is invalid');

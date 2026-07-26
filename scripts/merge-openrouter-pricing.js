@@ -13,6 +13,8 @@ const OPENROUTER_MODEL_MAP = {
   'gpt-5-4-nano': 'openai/gpt-5.4-nano',
 
   'claude-fable-5': 'anthropic/claude-fable-5',
+  'claude-opus-5': 'anthropic/claude-opus-5',
+  'claude-opus-5-fast': 'anthropic/claude-opus-5-fast',
   'claude-opus-4-8': 'anthropic/claude-opus-4.8',
   'claude-opus-4-8-fast': 'anthropic/claude-opus-4.8-fast',
   'claude-sonnet-4-6': 'anthropic/claude-sonnet-4.6',

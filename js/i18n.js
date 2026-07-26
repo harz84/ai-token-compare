@@ -6,9 +6,9 @@
 const TRANSLATIONS = {
   en: {
     // ─── Header ───────────────────────────────────────────────────────────────
-    'site.title': 'AI Token Price Compare',
-    'site.tagline': 'Compare AI Token Prices Across All Platforms',
-    'site.subtitle': 'Find the best deals on AI API tokens from 20+ providers worldwide',
+    'site.title': 'AI Mendang-Mending',
+    'site.tagline': 'Compare AI API prices before your tokens burn through your budget.',
+    'site.subtitle': 'Find the cheapest provider for GPT, Claude, Gemini, DeepSeek, Qwen, Llama, and other popular AI models. Compare input, output, cache, context window, promo, and free tier pricing in one place.',
 
     // ─── Navigation ───────────────────────────────────────────────────────────
     'nav.all_models': 'All Models',
@@ -16,6 +16,7 @@ const TRANSLATIONS = {
     'nav.best_picks': 'Best Picks',
     'nav.promos': 'Promo',
     'nav.free_models': 'Free Models',
+    'nav.opencode_free': 'OpenCode Free',
 
     // ─── Table Headers ────────────────────────────────────────────────────────
     'table.provider': 'Provider',
@@ -54,6 +55,7 @@ const TRANSLATIONS = {
     'compare.vs_official': 'vs official price',
     'compare.official_price': 'Official Price',
     'compare.no_alternatives': 'No third-party alternatives available for this model',
+    'compare.open_provider': 'Open Provider',
 
     // ─── Free Models ─────────────────────────────────────────────────────────
     'free_models.title': 'Free AI Models',
@@ -70,6 +72,14 @@ const TRANSLATIONS = {
     'free_models.type_free_tier': 'Free tier',
     'free_models.type_trial': 'Trial',
     'free_models.claim_offer': 'Claim offer',
+
+    // ─── OpenCode Free ────────────────────────────────────────────────────────
+    'opencode_free.title': 'Best Free Models on OpenCode',
+    'opencode_free.subtitle': 'A focused list of currently free OpenCode models, including published coding benchmarks where an exact-model source is available.',
+    'opencode_free.active_models': 'active free models',
+    'opencode_free.benchmark': 'Coding Benchmark',
+    'opencode_free.benchmark_unavailable': 'No exact public benchmark yet',
+    'opencode_free.benchmark_disclaimer': 'Benchmark scores come from first-party model cards or release pages. Empty entries mean no trustworthy exact-model result was found.',
 
     // ─── Best Picks ───────────────────────────────────────────────────────────
     'best_picks.title': 'Best Picks',
@@ -92,6 +102,7 @@ const TRANSLATIONS = {
     'best_picks.why_this_pick': 'Why this pick',
     'best_picks.view_in_compare': 'View in Compare',
     'best_picks.free_tier_note': 'Free tier available',
+    'best_picks.open_provider': 'Open Provider',
 
     // ─── Promos ───────────────────────────────────────────────────────────────
     'promo.title': 'Promo',
@@ -112,6 +123,7 @@ const TRANSLATIONS = {
     'promo.you_save': 'You save',
     'promo.source': 'Source',
     'promo.discount_suffix': 'cheaper vs official',
+    'promo.open_provider': 'Open Provider',
 
     // ─── General ──────────────────────────────────────────────────────────────
     'general.per_1m': 'per 1M tokens',
@@ -128,6 +140,8 @@ const TRANSLATIONS = {
     'general.code': 'Code',
     'general.reasoning': 'Reasoning',
     'general.region': 'Region',
+    'general.action': 'Action',
+    'general.new': 'New',
 
     // ─── Footer ───────────────────────────────────────────────────────────────
     'footer.built_with': 'Built with ❤️ for the AI community',
@@ -137,9 +151,9 @@ const TRANSLATIONS = {
 
   id: {
     // ─── Header ───────────────────────────────────────────────────────────────
-    'site.title': 'Bandingkan Harga Token AI',
-    'site.tagline': 'Bandingkan Harga Token AI dari Semua Platform',
-    'site.subtitle': 'Temukan penawaran terbaik token API AI dari 20+ penyedia di seluruh dunia',
+    'site.title': 'AI Mendang-Mending',
+    'site.tagline': 'Bandingkan harga API AI sebelum token Anda habis.',
+    'site.subtitle': 'Temukan provider termurah untuk GPT, Claude, Gemini, DeepSeek, Qwen, Llama, dan model AI populer lainnya. Lengkap dengan harga input, output, cache, context window, promo, dan free tier.',
 
     // ─── Navigation ───────────────────────────────────────────────────────────
     'nav.all_models': 'Semua Model',
@@ -147,6 +161,7 @@ const TRANSLATIONS = {
     'nav.best_picks': 'Best Picks',
     'nav.promos': 'Promo',
     'nav.free_models': 'Model Gratis',
+    'nav.opencode_free': 'OpenCode Gratis',
 
     // ─── Table Headers ────────────────────────────────────────────────────────
     'table.provider': 'Penyedia',
@@ -185,6 +200,7 @@ const TRANSLATIONS = {
     'compare.vs_official': 'vs harga resmi',
     'compare.official_price': 'Harga Resmi',
     'compare.no_alternatives': 'Tidak ada alternatif pihak ketiga untuk model ini',
+    'compare.open_provider': 'Buka Provider',
 
     // ─── Free Models ─────────────────────────────────────────────────────────
     'free_models.title': 'Model AI Gratis',
@@ -201,6 +217,14 @@ const TRANSLATIONS = {
     'free_models.type_free_tier': 'Free tier',
     'free_models.type_trial': 'Uji coba',
     'free_models.claim_offer': 'Ambil penawaran',
+
+    // ─── OpenCode Free ────────────────────────────────────────────────────────
+    'opencode_free.title': 'Model Gratis Terbaik di OpenCode',
+    'opencode_free.subtitle': 'Daftar khusus model OpenCode yang masih gratis, dilengkapi benchmark coding bila tersedia sumber yang tepat untuk model tersebut.',
+    'opencode_free.active_models': 'model gratis aktif',
+    'opencode_free.benchmark': 'Benchmark Coding',
+    'opencode_free.benchmark_unavailable': 'Belum ada benchmark publik yang tepat',
+    'opencode_free.benchmark_disclaimer': 'Skor benchmark berasal dari model card atau halaman rilis resmi. Kolom kosong berarti belum ditemukan hasil terpercaya untuk model yang persis sama.',
 
     // ─── Best Picks ───────────────────────────────────────────────────────────
     'best_picks.title': 'Best Picks',
@@ -223,6 +247,7 @@ const TRANSLATIONS = {
     'best_picks.why_this_pick': 'Alasan pilihan',
     'best_picks.view_in_compare': 'Lihat di Compare',
     'best_picks.free_tier_note': 'Free tier tersedia',
+    'best_picks.open_provider': 'Buka Provider',
 
     // ─── Promos ───────────────────────────────────────────────────────────────
     'promo.title': 'Promo',
@@ -243,6 +268,7 @@ const TRANSLATIONS = {
     'promo.you_save': 'Hemat',
     'promo.source': 'Sumber',
     'promo.discount_suffix': 'lebih murah vs harga resmi',
+    'promo.open_provider': 'Buka Provider',
 
     // ─── General ──────────────────────────────────────────────────────────────
     'general.per_1m': 'per 1M token',
@@ -259,6 +285,8 @@ const TRANSLATIONS = {
     'general.code': 'Kode',
     'general.reasoning': 'Reasoning',
     'general.region': 'Wilayah',
+    'general.action': 'Aksi',
+    'general.new': 'Baru',
 
     // ─── Footer ───────────────────────────────────────────────────────────────
     'footer.built_with': 'Dibuat dengan ❤️ untuk komunitas AI',

@@ -56,6 +56,15 @@ const OFFICIAL_MODEL_MAP = {
     aliases: ['claude-mythos-5', 'claude mythos 5'],
     officialPricing: { inputPrice: 10, cachePrice: 1, outputPrice: 50, contextWindow: 1000000, maxOutput: 128000 },
   },
+  'claude-opus-5': {
+    provider: 'anthropic',
+    aliases: ['claude-opus-5', 'claude opus 5'],
+    officialPricing: { inputPrice: 5, cachePrice: 0.5, outputPrice: 25, contextWindow: 1000000, maxOutput: 128000 },
+  },
+  'claude-opus-5-fast': {
+    provider: 'anthropic',
+    aliases: ['claude-opus-5-fast', 'claude opus 5 fast'],
+  },
   'claude-opus-4-8': {
     provider: 'anthropic',
     aliases: ['claude-opus-4-8', 'claude opus 4.8'],

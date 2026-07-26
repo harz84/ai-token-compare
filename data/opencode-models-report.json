@@ -1,0 +1,19 @@
+{
+  "source": "https://models.dev/api.json",
+  "provider": "opencode",
+  "fetchedAt": "2026-07-25T23:59:29.765Z",
+  "availableCount": 84,
+  "activePaidCount": 52,
+  "freeCount": 7,
+  "benchmarkedFreeCount": 4,
+  "deprecatedCount": 25,
+  "freeModelIds": [
+    "opencode/big-pickle",
+    "opencode/deepseek-v4-flash-free",
+    "opencode/laguna-s-2.1-free",
+    "opencode/ling-3.0-flash-free",
+    "opencode/mimo-v2.5-free",
+    "opencode/nemotron-3-ultra-free",
+    "opencode/north-mini-code-free"
+  ]
+}

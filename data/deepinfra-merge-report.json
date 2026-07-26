@@ -1,11 +1,11 @@
 {
   "source": "https://api.deepinfra.com/v1/openai/models",
-  "fetchedAt": "2026-07-07T19:06:14.111Z",
-  "generatedAt": "2026-07-07T19:06:14.666Z",
-  "availableCount": 118,
-  "mappedCount": 48,
-  "matchedCount": 48,
-  "missingCount": 0,
+  "fetchedAt": "2026-07-25T23:59:40.928Z",
+  "generatedAt": "2026-07-25T23:59:44.949Z",
+  "availableCount": 115,
+  "mappedCount": 49,
+  "matchedCount": 47,
+  "missingCount": 2,
   "matched": [
     {
       "internalId": "deepseek-r1",
@@ -26,9 +26,9 @@
     {
       "internalId": "deepseek-v3-1",
       "deepinfraId": "deepseek-ai/DeepSeek-V3.1",
-      "inputPrice": 0.21,
+      "inputPrice": 0.25,
       "cachePrice": 0.13,
-      "outputPrice": 0.79,
+      "outputPrice": 0.95,
       "contextLength": 163840
     },
     {
@@ -72,14 +72,6 @@
       "contextLength": 196608
     },
     {
-      "internalId": "minimax-m2-5",
-      "deepinfraId": "MiniMaxAI/MiniMax-M2.5",
-      "inputPrice": 0.15,
-      "cachePrice": 0.03,
-      "outputPrice": 1.15,
-      "contextLength": 196608
-    },
-    {
       "internalId": "glm-4-5",
       "deepinfraId": "zai-org/GLM-5",
       "inputPrice": 0.6,
@@ -90,9 +82,9 @@
     {
       "internalId": "glm-4-plus",
       "deepinfraId": "zai-org/GLM-4.6",
-      "inputPrice": 0.43,
-      "cachePrice": 0.08,
-      "outputPrice": 1.74,
+      "inputPrice": 0.5,
+      "cachePrice": 0.1,
+      "outputPrice": 2,
       "contextLength": 202752
     },
     {
@@ -156,7 +148,7 @@
       "deepinfraId": "Qwen/Qwen3-235B-A22B-Instruct-2507",
       "inputPrice": 0.09,
       "cachePrice": null,
-      "outputPrice": 0.1,
+      "outputPrice": 0.55,
       "contextLength": 262144
     },
     {
@@ -338,9 +330,9 @@
     {
       "internalId": "llama-4-maverick",
       "deepinfraId": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
-      "inputPrice": 0.15,
+      "inputPrice": 0.2,
       "cachePrice": null,
-      "outputPrice": 0.6,
+      "outputPrice": 0.8,
       "contextLength": 1048576
     },
     {
@@ -392,5 +384,18 @@
       "contextLength": 131072
     }
   ],
-  "missing": []
+  "missing": [
+    {
+      "internalId": "minimax-m2-5",
+      "candidates": [
+        "MiniMaxAI/MiniMax-M2.5"
+      ]
+    },
+    {
+      "internalId": "claude-opus-5",
+      "candidates": [
+        "anthropic/claude-opus-5"
+      ]
+    }
+  ]
 }

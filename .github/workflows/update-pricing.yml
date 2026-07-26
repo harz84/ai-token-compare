@@ -146,6 +146,7 @@ jobs:
             js/official-pricing.generated.js \
             js/sumopod-merge.generated.js \
             js/deepinfra-merge.generated.js \
+            js/opencode-models.generated.js \
             js/exchange-rate.generated.js \
             js/data.js \
             data/*.json \
