@@ -143,6 +143,7 @@ jobs:
           git add \
             index.html \
             js/openrouter-merge.generated.js \
+            js/openrouter-free-models.generated.js \
             js/official-pricing.generated.js \
             js/sumopod-merge.generated.js \
             js/deepinfra-merge.generated.js \

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SUMOPOD_BASE_URL = process.env.SUMOPOD_BASE_URL || 'https://ai.sumopod.com';
-const SUMOPOD_MODEL_INFO_URL = `${SUMOPOD_BASE_URL}/model/info`;
+const SUMOPOD_MODEL_INFO_URL = `${SUMOPOD_BASE_URL}/v1/model/info`;
 const SUMOPOD_API_KEY = process.env.SUMOPOD_API_KEY;
 
 const PROJECT_ROOT = path.join(__dirname, '..');

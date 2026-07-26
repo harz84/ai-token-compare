@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-25T23:59:29.236Z",
-  "generatedAt": "2026-07-25T23:59:29.290Z",
+  "fetchedAt": "2026-07-26T23:23:34.385Z",
+  "generatedAt": "2026-07-26T23:23:34.450Z",
   "mappedCount": 91,
   "matchedCount": 90,
   "missingCount": 1,
@@ -361,7 +361,7 @@
     {
       "internalId": "kimi-k2-7",
       "openrouterId": "moonshotai/kimi-k2.7-code",
-      "inputPrice": 0.78,
+      "inputPrice": 0.73,
       "cachePrice": 0.15,
       "outputPrice": 3.5,
       "contextWindow": 262144
@@ -393,17 +393,17 @@
     {
       "internalId": "glm-5-2",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.7266,
-      "cachePrice": 0.13494,
-      "outputPrice": 2.2836,
+      "inputPrice": 0.6692,
+      "cachePrice": 0.12428,
+      "outputPrice": 2.1032,
       "contextWindow": 1048576
     },
     {
       "internalId": "glm-5-2-air",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.7266,
-      "cachePrice": 0.13494,
-      "outputPrice": 2.2836,
+      "inputPrice": 0.6692,
+      "cachePrice": 0.12428,
+      "outputPrice": 2.1032,
       "contextWindow": 1048576
     },
     {
@@ -721,9 +721,9 @@
     {
       "internalId": "deepseek-v4-flash",
       "openrouterId": "deepseek/deepseek-v4-flash",
-      "inputPrice": 0.0938,
-      "cachePrice": 0.01876,
-      "outputPrice": 0.1876,
+      "inputPrice": 0.14,
+      "cachePrice": 0.028,
+      "outputPrice": 0.28,
       "contextWindow": 1048576
     }
   ],

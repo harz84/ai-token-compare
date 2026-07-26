@@ -51,6 +51,8 @@ const STEPS = [
     args: ['scripts/fetch-sumopod-models.js'],
     outputs: ['data/sumopod-models.generated.json', 'js/sumopod-merge.generated.js', 'data/sumopod-merge-report.json'],
     requiredEnv: 'SUMOPOD_API_KEY',
+    // Enrichment source: on failure, keep yesterday's generated files and continue
+    optional: true,
   },
   {
     name: 'fetch-deepinfra-models',
@@ -58,6 +60,7 @@ const STEPS = [
     args: ['scripts/fetch-deepinfra-models.js'],
     outputs: ['data/deepinfra-models.generated.json', 'js/deepinfra-merge.generated.js', 'data/deepinfra-merge-report.json'],
     // No API key required — DeepInfra model list is public
+    optional: true,
   },
   {
     name: 'fetch-exchange-rate',
@@ -65,6 +68,7 @@ const STEPS = [
     args: ['scripts/fetch-exchange-rate.js'],
     outputs: ['data/exchange-rate.generated.json', 'js/exchange-rate.generated.js'],
     // No API key required — public, no-auth exchange rate APIs
+    optional: true,
   },
 ];
 
@@ -76,6 +80,7 @@ function runStep(step) {
     return {
       name: step.name,
       command: [step.command, ...step.args].join(' '),
+      optional: Boolean(step.optional),
       startedAt,
       finishedAt,
       status: 'skipped',
@@ -113,6 +118,7 @@ function runStep(step) {
   return {
     name: step.name,
     command: [step.command, ...step.args].join(' '),
+    optional: Boolean(step.optional),
     startedAt,
     finishedAt,
     status: result.status === 0 ? 'ok' : 'failed',
@@ -346,7 +352,11 @@ function validateOutputs() {
 function main() {
   const generatedAt = new Date().toISOString();
   const steps = STEPS.map(runStep);
-  const failedStep = steps.find(step => step.status === 'failed');
+  steps.filter(step => step.status === 'failed').forEach(step => {
+    console.error(`Step "${step.name}" failed (exit ${step.exitCode})${step.optional ? ' — optional, pipeline continues with previous data' : ''}`);
+    if (step.stderr) console.error(step.stderr);
+  });
+  const failedStep = steps.find(step => step.status === 'failed' && !step.optional);
 
   let validation = null;
   let validationError = null;
