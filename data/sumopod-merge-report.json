@@ -1,11 +1,11 @@
 {
   "source": "https://ai.sumopod.com/model/info",
-  "fetchedAt": "2026-07-07T19:06:12.525Z",
-  "generatedAt": "2026-07-08T02:59:58.199Z",
+  "fetchedAt": "2026-07-25T18:01:54.434Z",
+  "generatedAt": "2026-07-25T18:01:56.373Z",
   "availableCount": 63,
   "mappedCount": 59,
-  "matchedCount": 44,
-  "missingCount": 15,
+  "matchedCount": 42,
+  "missingCount": 17,
   "matched": [
     {
       "internalId": "claude-opus-4-8",
@@ -115,26 +115,6 @@
       "inputPrice": 0.25,
       "cachePrice": 0.025,
       "outputPrice": 1.5,
-      "contextWindow": 1048576
-    },
-    {
-      "internalId": "gemini-2-5-flash",
-      "sumopodId": "gemini/gemini-2.5-flash",
-      "provider": "gemini",
-      "mode": "chat",
-      "inputPrice": 0.3,
-      "cachePrice": 0.03,
-      "outputPrice": 2.5,
-      "contextWindow": 1048576
-    },
-    {
-      "internalId": "gemini-2-5-flash-lite",
-      "sumopodId": "gemini/gemini-2.5-flash-lite",
-      "provider": "gemini",
-      "mode": "chat",
-      "inputPrice": 0.1,
-      "cachePrice": 0.01,
-      "outputPrice": 0.4,
       "contextWindow": 1048576
     },
     {
@@ -250,22 +230,22 @@
     {
       "internalId": "kimi-k2-6",
       "sumopodId": "kimi-k2.6",
-      "provider": "openai",
+      "provider": "moonshoot",
       "mode": null,
       "inputPrice": 0.67,
       "cachePrice": 0.14,
       "outputPrice": 3.39,
-      "contextWindow": null
+      "contextWindow": 262100
     },
     {
       "internalId": "kimi-k2",
       "sumopodId": "kimi-k2.6",
-      "provider": "openai",
+      "provider": "moonshoot",
       "mode": null,
       "inputPrice": 0.67,
       "cachePrice": 0.14,
       "outputPrice": 3.39,
-      "contextWindow": null
+      "contextWindow": 262100
     },
     {
       "internalId": "minimax-m2-7-highspeed",
@@ -412,9 +392,9 @@
       "sumopodId": "deepseek-v4-pro",
       "provider": "deepseek",
       "mode": "chat",
-      "inputPrice": 0.435,
-      "cachePrice": 0.003625,
-      "outputPrice": 0.87,
+      "inputPrice": 0.495,
+      "cachePrice": 0.0045,
+      "outputPrice": 0.95,
       "contextWindow": 1000000
     },
     {
@@ -422,9 +402,9 @@
       "sumopodId": "deepseek-v4-pro",
       "provider": "deepseek",
       "mode": "chat",
-      "inputPrice": 0.435,
-      "cachePrice": 0.003625,
-      "outputPrice": 0.87,
+      "inputPrice": 0.495,
+      "cachePrice": 0.0045,
+      "outputPrice": 0.95,
       "contextWindow": 1000000
     },
     {
@@ -432,9 +412,9 @@
       "sumopodId": "deepseek-v4-pro",
       "provider": "deepseek",
       "mode": "chat",
-      "inputPrice": 0.435,
-      "cachePrice": 0.003625,
-      "outputPrice": 0.87,
+      "inputPrice": 0.495,
+      "cachePrice": 0.0045,
+      "outputPrice": 0.95,
       "contextWindow": 1000000
     },
     {
@@ -442,9 +422,9 @@
       "sumopodId": "deepseek-v4-flash",
       "provider": "deepseek",
       "mode": "chat",
-      "inputPrice": 0.14,
-      "cachePrice": 0.0028,
-      "outputPrice": 0.28,
+      "inputPrice": 0.16,
+      "cachePrice": 0.0032,
+      "outputPrice": 0.32,
       "contextWindow": 1000000
     }
   ],
@@ -453,6 +433,18 @@
       "internalId": "gemini-2-5-pro",
       "candidates": [
         "gemini/gemini-2.5-pro"
+      ]
+    },
+    {
+      "internalId": "gemini-2-5-flash",
+      "candidates": [
+        "gemini/gemini-2.5-flash"
+      ]
+    },
+    {
+      "internalId": "gemini-2-5-flash-lite",
+      "candidates": [
+        "gemini/gemini-2.5-flash-lite"
       ]
     },
     {
