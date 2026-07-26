@@ -1076,8 +1076,8 @@
     "minimax": "https://www.minimax.io/platform",
     "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
   },
-  "fetchedAt": "2026-07-26T23:23:35.078Z",
-  "generatedAt": "2026-07-26T23:23:46.929Z",
+  "fetchedAt": "2026-07-26T23:24:29.725Z",
+  "generatedAt": "2026-07-26T23:24:33.019Z",
   "mappedCount": 66,
   "matchedCount": 38,
   "missingCount": 28,

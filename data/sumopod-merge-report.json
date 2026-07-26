@@ -1,11 +1,11 @@
 {
-  "source": "https://ai.sumopod.com/model/info",
-  "fetchedAt": "2026-07-25T18:01:54.434Z",
-  "generatedAt": "2026-07-25T18:01:56.373Z",
+  "source": "https://ai.sumopod.com/v1/model/info",
+  "fetchedAt": "2026-07-26T23:24:33.065Z",
+  "generatedAt": "2026-07-26T23:24:35.237Z",
   "availableCount": 63,
-  "mappedCount": 59,
+  "mappedCount": 61,
   "matchedCount": 42,
-  "missingCount": 17,
+  "missingCount": 19,
   "matched": [
     {
       "internalId": "claude-opus-4-8",
@@ -429,6 +429,18 @@
     }
   ],
   "missing": [
+    {
+      "internalId": "claude-opus-5",
+      "candidates": [
+        "claude-opus-5"
+      ]
+    },
+    {
+      "internalId": "claude-opus-5-fast",
+      "candidates": [
+        "claude-opus-5"
+      ]
+    },
     {
       "internalId": "gemini-2-5-pro",
       "candidates": [

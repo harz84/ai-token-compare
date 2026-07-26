@@ -1,7 +1,7 @@
 {
   "source": "https://api.deepinfra.com/v1/openai/models",
-  "fetchedAt": "2026-07-26T23:23:46.964Z",
-  "generatedAt": "2026-07-26T23:23:49.695Z",
+  "fetchedAt": "2026-07-26T23:24:35.267Z",
+  "generatedAt": "2026-07-26T23:24:35.808Z",
   "availableCount": 115,
   "mappedCount": 49,
   "matchedCount": 47,
