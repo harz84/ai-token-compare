@@ -1,6 +1,6 @@
 {
   "source": "https://ai.sumopod.com/v1/model/info",
-  "fetchedAt": "2026-07-26T23:24:33.065Z",
+  "fetchedAt": "2026-07-27T18:26:49.457Z",
   "count": 63,
   "models": [
     {
@@ -19,7 +19,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "claude-fable-5",
         "litellm_params": {
@@ -177,7 +177,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "claude-haiku-4-5",
         "litellm_params": {
@@ -329,7 +329,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "claude-opus-4-7",
         "litellm_params": {
@@ -488,7 +488,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "claude-opus-4-8",
         "litellm_params": {
@@ -647,7 +647,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "claude-sonnet-4-6",
         "litellm_params": {
@@ -803,7 +803,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "claude-sonnet-5",
         "litellm_params": {
@@ -961,7 +961,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "deepseek-v4-flash",
         "litellm_params": {
@@ -1101,7 +1101,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "deepseek-v4-pro",
         "litellm_params": {
@@ -1241,7 +1241,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gemini/gemini-3-flash-preview",
         "litellm_params": {
@@ -1400,7 +1400,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gemini/gemini-3.1-flash-lite",
         "litellm_params": {
@@ -1559,7 +1559,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gemini/gemini-3.1-flash-lite",
         "litellm_params": {
@@ -1718,7 +1718,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gemini/gemini-3.1-pro-preview",
         "litellm_params": {
@@ -1877,7 +1877,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gemini/gemini-3.5-flash",
         "litellm_params": {
@@ -2036,7 +2036,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gemini/gemini-embedding-001",
         "litellm_params": {
@@ -2189,7 +2189,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "glm-5",
         "litellm_params": {
@@ -2239,7 +2239,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "glm-5",
         "litellm_params": {
@@ -2289,7 +2289,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "glm-5-turbo",
         "litellm_params": {
@@ -2339,7 +2339,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "glm-5-turbo",
         "litellm_params": {
@@ -2384,7 +2384,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "glm-5.1",
         "litellm_params": {
@@ -2434,7 +2434,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "glm-5.1",
         "litellm_params": {
@@ -2479,7 +2479,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "glm-5.2",
         "litellm_params": {
@@ -2529,7 +2529,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "glm-5.2",
         "litellm_params": {
@@ -2579,7 +2579,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "glm-5v-turbo",
         "litellm_params": {
@@ -2629,7 +2629,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-4.1",
         "litellm_params": {
@@ -2795,7 +2795,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-4.1-mini",
         "litellm_params": {
@@ -2961,7 +2961,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-4.1-nano",
         "litellm_params": {
@@ -3127,7 +3127,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-4o",
         "litellm_params": {
@@ -3293,7 +3293,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-4o-mini",
         "litellm_params": {
@@ -3459,7 +3459,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-5",
         "litellm_params": {
@@ -3616,7 +3616,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-5-mini",
         "litellm_params": {
@@ -3773,7 +3773,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-5-nano",
         "litellm_params": {
@@ -3930,7 +3930,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-5.4",
         "litellm_params": {
@@ -4090,7 +4090,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-5.4-mini",
         "litellm_params": {
@@ -4250,7 +4250,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "gpt-5.4-nano",
         "litellm_params": {
@@ -4410,7 +4410,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "hy3",
         "litellm_params": {
@@ -4460,7 +4460,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "kimi-k2.6",
         "litellm_params": {
@@ -4510,7 +4510,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "kimi-k2.6",
         "litellm_params": {
@@ -4560,7 +4560,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "kimi-k2.7",
         "litellm_params": {
@@ -4610,7 +4610,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "kimi-k3",
         "litellm_params": {
@@ -4660,7 +4660,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "mimo-v2.5",
         "litellm_params": {
@@ -4711,7 +4711,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "mimo-v2.5",
         "litellm_params": {
@@ -4762,7 +4762,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "mimo-v2.5",
         "litellm_params": {
@@ -4813,7 +4813,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "mimo-v2.5-pro",
         "litellm_params": {
@@ -4864,7 +4864,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "mimo-v2.5-pro",
         "litellm_params": {
@@ -4915,7 +4915,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "mimo-v2.5-pro",
         "litellm_params": {
@@ -4966,7 +4966,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5016,7 +5016,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5066,7 +5066,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5116,7 +5116,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5168,7 +5168,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "MiniMax-M2.7-highspeed",
         "litellm_params": {
@@ -5218,7 +5218,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "MiniMax-M3",
         "litellm_params": {
@@ -5268,7 +5268,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "MiniMax-M3",
         "litellm_params": {
@@ -5321,7 +5321,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "qwen3.6-flash",
         "litellm_params": {
@@ -5371,7 +5371,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "qwen3.6-plus",
         "litellm_params": {
@@ -5421,7 +5421,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "qwen3.7-max",
         "litellm_params": {
@@ -5471,7 +5471,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "qwen3.7-plus",
         "litellm_params": {
@@ -5521,7 +5521,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "qwen3.8-max-preview",
         "litellm_params": {
@@ -5571,7 +5571,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "seed-2-0-code",
         "litellm_params": {
@@ -5621,7 +5621,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "seed-2-0-lite",
         "litellm_params": {
@@ -5671,7 +5671,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "seed-2-0-mini",
         "litellm_params": {
@@ -5719,7 +5719,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "seed-2-0-pro",
         "litellm_params": {
@@ -5769,7 +5769,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "text-embedding-3-large",
         "litellm_params": {
@@ -5935,7 +5935,7 @@
       "source": "sumopod-api",
       "sourceType": "router",
       "sourceUrl": "https://ai.sumopod.com/v1/model/info",
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-07-27",
       "raw": {
         "model_name": "text-embedding-3-small",
         "litellm_params": {

@@ -1,13 +1,13 @@
 {
   "source": "https://models.dev/api.json",
-  "fetchedAt": "2026-07-26T23:24:29.649Z",
+  "fetchedAt": "2026-07-27T18:26:46.648Z",
   "provider": {
     "id": "opencode",
     "name": "OpenCode Zen",
     "api": "https://opencode.ai/zen/v1",
     "doc": "https://opencode.ai/docs/zen"
   },
-  "count": 84,
+  "count": 85,
   "models": [
     {
       "id": "big-pickle",
@@ -1362,6 +1362,29 @@
       "category": "reasoning",
       "releaseDate": "2026-06-12",
       "updatedAt": "2026-06-12",
+      "status": "active",
+      "openWeights": true
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
+      "family": "kimi-k3",
+      "inputPrice": 3,
+      "cachePrice": 0.3,
+      "cacheWritePrice": 0,
+      "outputPrice": 15,
+      "contextWindow": 1048576,
+      "maxOutput": 131072,
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function-calling",
+        "json-mode"
+      ],
+      "category": "reasoning",
+      "releaseDate": "2026-07-16",
+      "updatedAt": "2026-07-16",
       "status": "active",
       "openWeights": true
     },
