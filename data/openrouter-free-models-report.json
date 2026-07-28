@@ -1,8 +1,8 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-27T18:26:46.180Z",
-  "generatedAt": "2026-07-27T18:26:46.311Z",
-  "count": 15,
+  "fetchedAt": "2026-07-28T18:19:12.734Z",
+  "generatedAt": "2026-07-28T18:19:12.851Z",
+  "count": 14,
   "modelIds": [
     "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
@@ -16,7 +16,6 @@
     "nvidia/nemotron-nano-12b-v2-vl:free",
     "nvidia/nemotron-nano-9b-v2:free",
     "openai/gpt-oss-20b:free",
-    "poolside/laguna-m.1:free",
     "poolside/laguna-s-2.1:free",
     "poolside/laguna-xs-2.1:free"
   ]
