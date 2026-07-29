@@ -1,7 +1,7 @@
 {
   "source": "https://openrouter.ai/api/v1/models",
-  "fetchedAt": "2026-07-28T18:19:12.734Z",
-  "generatedAt": "2026-07-28T18:19:12.816Z",
+  "fetchedAt": "2026-07-29T18:11:15.200Z",
+  "generatedAt": "2026-07-29T18:11:15.279Z",
   "mappedCount": 91,
   "matchedCount": 90,
   "missingCount": 1,
@@ -393,17 +393,17 @@
     {
       "internalId": "glm-5-2",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.7686,
-      "cachePrice": 0.14274,
-      "outputPrice": 2.4156,
+      "inputPrice": 0.6958,
+      "cachePrice": 0.12922,
+      "outputPrice": 2.1868,
       "contextWindow": 1048576
     },
     {
       "internalId": "glm-5-2-air",
       "openrouterId": "z-ai/glm-5.2",
-      "inputPrice": 0.7686,
-      "cachePrice": 0.14274,
-      "outputPrice": 2.4156,
+      "inputPrice": 0.6958,
+      "cachePrice": 0.12922,
+      "outputPrice": 2.1868,
       "contextWindow": 1048576
     },
     {
@@ -625,9 +625,9 @@
     {
       "internalId": "qwen-3-6-max",
       "openrouterId": "qwen/qwen3.6-max-preview",
-      "inputPrice": 1.04,
+      "inputPrice": 1.027,
       "cachePrice": 0,
-      "outputPrice": 6.24,
+      "outputPrice": 6.162,
       "contextWindow": 262144
     },
     {
