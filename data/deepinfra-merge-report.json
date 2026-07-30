@@ -1,7 +1,7 @@
 {
   "source": "https://api.deepinfra.com/v1/openai/models",
-  "fetchedAt": "2026-07-29T18:11:20.815Z",
-  "generatedAt": "2026-07-29T18:11:21.675Z",
+  "fetchedAt": "2026-07-30T18:21:31.878Z",
+  "generatedAt": "2026-07-30T18:21:32.415Z",
   "availableCount": 118,
   "mappedCount": 49,
   "matchedCount": 48,
@@ -234,9 +234,9 @@
     {
       "internalId": "glm-5-2",
       "deepinfraId": "zai-org/GLM-5.2",
-      "inputPrice": 0.93,
-      "cachePrice": 0.18,
-      "outputPrice": 3,
+      "inputPrice": 0.75,
+      "cachePrice": 0.14,
+      "outputPrice": 2.4,
       "contextLength": 1048576
     },
     {
