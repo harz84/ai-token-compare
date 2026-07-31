@@ -1,8 +1,8 @@
 {
   "source": "https://ai.sumopod.com/v1/model/info",
-  "fetchedAt": "2026-07-30T18:21:30.401Z",
-  "generatedAt": "2026-07-30T18:21:31.849Z",
-  "availableCount": 63,
+  "fetchedAt": "2026-07-31T18:23:49.866Z",
+  "generatedAt": "2026-07-31T18:23:51.473Z",
+  "availableCount": 65,
   "mappedCount": 61,
   "matchedCount": 42,
   "missingCount": 19,
@@ -392,9 +392,9 @@
       "sumopodId": "deepseek-v4-pro",
       "provider": "deepseek",
       "mode": "chat",
-      "inputPrice": 0.495,
-      "cachePrice": 0.0045,
-      "outputPrice": 0.95,
+      "inputPrice": 0.435,
+      "cachePrice": 0.003625,
+      "outputPrice": 0.87,
       "contextWindow": 1000000
     },
     {
@@ -402,9 +402,9 @@
       "sumopodId": "deepseek-v4-pro",
       "provider": "deepseek",
       "mode": "chat",
-      "inputPrice": 0.495,
-      "cachePrice": 0.0045,
-      "outputPrice": 0.95,
+      "inputPrice": 0.435,
+      "cachePrice": 0.003625,
+      "outputPrice": 0.87,
       "contextWindow": 1000000
     },
     {
@@ -412,9 +412,9 @@
       "sumopodId": "deepseek-v4-pro",
       "provider": "deepseek",
       "mode": "chat",
-      "inputPrice": 0.495,
-      "cachePrice": 0.0045,
-      "outputPrice": 0.95,
+      "inputPrice": 0.435,
+      "cachePrice": 0.003625,
+      "outputPrice": 0.87,
       "contextWindow": 1000000
     },
     {
@@ -422,9 +422,9 @@
       "sumopodId": "deepseek-v4-flash",
       "provider": "deepseek",
       "mode": "chat",
-      "inputPrice": 0.16,
-      "cachePrice": 0.0032,
-      "outputPrice": 0.32,
+      "inputPrice": 0.14,
+      "cachePrice": 0.0028,
+      "outputPrice": 0.28,
       "contextWindow": 1000000
     }
   ],
