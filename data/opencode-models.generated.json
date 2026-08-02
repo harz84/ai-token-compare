@@ -1,6 +1,6 @@
 {
   "source": "https://models.dev/api.json",
-  "fetchedAt": "2026-08-01T18:03:14.957Z",
+  "fetchedAt": "2026-08-02T18:03:37.585Z",
   "provider": {
     "id": "opencode",
     "name": "OpenCode Zen",
@@ -318,8 +318,8 @@
     },
     {
       "id": "deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash",
-      "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
+      "name": "DeepSeek V4 Flash 0731",
+      "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "inputPrice": 0.14,
       "cachePrice": 0.028,
@@ -333,15 +333,15 @@
         "json-mode"
       ],
       "category": "reasoning",
-      "releaseDate": "2026-04-24",
-      "updatedAt": "2026-04-24",
+      "releaseDate": "2026-07-31",
+      "updatedAt": "2026-07-31",
       "status": "active",
       "openWeights": true
     },
     {
       "id": "deepseek-v4-flash-free",
       "name": "DeepSeek V4 Flash Free (New)",
-      "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
+      "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "inputPrice": 0,
       "cachePrice": 0,
@@ -355,8 +355,8 @@
         "json-mode"
       ],
       "category": "reasoning",
-      "releaseDate": "2026-04-24",
-      "updatedAt": "2026-04-24",
+      "releaseDate": "2026-07-31",
+      "updatedAt": "2026-07-31",
       "status": "active",
       "openWeights": true
     },
