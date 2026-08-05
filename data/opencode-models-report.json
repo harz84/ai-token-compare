@@ -1,10 +1,10 @@
 {
   "source": "https://models.dev/api.json",
   "provider": "opencode",
-  "fetchedAt": "2026-08-04T18:41:56.699Z",
-  "availableCount": 85,
+  "fetchedAt": "2026-08-05T18:26:23.845Z",
+  "availableCount": 86,
   "activePaidCount": 53,
-  "freeCount": 7,
+  "freeCount": 8,
   "benchmarkedFreeCount": 4,
   "deprecatedCount": 25,
   "freeModelIds": [
@@ -12,6 +12,7 @@
     "opencode/deepseek-v4-flash-free",
     "opencode/laguna-s-2.1-free",
     "opencode/ling-3.0-flash-free",
+    "opencode/longcat-2.0-free",
     "opencode/mimo-v2.5-free",
     "opencode/nemotron-3-ultra-free",
     "opencode/north-mini-code-free"

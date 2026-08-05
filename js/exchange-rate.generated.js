@@ -1,12 +1,12 @@
 // Auto-generated daily by scripts/fetch-exchange-rate.js — do not edit by hand.
-// Source: open.er-api.com (fetched 2026-08-04T18:42:01.299Z)
+// Source: open.er-api.com (fetched 2026-08-05T18:26:28.100Z)
 (function () {
-  var rate = 17992.425129;
+  var rate = 18015.282467;
   if (typeof window.updateExchangeRate === 'function') {
     window.updateExchangeRate('IDR', rate);
   } else {
     window.EXCHANGE_RATES = window.EXCHANGE_RATES || {};
     window.EXCHANGE_RATES.IDR = rate;
   }
-  window.EXCHANGE_RATE_FETCHED_AT = "2026-08-04T18:42:01.299Z";
+  window.EXCHANGE_RATE_FETCHED_AT = "2026-08-05T18:26:28.100Z";
 })();

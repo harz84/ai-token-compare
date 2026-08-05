@@ -1,13 +1,13 @@
 {
   "source": "https://models.dev/api.json",
-  "fetchedAt": "2026-08-04T18:41:56.699Z",
+  "fetchedAt": "2026-08-05T18:26:23.845Z",
   "provider": {
     "id": "opencode",
     "name": "OpenCode Zen",
     "api": "https://opencode.ai/zen/v1",
     "doc": "https://opencode.ai/docs/zen"
   },
-  "count": 85,
+  "count": 86,
   "models": [
     {
       "id": "big-pickle",
@@ -1447,6 +1447,27 @@
       "category": "budget",
       "releaseDate": "2026-07-23",
       "updatedAt": "2026-07-23",
+      "status": "active",
+      "openWeights": false
+    },
+    {
+      "id": "longcat-2.0-free",
+      "name": "LongCat-2.0 Free",
+      "description": "Meituan LongCat-2.0, a reasoning model with tool calling and a 1M-token context window",
+      "family": "longcat",
+      "inputPrice": 0,
+      "cachePrice": 0,
+      "cacheWritePrice": 0,
+      "outputPrice": 0,
+      "contextWindow": 1000000,
+      "maxOutput": 131072,
+      "capabilities": [
+        "reasoning",
+        "function-calling"
+      ],
+      "category": "budget",
+      "releaseDate": "2026-06-30",
+      "updatedAt": "2026-06-30",
       "status": "active",
       "openWeights": false
     },

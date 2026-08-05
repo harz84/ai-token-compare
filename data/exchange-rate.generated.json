@@ -1,8 +1,8 @@
 {
   "base": "USD",
   "target": "IDR",
-  "rate": 17992.425129,
+  "rate": 18015.282467,
   "source": "open.er-api.com",
-  "fetchedAt": "2026-08-04T18:42:01.299Z",
-  "previousRate": 18075.566022
+  "fetchedAt": "2026-08-05T18:26:28.100Z",
+  "previousRate": 17992.425129
 }

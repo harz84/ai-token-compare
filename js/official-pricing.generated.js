@@ -18,7 +18,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://platform.openai.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 2.5,
       "cachePrice": 0.25,
@@ -29,7 +29,7 @@
       "official": {
         "provider": "openai",
         "sourceUrl": "https://platform.openai.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 128000
@@ -45,7 +45,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 10,
       "cachePrice": 1,
@@ -56,7 +56,7 @@
       "official": {
         "provider": "anthropic",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 128000
@@ -72,7 +72,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 10,
       "cachePrice": 1,
@@ -83,7 +83,7 @@
       "official": {
         "provider": "anthropic",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 128000
@@ -99,7 +99,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 5,
       "cachePrice": 0.5,
@@ -110,7 +110,7 @@
       "official": {
         "provider": "anthropic",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 128000
@@ -126,7 +126,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 5,
       "cachePrice": 0.5,
@@ -137,7 +137,7 @@
       "official": {
         "provider": "anthropic",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 128000
@@ -153,7 +153,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 3,
       "cachePrice": 0.3,
@@ -164,7 +164,7 @@
       "official": {
         "provider": "anthropic",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 128000
@@ -180,7 +180,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 3,
       "cachePrice": 0.3,
@@ -191,7 +191,7 @@
       "official": {
         "provider": "anthropic",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 200000,
       "maxOutput": 64000
@@ -207,7 +207,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 1,
       "cachePrice": 0.1,
@@ -218,7 +218,7 @@
       "official": {
         "provider": "anthropic",
         "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 200000,
       "maxOutput": 64000
@@ -234,7 +234,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 1.25,
       "cachePrice": 0.125,
@@ -245,7 +245,7 @@
       "official": {
         "provider": "google",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 2000000,
       "maxOutput": 65536
@@ -261,7 +261,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.3,
       "cachePrice": 0.03,
@@ -272,7 +272,7 @@
       "official": {
         "provider": "google",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 65536
@@ -288,7 +288,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.1,
       "cachePrice": 0.01,
@@ -299,7 +299,7 @@
       "official": {
         "provider": "google",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 65536
@@ -315,7 +315,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.1,
       "cachePrice": 0.01,
@@ -326,7 +326,7 @@
       "official": {
         "provider": "google",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 8192
@@ -342,7 +342,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://platform.deepseek.com/api-docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.27,
       "cachePrice": 0.07,
@@ -353,7 +353,7 @@
       "official": {
         "provider": "deepseek",
         "sourceUrl": "https://platform.deepseek.com/api-docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 16384
@@ -369,7 +369,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://platform.deepseek.com/api-docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.55,
       "cachePrice": 0.14,
@@ -380,7 +380,7 @@
       "official": {
         "provider": "deepseek",
         "sourceUrl": "https://platform.deepseek.com/api-docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 32768
@@ -396,7 +396,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://platform.deepseek.com/api-docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.27,
       "cachePrice": 0.07,
@@ -407,7 +407,7 @@
       "official": {
         "provider": "deepseek",
         "sourceUrl": "https://platform.deepseek.com/api-docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 64000,
       "maxOutput": 8192
@@ -423,7 +423,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://platform.deepseek.com/api-docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.14,
       "cachePrice": 0.014,
@@ -434,7 +434,7 @@
       "official": {
         "provider": "deepseek",
         "sourceUrl": "https://platform.deepseek.com/api-docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 64000,
       "maxOutput": 8192
@@ -450,7 +450,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.x.ai/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 3,
       "cachePrice": 0.75,
@@ -461,7 +461,7 @@
       "official": {
         "provider": "xai",
         "sourceUrl": "https://docs.x.ai/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 256000,
       "maxOutput": 16384
@@ -477,7 +477,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://platform.moonshot.ai/docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.74,
       "cachePrice": 0.15,
@@ -488,7 +488,7 @@
       "official": {
         "provider": "moonshot",
         "sourceUrl": "https://platform.moonshot.ai/docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 262144,
       "maxOutput": 16384
@@ -504,7 +504,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://platform.moonshot.ai/docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.66,
       "cachePrice": 0.144,
@@ -515,7 +515,7 @@
       "official": {
         "provider": "moonshot",
         "sourceUrl": "https://platform.moonshot.ai/docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 262144,
       "maxOutput": 262144
@@ -531,7 +531,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://platform.moonshot.ai/docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.57,
       "cachePrice": 0,
@@ -542,7 +542,7 @@
       "official": {
         "provider": "moonshot",
         "sourceUrl": "https://platform.moonshot.ai/docs",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 131072,
       "maxOutput": 16384
@@ -558,7 +558,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.z.ai",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.95,
       "cachePrice": 0.18,
@@ -569,7 +569,7 @@
       "official": {
         "provider": "zhipu",
         "sourceUrl": "https://docs.z.ai",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1048576,
       "maxOutput": 32768
@@ -585,7 +585,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.z.ai",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.6,
       "cachePrice": 0.12,
@@ -596,7 +596,7 @@
       "official": {
         "provider": "zhipu",
         "sourceUrl": "https://docs.z.ai",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 16384
@@ -612,7 +612,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 2,
       "cachePrice": 0.2,
@@ -623,7 +623,7 @@
       "official": {
         "provider": "mistral",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 8192
@@ -639,7 +639,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 2,
       "cachePrice": 0.2,
@@ -650,7 +650,7 @@
       "official": {
         "provider": "mistral",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 40000,
       "maxOutput": 8192
@@ -666,7 +666,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.2,
       "cachePrice": 0.02,
@@ -677,7 +677,7 @@
       "official": {
         "provider": "mistral",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 256000,
       "maxOutput": 8192
@@ -693,7 +693,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.1,
       "cachePrice": 0.01,
@@ -704,7 +704,7 @@
       "official": {
         "provider": "mistral",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 8192
@@ -720,7 +720,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.1,
       "cachePrice": 0.01,
@@ -731,7 +731,7 @@
       "official": {
         "provider": "mistral",
         "sourceUrl": "https://docs.mistral.ai/getting-started/models/",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 8192
@@ -747,7 +747,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://llama.meta.com",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.05,
       "cachePrice": 0.005,
@@ -758,7 +758,7 @@
       "official": {
         "provider": "meta",
         "sourceUrl": "https://llama.meta.com",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 4096
@@ -774,7 +774,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.cohere.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 2.5,
       "cachePrice": 0.25,
@@ -785,7 +785,7 @@
       "official": {
         "provider": "cohere",
         "sourceUrl": "https://docs.cohere.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 256000,
       "maxOutput": 8192
@@ -801,7 +801,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.cohere.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 2.5,
       "cachePrice": 0.25,
@@ -812,7 +812,7 @@
       "official": {
         "provider": "cohere",
         "sourceUrl": "https://docs.cohere.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 4096
@@ -828,7 +828,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.cohere.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.15,
       "cachePrice": 0.015,
@@ -839,7 +839,7 @@
       "official": {
         "provider": "cohere",
         "sourceUrl": "https://docs.cohere.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 4096
@@ -855,7 +855,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://docs.cohere.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.0375,
       "cachePrice": 0.004,
@@ -866,7 +866,7 @@
       "official": {
         "provider": "cohere",
         "sourceUrl": "https://docs.cohere.com/docs/models",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 4096
@@ -882,7 +882,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://www.minimax.io/platform",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.6,
       "cachePrice": 0.12,
@@ -893,7 +893,7 @@
       "official": {
         "provider": "minimax",
         "sourceUrl": "https://www.minimax.io/platform",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 80000
@@ -909,7 +909,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://www.minimax.io/platform",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.5,
       "cachePrice": 0.1,
@@ -920,7 +920,7 @@
       "official": {
         "provider": "minimax",
         "sourceUrl": "https://www.minimax.io/platform",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 1000000,
       "maxOutput": 80000
@@ -936,7 +936,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://www.minimax.io/platform",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 1,
       "cachePrice": 0.1,
@@ -947,7 +947,7 @@
       "official": {
         "provider": "minimax",
         "sourceUrl": "https://www.minimax.io/platform",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 16384
@@ -963,7 +963,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.06,
       "cachePrice": 0.015,
@@ -974,7 +974,7 @@
       "official": {
         "provider": "xiaomi",
         "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 8192
@@ -990,7 +990,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.04,
       "cachePrice": 0.01,
@@ -1001,7 +1001,7 @@
       "official": {
         "provider": "xiaomi",
         "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 8192
@@ -1017,7 +1017,7 @@
         "source": "official-docs",
         "sourceType": "official",
         "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "inputPrice": 0.05,
       "cachePrice": 0.01,
@@ -1028,7 +1028,7 @@
       "official": {
         "provider": "xiaomi",
         "sourceUrl": "https://github.com/XiaomiMiMo/MiMo",
-        "updatedAt": "2026-08-04"
+        "updatedAt": "2026-08-05"
       },
       "contextWindow": 128000,
       "maxOutput": 8192
@@ -1076,8 +1076,8 @@
     "minimax": "https://www.minimax.io/platform",
     "xiaomi": "https://github.com/XiaomiMiMo/MiMo"
   },
-  "fetchedAt": "2026-08-04T18:41:56.751Z",
-  "generatedAt": "2026-08-04T18:41:59.225Z",
+  "fetchedAt": "2026-08-05T18:26:23.899Z",
+  "generatedAt": "2026-08-05T18:26:26.175Z",
   "mappedCount": 66,
   "matchedCount": 38,
   "missingCount": 28,
